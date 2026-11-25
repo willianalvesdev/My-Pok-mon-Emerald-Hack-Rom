@@ -577,7 +577,7 @@ static enum CancelerResult CancelerCallSubmove(struct BattleCalcValues *cv)
         return CANCELER_RESULT_SUCCESS;
     }
 
-    if (calledMove != MOVE_NONE)
+    if (calledMove != MOVE_NONE && calledMove < MOVES_COUNT_GEN4)
     {
         if (GetActiveGimmick(cv->battlerAtk) == GIMMICK_Z_MOVE && !IsBattleMoveStatus(calledMove))
             calledMove = GetTypeBasedZMove(calledMove);
@@ -6049,7 +6049,7 @@ static enum Move GetAssistMove(void)
             else
                 move = GetMonData(&party[monId], MON_DATA_MOVE1 + moveId);
 
-            if (IsMoveAssistBanned(move))
+            if (move >= MOVES_COUNT_GEN4 || IsMoveAssistBanned(move))
                 continue;
 
             validMoves[chooseableMovesNo++] = move;
@@ -6071,7 +6071,7 @@ enum Move GetNaturePowerMove(void)
     else if (gBattleEnvironmentInfo[gBattleEnvironment].naturePower == MOVE_NONE)
         move = B_NATURE_POWER_MOVES >= GEN_4 ? MOVE_TRI_ATTACK : MOVE_SWIFT;
 
-    return move;
+    return move < MOVES_COUNT_GEN4 ? move : MOVE_SWIFT;
 }
 
 static enum Move GetSleepTalkMove(void)

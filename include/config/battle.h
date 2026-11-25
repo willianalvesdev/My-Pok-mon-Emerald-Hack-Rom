@@ -118,7 +118,7 @@
 #define B_HEAL_BLOCKING                 GEN_LATEST // In Gen5+, Heal Block prevents healing by Black Sludge, Leftovers, and Shell Bell. Affected Pokémon will not consume held HP-restoring Berries or Berry Juice. Abilities will not heal but will prevent damage.
                                                    // In Gen6+, Heal Block prevents the use of HP-draining moves, as long as they aren't Z-Moves.
 #define B_ROOTED_GROUNDING              GEN_LATEST // In Gen4+, Ingrain causes the user to become grounded.
-#define B_METRONOME_MOVES               GEN_LATEST // Determines up to and including which generation Metronome will call moves from.
+#define B_METRONOME_MOVES               GEN_4      // Determines up to and including which generation Metronome will call moves from.
 #define B_TELEPORT_BEHAVIOR             GEN_LATEST // In LGPE onwards (Gen8+ here), Teleport switches the user out instead of fleeing.
 #define B_BEAT_UP                       GEN_LATEST // In Gen5+, Beat Up uses a different formula to calculate its damage, and deals Dark-type damage. In Gen4 and earlier, each hit announces the party member's name.
 #define B_DARK_VOID_FAIL                GEN_LATEST // In Gen7+, only Darkrai can use Dark Void.
@@ -343,14 +343,14 @@
 #define B_TERRAIN_TYPE_BOOST        GEN_LATEST // In Gen8+, terrain increases the power of same-type moves by 30% instead of 50%.
 #define B_SECRET_POWER_EFFECT       GEN_LATEST // Secret Power's effects change depending on the terrain and generation. See MOVE_EFFECT_SECRET_POWER's case in `SetMoveEffect`.
 #define B_SECRET_POWER_ANIMATION    GEN_LATEST // Secret Power's animations change depending on the terrain and generation.
-#define B_NATURE_POWER_MOVES        GEN_LATEST // Nature Power calls different moves depending on the terrain and generation. See gBattleEnvironmentInfo.
+#define B_NATURE_POWER_MOVES        GEN_3      // Nature Power calls different moves depending on the terrain and generation. See gBattleEnvironmentInfo.
 #define B_CAMOUFLAGE_TYPES          GEN_LATEST // Camouflage changes the user to different types depending on the terrain and generation. See sTerrainToType.
 #define B_NEW_TERRAIN_BACKGROUNDS   FALSE      // If set to TRUE, uses new terrain backgrounds for Electric, Misty, Grassy and Psychic Terrain.
 
 // Interface settings
 #define B_FAST_INTRO_PKMN_TEXT              TRUE       // If set to TRUE, battle intro text prints at the same time as the animation of Pokémon, as opposing to waiting for the animation to end.
 #define B_FAST_INTRO_NO_SLIDE               FALSE      // If set to TRUE, the slide animation that happens at the beginning of battles is skipped.
-#define B_FAST_HP_DRAIN                     TRUE       // If set to TRUE, HP bars will move faster.
+#define B_FAST_HP_DRAIN                     FALSE      // If set to TRUE, HP bars will move faster.
 #define B_FAST_EXP_GROW                     TRUE       // If set to TRUE, EXP bars will move faster.
 #define B_SHOW_TARGETS                      TRUE       // If set to TRUE, all available targets will be shown before selecting a move in Double Battles.
 #define B_SHOW_CATEGORY_ICON                TRUE       // If set to TRUE, an icon in the summary and move relearner will show a move's category.
@@ -362,6 +362,8 @@
 #define B_SHOW_USELESS_Z_MOVE_INFO          FALSE      // If set to TRUE, Z-Moves without additional effects, like newer generation status moves, will say "No additional effect."
 #define B_ANIMATE_MON_AFTER_KO              TRUE       // If set to TRUE, if a Pokémon on the opposing side faints, the non-fainted Pokémon will play their animations.
 #define B_ANIMATE_MON_AFTER_FAILED_POKEBALL TRUE       // If set to TRUE, a wild Pokémon that breaks of a thrown Poké Ball will play its animation.
+#define B_DYNAMAX_ENABLED                   FALSE      // Enables Dynamax for players and opponents.
+#define B_Z_MOVES_ENABLED                   FALSE      // Enables Z-Moves for players and opponents.
 #define B_SHOW_DYNAMAX_MESSAGE              FALSE      // If set to TRUE, an additional battle message is shown after Dynamaxing or Gigantamaxing.
 #define B_HPBAR_COLOR_THRESHOLD             GEN_LATEST // In Gen5+, HP bar color thresholds were changed to be based on the actual HP values instead of the pixel length of the HP bar, leading to more accurate HP bar colors.
 #define B_HP_PERCENTAGE_DISPLAY             FALSE      // If set to TRUE, Pokémon on the opposing side's HP will be displayed in percentage alongside the HP bar. In single battles, this extends the healthbox to add the percentage below the HP bar. In double battles, the same input used to toggle your side's HP values will also toggle the opposing side's percentage display.

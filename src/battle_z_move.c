@@ -112,6 +112,9 @@ bool32 IsZMove(enum Move move)
 
 bool32 CanUseZMove(enum BattlerId battler)
 {
+    if (!B_Z_MOVES_ENABLED)
+        return FALSE;
+
     enum HoldEffect holdEffect = GetBattlerHoldEffectIgnoreNegation(battler);
     enum BattlerPosition position = GetBattlerPosition(battler);
 

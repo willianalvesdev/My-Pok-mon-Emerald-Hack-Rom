@@ -270,18 +270,18 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "The clock is stopped…\p"
-	.string "Better set it and start it!$"
+	.string "O relógio tá parado… Melhor acertar a\n"
+	.string "hora$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "MOM: {PLAYER}, how do you like your\n"
-	.string "new room?\p"
-	.string "Good! Everything's put away neatly!\p"
-	.string "They finished moving everything in\n"
-	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
-	.string "Oh, you should make sure that\n"
-	.string "everything's all there on your desk.$"
+	.string "MAE: Eai {PLAYER}, gostou do\n"
+	.string "quarto novo?\p"
+	.string "Que bom! Tá tudo no lugar! Lá embaixo\n"
+	.string "também já terminaram a mudança.\p"
+	.string "Esses escra-, digo, Pokémons, facilitam\n"
+	.string "a vida mesmo c ta doido.\p"
+	.string "Ah, depois dá uma olhadinha na sua mesa\n"
+	.string "pra ver se está tudo aí.$"
 
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"

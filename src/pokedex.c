@@ -1354,10 +1354,18 @@ const struct WindowTemplate sSearchMenu_WindowTemplate[] =
 
 // .text
 
+void ClearPokedexFlags(void)
+{
+    memset(gSaveBlock1Ptr->dexCaught, 0, sizeof(gSaveBlock1Ptr->dexCaught));
+    memset(gSaveBlock1Ptr->dexSeen, 0, sizeof(gSaveBlock1Ptr->dexSeen));
+#if P_GEN_4_POKEMON
+    memset(gSaveBlock3Ptr->dexCaughtExtra, 0, sizeof(gSaveBlock3Ptr->dexCaughtExtra));
+    memset(gSaveBlock3Ptr->dexSeenExtra, 0, sizeof(gSaveBlock3Ptr->dexSeenExtra));
+#endif
+}
+
 void ResetPokedex(void)
 {
-    u16 i;
-
     sLastSelectedPokemon = 0;
     sPokeBallRotation = POKEBALL_ROTATION_TOP;
     gSaveBlock2Ptr->pokedex.mode = DEX_MODE_HOENN;
@@ -1368,11 +1376,7 @@ void ResetPokedex(void)
     gSaveBlock2Ptr->pokedex.spindaPersonality = 0;
     gSaveBlock2Ptr->pokedex.unknown3 = 0;
     DisableNationalPokedex();
-    for (i = 0; i < NUM_DEX_FLAG_BYTES; i++)
-    {
-        gSaveBlock1Ptr->dexCaught[i] = 0;
-        gSaveBlock1Ptr->dexSeen[i] = 0;
-    }
+    ClearPokedexFlags();
 }
 
 void ResetPokedexScrollPositions(void)
@@ -4486,31 +4490,38 @@ static u8* ConvertMeasurementToMetricString(u32 num, u32* index)
 
 s8 GetSetPokedexFlag(enum NationalDexOrder nationalDexNo, u8 caseID)
 {
-    u32 index, bit, mask;
-    s8 retVal = 0;
+    if (nationalDexNo == NATIONAL_DEX_NONE || nationalDexNo > NATIONAL_DEX_COUNT)
+        return FALSE;
 
-    nationalDexNo--;
-    index = nationalDexNo / 8;
-    bit = nationalDexNo % 8;
-    mask = 1 << bit;
+    u32 index = (nationalDexNo - 1) / 8;
+    u32 mask = 1 << ((nationalDexNo - 1) % 8);
+    u8 *seen = gSaveBlock1Ptr->dexSeen;
+    u8 *caught = gSaveBlock1Ptr->dexCaught;
+
+#if P_GEN_4_POKEMON
+    if (index >= NUM_DEX_FLAG_BYTES_SAVEBLOCK1)
+    {
+        index -= NUM_DEX_FLAG_BYTES_SAVEBLOCK1;
+        seen = gSaveBlock3Ptr->dexSeenExtra;
+        caught = gSaveBlock3Ptr->dexCaughtExtra;
+    }
+#endif
 
     switch (caseID)
     {
     case FLAG_GET_SEEN:
-        retVal = ((gSaveBlock1Ptr->dexSeen[index] & mask) != 0);
-        break;
+        return (seen[index] & mask) != 0;
     case FLAG_GET_CAUGHT:
-         retVal = ((gSaveBlock1Ptr->dexCaught[index] & mask) != 0);
-        break;
+        return (caught[index] & mask) != 0;
     case FLAG_SET_SEEN:
-        gSaveBlock1Ptr->dexSeen[index] |= mask;
+        seen[index] |= mask;
         break;
     case FLAG_SET_CAUGHT:
-        gSaveBlock1Ptr->dexCaught[index] |= mask;
+        caught[index] |= mask;
         break;
     }
 
-    return retVal;
+    return FALSE;
 }
 
 u16 GetNationalPokedexCount(u8 caseID)

@@ -284,27 +284,28 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "MOM: See, {PLAYER}?\n"
-	.string "Isn't it nice in here, too?$"
+	.string "MAE: Olha só, {PLAYER}! Aqui\n"
+	.string "dentro até que é bonitinho, né?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "The mover's POKéMON do all the work\n"
-	.string "of moving us in and cleaning up after.\l"
-	.string "This is so convenient!\p"
-	.string "{PLAYER}, your room is upstairs.\n"
-	.string "Go check it out, dear!\p"
-	.string "DAD bought you a new clock to mark\n"
-	.string "our move here.\l"
-	.string "Don't forget to set it!$"
+	.string "Os Pokémons da mudança carregam tudo\n"
+	.string "e ainda deixam a casa arrumada. Que\l"
+	.string "belezinha!\p"
+	.string "{PLAYER}, seu quarto fica lá em\n"
+	.string "cima. Vai lá ver!\p"
+	.string "Seu pai aquele vagabundo ausente\n"
+	.string "comprou um relógio novo pra você, pelo\l"
+	.string "menos pra isso ele presta. Lembra de\l"
+	.string "acertar a hora depois tabaum?$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
-	.string "MOM: Well, {PLAYER}?\p"
-	.string "Aren't you interested in seeing your\n"
-	.string "very own room?$"
+	.string "MAE: Eai, {PLAYER}? Cadê a\n"
+	.string "curiosidade pra ver o seu quarto\l"
+	.string "novuuu?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "MOM: {PLAYER}.\p"
-	.string "Go set the clock in your room, honey.$"
+	.string "MAE: Porra {PLAYER}, vai acertar o\n"
+	.string "relógio do seu quarto.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
 	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"

@@ -7,6 +7,7 @@
 extern void (*gPokedexVBlankCB)(void);
 
 void ResetPokedex(void);
+void ClearPokedexFlags(void);
 u16 GetNationalPokedexCount(u8 caseID);
 u32 GetRegionalPokedexCount(u8 caseID);
 u16 GetHoennPokedexCount(u8 caseID);

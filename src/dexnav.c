@@ -1224,6 +1224,9 @@ static enum Move GetRandomEggMove(enum Species species)
     for (u32 i = 0; eggMoveLearnset[i] != MOVE_UNAVAILABLE; i++)
         numEggMoves++;
 
+    if (numEggMoves == 0)
+        return MOVE_NONE;
+
     enum Move result = *(const u16 *)(RandomElementArray(RNG_DEXNAV_RANDOM_EGG_MOVE, eggMoveLearnset, sizeof(u16), numEggMoves));
     return result;
 }
@@ -1275,7 +1278,11 @@ static void DexNavGenerateMoveset(enum Species species, u8 searchLevel, u8 encou
 
     // set first move slot to a random egg move if search level is good enough
     if (genMove)
-        moveDst[0] = GetRandomEggMove(GetEggSpecies(species));
+    {
+        enum Move eggMove = GetRandomEggMove(GetEggSpecies(species));
+        if (eggMove != MOVE_NONE)
+            moveDst[0] = eggMove;
+    }
 }
 
 static enum Item DexNavGenerateHeldItem(enum Species species, u8 searchLevel)

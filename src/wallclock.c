@@ -50,6 +50,7 @@ static void SpriteCB_AMIndicator(struct Sprite *sprite);
 #define tMoveDir         data[4]
 #define tPeriod          data[5]
 #define tMoveSpeed       data[6]
+#define tConfirmWindowId data[7]
 
 #define GFXTAG_WALL_CLOCK_HAND   0x1000
 #define PALTAG_WALL_CLOCK_MALE   0x1000
@@ -87,9 +88,9 @@ static const struct WindowTemplate sWindowTemplates[] =
     },
     [WIN_BUTTON_LABEL] = {
         .bg = 2,
-        .tilemapLeft = 24,
-        .tilemapTop = 16,
-        .width = 6,
+        .tilemapLeft = 20,
+        .tilemapTop = 18,
+        .width = 10,
         .height = 2,
         .paletteNum = 12,
         .baseBlock = 560
@@ -100,12 +101,18 @@ static const struct WindowTemplate sWindowTemplates[] =
 static const struct WindowTemplate sWindowTemplate_ConfirmYesNo =
 {
     .bg = 0,
-    .tilemapLeft = 24,
+    .tilemapLeft = 18,
     .tilemapTop = 9,
-    .width = 5,
+    .width = 11,
     .height = 4,
     .paletteNum = 14,
     .baseBlock = 572
+};
+
+static const struct MenuAction sClockConfirmActions[] =
+{
+    { gText_Confirm3 },
+    { gText_Cancel4 },
 };
 
 static const struct BgTemplate sBgTemplates[] =
@@ -828,13 +835,22 @@ static void Task_SetClock_AskConfirm(u8 taskId)
     AddTextPrinterParameterized(WIN_MSG, FONT_NORMAL, gText_IsThisTheCorrectTime, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_MSG);
     ScheduleBgCopyTilemapToVram(0);
-    CreateYesNoMenu(&sWindowTemplate_ConfirmYesNo, 0x250, 0x0d, 1);
+    gTasks[taskId].tConfirmWindowId = AddWindow(&sWindowTemplate_ConfirmYesNo);
+    DrawStdFrameWithCustomTileAndPalette(gTasks[taskId].tConfirmWindowId, TRUE, 0x250, 0x0d);
+    PrintMenuTable(gTasks[taskId].tConfirmWindowId, ARRAY_COUNT(sClockConfirmActions), sClockConfirmActions);
+    InitMenuInUpperLeftCornerNormal(gTasks[taskId].tConfirmWindowId, ARRAY_COUNT(sClockConfirmActions), 1);
     gTasks[taskId].func = Task_SetClock_HandleConfirmInput;
 }
 
 static void Task_SetClock_HandleConfirmInput(u8 taskId)
 {
-    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    s8 choice = Menu_ProcessInputNoWrap();
+    if (choice == MENU_NOTHING_CHOSEN)
+        return;
+
+    ClearStdWindowAndFrameToTransparent(gTasks[taskId].tConfirmWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tConfirmWindowId);
+    switch (choice)
     {
     case 0: // YES
         PlaySE(SE_SELECT);

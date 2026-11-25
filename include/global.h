@@ -144,6 +144,12 @@
 #define ROUND_BITS_TO_BYTES(numBits) DIV_ROUND_UP(numBits, 8)
 
 #define NUM_DEX_FLAG_BYTES ROUND_BITS_TO_BYTES(POKEMON_SLOTS_NUMBER)
+#if P_GEN_4_POKEMON
+// Preserve the original two 49-byte dex arrays and the following fields in SaveBlock1.
+#define NUM_DEX_FLAG_BYTES_SAVEBLOCK1 ROUND_BITS_TO_BYTES(NATIONAL_DEX_DEOXYS + 1)
+#else
+#define NUM_DEX_FLAG_BYTES_SAVEBLOCK1 NUM_DEX_FLAG_BYTES
+#endif
 #define NUM_FLAG_BYTES ROUND_BITS_TO_BYTES(FLAGS_COUNT)
 #define NUM_TRENDY_SAYING_BYTES ROUND_BITS_TO_BYTES(NUM_TRENDY_SAYINGS)
 
@@ -271,6 +277,10 @@ struct SaveBlock3
     u8 dexNavChain;
 #if APRICORN_TREE_COUNT > 0
     u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
+#endif
+#if P_GEN_4_POKEMON
+    u8 dexSeenExtra[NUM_DEX_FLAG_BYTES - NUM_DEX_FLAG_BYTES_SAVEBLOCK1];
+    u8 dexCaughtExtra[NUM_DEX_FLAG_BYTES - NUM_DEX_FLAG_BYTES_SAVEBLOCK1];
 #endif
 }; /* max size 1624 bytes */
 
@@ -602,7 +612,8 @@ struct SaveBlock2
              u16 optionsBattleStyle:1; // OPTIONS_BATTLE_STYLE_[SHIFT/SET]
              u16 optionsBattleSceneOff:1; // whether battle animations are disabled
              u16 regionMapZoom:1; // whether the map is zoomed in
-             //u16 padding1:4;
+             u16 optionsFollowers:1; // Whether Pokémon follow the player
+             //u16 padding1:3;
              //u16 padding2;
     /*0x18*/ struct Pokedex pokedex;
     /*0x90*/ u8 filler_90[0x8];
@@ -1184,8 +1195,8 @@ struct SaveBlock1
 #if FREE_MYSTERY_GIFT == FALSE
     /*0x322C*/ struct MysteryGiftSave mysteryGift;
 #endif //FREE_MYSTERY_GIFT
-    /*0x3???*/ u8 dexSeen[NUM_DEX_FLAG_BYTES];
-    /*0x3???*/ u8 dexCaught[NUM_DEX_FLAG_BYTES];
+    /*0x3???*/ u8 dexSeen[NUM_DEX_FLAG_BYTES_SAVEBLOCK1];
+    /*0x3???*/ u8 dexCaught[NUM_DEX_FLAG_BYTES_SAVEBLOCK1];
 #if FREE_TRAINER_HILL == FALSE
     /*0x3???*/ u32 trainerHillTimes[NUM_TRAINER_HILL_MODES];
 #endif //FREE_TRAINER_HILL

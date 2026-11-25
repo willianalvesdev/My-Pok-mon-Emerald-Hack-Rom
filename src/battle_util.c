@@ -1429,6 +1429,9 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
     u16 *choicedMove = &gBattleStruct->choicedMove[battler];
     enum BattleMoveEffects moveEffect = GetMoveEffect(move);
 
+    if (move >= MOVES_COUNT_GEN4)
+        return SetCantSelectScript(battler, move, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove);
+
     // Dynamax bypasses all selection prevention except Taunt and Assault Vest.
     bool32 dynamaxBypassCheck = (!IsGimmickChosenForAction(battler, GIMMICK_DYNAMAX) && GetActiveGimmick(battler) != GIMMICK_DYNAMAX);
 
@@ -1627,7 +1630,7 @@ u32 CheckMoveLimitations(enum BattlerId battler, u8 unusableMoves, u32 check)
         move = gBattleMons[battler].moves[i];
         moveEffect = GetMoveEffect(move);
         // No move
-        if (check & MOVE_LIMITATION_ZEROMOVE && move == MOVE_NONE)
+        if (move >= MOVES_COUNT_GEN4 || (check & MOVE_LIMITATION_ZEROMOVE && move == MOVE_NONE))
             unusableMoves |= 1u << i;
         // No PP
         else if (check & MOVE_LIMITATION_PP && gBattleMons[battler].pp[i] == 0)

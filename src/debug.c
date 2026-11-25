@@ -2584,7 +2584,7 @@ static void DebugSelectionStep_UpdateMoves(u8 taskId, u8 digits, u32 min, u32 ma
     ConvertIntToDecimalStringN(gStringVar3, moveId, STR_CONV_MODE_LEADING_ZEROS, digits);
     StringExpandPlaceholders(gStringVar1, COMPOUND_STRING("Move {STR_VAR_2}: {STR_VAR_3}"));
     u8 *end;
-    if (moveId == MOVES_COUNT)
+    if (moveId == MOVES_COUNT_GEN4)
         end = StringCopy(gStringVar2, COMPOUND_STRING("Default"));
     else
         end = StringCopy(gStringVar2, GetMoveName(moveId));
@@ -2596,7 +2596,7 @@ static void DebugSelectionStep_UpdateMoves(u8 taskId, u8 digits, u32 min, u32 ma
 static void DebugSelectionStep_MovesConfirm(u8 taskId)
 {
     u32 moveId = gTasks[taskId].tInput;
-    if (moveId != MOVE_NONE && moveId != MOVES_COUNT)
+    if (moveId != MOVE_NONE && moveId != MOVES_COUNT_GEN4)
     {
         DebugSelection_SetData(taskId, gTasks[taskId].tStepsDataIndex, moveId);
         return;
@@ -2631,7 +2631,7 @@ static const struct DebugSelectionStep sMovesSelectionStep = {
     .stepUpdate = DebugSelectionStep_UpdateMoves,
     .stepConfirm = DebugSelectionStep_MovesConfirm,
     .minValue = MOVE_NONE,
-    .maxValue = MOVES_COUNT,
+    .maxValue = MOVES_COUNT_GEN4,
     .digits = 3,
     .substepCount = 4,
 };
@@ -2708,7 +2708,7 @@ static bool32 DebugSelection_SetMassOutbreakMoves_Complete(u8 taskId) {
     for (u32 i = 0; i < MAX_MON_MOVES; i++)
     {
         u16 moveId = DebugSelection_GetData(taskId, i);
-        if (moveId < MOVES_COUNT)
+        if (moveId < MOVES_COUNT_GEN4)
             gSaveBlock1Ptr->outbreakPokemonMoves[i] = moveId;
         else
             gSaveBlock1Ptr->outbreakPokemonMoves[i] = MOVE_NONE;
@@ -2918,9 +2918,7 @@ static void DebugAction_FlagsVars_PokedexFlags_Reset(u8 taskId)
     int boxId, boxPosition, partyId;
     enum Species species;
 
-    // Reset Pokedex to emtpy
-    memset(&gSaveBlock1Ptr->dexCaught, 0, sizeof(gSaveBlock1Ptr->dexCaught));
-    memset(&gSaveBlock1Ptr->dexSeen, 0, sizeof(gSaveBlock1Ptr->dexSeen));
+    ClearPokedexFlags();
 
     // Add party Pokemon to Pokedex
     for (partyId = 0; partyId < PARTY_SIZE; partyId++)
