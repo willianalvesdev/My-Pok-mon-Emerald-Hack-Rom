@@ -5391,7 +5391,7 @@ static s8 DetermineBoxScrollDirection(u8 boxId)
             currentBox = 0;
     }
 
-    return (i < TOTAL_BOXES_COUNT / 2) ? 1 : -1;
+    return (2 * i < TOTAL_BOXES_COUNT) ? 1 : -1;
 }
 
 

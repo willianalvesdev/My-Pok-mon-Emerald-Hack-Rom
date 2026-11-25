@@ -205,6 +205,7 @@ struct MessageWindowInfo
 };
 
 static void InitUnionRoomChat(struct UnionRoomChat *);
+static void InitDefaultRegisteredTexts(u8 texts[][21]);
 static void CB2_LoadInterface(void);
 static void VBlankCB_UnionRoomChatMain(void);
 static void CB2_UnionRoomChatMain(void);
@@ -918,6 +919,8 @@ static void InitUnionRoomChat(struct UnionRoomChat *chat)
 #if FREE_UNION_ROOM_CHAT == FALSE
     for (i = 0; i < UNION_ROOM_KB_ROW_COUNT; i++)
         StringCopy(chat->registeredTexts[i], gSaveBlock1Ptr->registeredTexts[i]);
+#else
+    InitDefaultRegisteredTexts(chat->registeredTexts);
 #endif //FREE_UNION_ROOM_CHAT
 }
 
@@ -1740,7 +1743,7 @@ static void RegisterTextAtRow(void)
 {
     u8 *src = GetLimitedMessageStartPtr();
     StringCopy(sChat->registeredTexts[sChat->currentRow], src);
-    sChat->changedRegisteredTexts = TRUE;
+    sChat->changedRegisteredTexts = !FREE_UNION_ROOM_CHAT;
 }
 
 static void ResetMessageEntryBuffer(void)
@@ -1998,20 +2001,25 @@ static u8 *GetChatHostName(void)
     return sChat->hostName;
 }
 
+static void InitDefaultRegisteredTexts(u8 texts[][21])
+{
+    StringCopy(texts[0], gText_Hello);
+    StringCopy(texts[1], gText_Pokemon2);
+    StringCopy(texts[2], gText_Trade);
+    StringCopy(texts[3], gText_Battle);
+    StringCopy(texts[4], gText_Lets);
+    StringCopy(texts[5], gText_Ok);
+    StringCopy(texts[6], gText_Sorry);
+    StringCopy(texts[7], gText_YaySmileEmoji);
+    StringCopy(texts[8], gText_ThankYou);
+    StringCopy(texts[9], gText_ByeBye);
+}
+
 void InitUnionRoomChatRegisteredTexts(void)
 {
 #if FREE_UNION_ROOM_CHAT == FALSE
-    StringCopy(gSaveBlock1Ptr->registeredTexts[0], gText_Hello);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[1], gText_Pokemon2);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[2], gText_Trade);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[3], gText_Battle);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[4], gText_Lets);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[5], gText_Ok);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[6], gText_Sorry);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[7], gText_YaySmileEmoji);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[8], gText_ThankYou);
-    StringCopy(gSaveBlock1Ptr->registeredTexts[9], gText_ByeBye);
-#endif //FREE_UNION_ROOM_CHAT
+    InitDefaultRegisteredTexts(gSaveBlock1Ptr->registeredTexts);
+#endif
 }
 
 #define tState               data[0]

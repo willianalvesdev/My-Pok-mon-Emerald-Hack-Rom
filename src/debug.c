@@ -1872,8 +1872,8 @@ void CheckSaveBlock3Size(struct ScriptContext *ctx)
 
 void CheckPokemonStorageSize(struct ScriptContext *ctx)
 {
-    u32 currPkmnStorageSize = sizeof(struct PokemonStorage);
-    u32 maxPkmnStorageSize = SECTOR_DATA_SIZE * (SECTOR_ID_PKMN_STORAGE_END - SECTOR_ID_PKMN_STORAGE_START + 1);
+    u32 currPkmnStorageSize = POKEMON_STORAGE_SAVE_SIZE;
+    u32 maxPkmnStorageSize = SAVE_SLOT_PC_CAPACITY;
     ConvertIntToDecimalStringN(gStringVar1, currPkmnStorageSize, STR_CONV_MODE_LEFT_ALIGN, 6);
     ConvertIntToDecimalStringN(gStringVar2, maxPkmnStorageSize, STR_CONV_MODE_LEFT_ALIGN, 6);
     ConvertIntToDecimalStringN(gStringVar3, maxPkmnStorageSize - currPkmnStorageSize, STR_CONV_MODE_LEFT_ALIGN, 6);

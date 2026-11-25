@@ -22,6 +22,9 @@
 #define SECTOR_ID_PKMN_STORAGE_START  5
 #define SECTOR_ID_PKMN_STORAGE_END   13
 #define NUM_SECTORS_PER_SLOT         14
+#define SAVE_SLOT_SECTOR_PAYLOAD_SIZE (SECTOR_DATA_SIZE + SAVE_BLOCK_3_CHUNK_SIZE)
+#define SAVE_SLOT_PC_CAPACITY (NUM_SECTORS_PER_SLOT * SAVE_SLOT_SECTOR_PAYLOAD_SIZE \
+    - sizeof(struct SaveBlock1) - sizeof(struct SaveBlock2) - sizeof(struct SaveBlock3))
 // Save Slot 1: 0-13;  Save Slot 2: 14-27
 #define SECTOR_ID_HOF_1              28
 #define SECTOR_ID_HOF_2              29
