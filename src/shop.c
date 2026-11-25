@@ -111,6 +111,7 @@ struct ShopData
 
 #if defined(EMERALD)
 extern const u16 LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionItems[];
+extern const u16 SlateportCity_Pokemart_RareBerries[];
 #endif
 
 static EWRAM_DATA struct MartInfo sMartInfo = {0};
@@ -396,6 +397,8 @@ static void SetShopItemsForSale(const u16 *items)
 #if defined(EMERALD)
     if (items == LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionItems)
         sMartInfo.fixedBuyPrice = 4000;
+    else if (items == SlateportCity_Pokemart_RareBerries)
+        sMartInfo.fixedBuyPrice = 20000;
 #endif
 
     assertf(items != NULL, "Shop items list should never be set as NULL")

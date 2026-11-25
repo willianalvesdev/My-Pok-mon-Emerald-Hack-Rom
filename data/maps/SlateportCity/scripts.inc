@@ -541,6 +541,32 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_TM_SECRET_POWER
 	pokemartlistend
 
+SlateportCity_EventScript_BerryElder::
+	lock
+	faceplayer
+	message SlateportCity_Text_BerryElderWelcome
+	waitmessage
+	pokemart SlateportCity_Pokemart_RareBerries
+	msgbox SlateportCity_Text_BerryElderFarewell, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_Pokemart_RareBerries::
+	.2byte ITEM_GANLON_BERRY
+	.2byte ITEM_SALAC_BERRY
+	.2byte ITEM_PETAYA_BERRY
+	.2byte ITEM_APICOT_BERRY
+	.2byte ITEM_ENIGMA_BERRY
+	pokemartlistend
+
+SlateportCity_Text_BerryElderWelcome:
+	.string "Bem-vindo! Tenho Berries raras.\n"
+	.string "Cada uma custa ¥20000.$"
+
+SlateportCity_Text_BerryElderFarewell:
+	.string "Volte quando quiser.$"
+
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
 SlateportCity_EventScript_CaptStern::
 	lockall
