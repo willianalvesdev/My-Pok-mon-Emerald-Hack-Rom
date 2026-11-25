@@ -45,6 +45,7 @@
 #include "vs_seeker.h"
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
+#include "constants/coins.h"
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
@@ -748,7 +749,7 @@ static void Task_AccessPokemonBoxLink(u8 taskId)
 
 void ItemUseOutOfBattle_CoinCase(u8 taskId)
 {
-    ConvertIntToDecimalStringN(gStringVar1, GetCoins(), STR_CONV_MODE_LEFT_ALIGN, 4);
+    ConvertIntToDecimalStringN(gStringVar1, GetCoins(), STR_CONV_MODE_LEFT_ALIGN, MAX_COIN_DIGITS);
     StringExpandPlaceholders(gStringVar4, sText_CoinCase);
 
     if (!gTasks[taskId].tUsingRegisteredKeyItem)

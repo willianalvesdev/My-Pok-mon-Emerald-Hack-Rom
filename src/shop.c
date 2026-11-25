@@ -90,6 +90,7 @@ struct MartInfo
     const struct MenuAction *menuActions;
     const u16 *itemList;
     u16 itemCount;
+    u16 fixedBuyPrice;
     u8 windowId;
     u8 martType;
 };
@@ -107,6 +108,10 @@ struct ShopData
     u8 itemSpriteIds[2];
     s16 viewportObjects[OBJECT_EVENTS_COUNT][5];
 };
+
+#if defined(EMERALD)
+extern const u16 LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionItems[];
+#endif
 
 static EWRAM_DATA struct MartInfo sMartInfo = {0};
 static EWRAM_DATA struct ShopData *sShopData = NULL;
@@ -387,6 +392,11 @@ static void SetShopItemsForSale(const u16 *items)
 
     sMartInfo.itemList = items;
     sMartInfo.itemCount = 0;
+    sMartInfo.fixedBuyPrice = 0;
+#if defined(EMERALD)
+    if (items == LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionItems)
+        sMartInfo.fixedBuyPrice = 4000;
+#endif
 
     assertf(items != NULL, "Shop items list should never be set as NULL")
     {
@@ -634,6 +644,41 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
     BuyMenuPrint(WIN_ITEM_DESCRIPTION, description, 3, 1, 0, COLORID_NORMAL);
 }
 
+static u32 GetShopItemBuyPrice(enum Item item)
+{
+    u32 price;
+
+    if (sMartInfo.fixedBuyPrice != 0)
+        return sMartInfo.fixedBuyPrice;
+
+    switch (item)
+    {
+    case ITEM_HEAL_BALL:
+        price = 400;
+        break;
+    case ITEM_DUSK_BALL:
+    case ITEM_FRIEND_BALL:
+    case ITEM_LURE_BALL:
+    case ITEM_LEVEL_BALL:
+    case ITEM_FAST_BALL:
+    case ITEM_MOON_BALL:
+    case ITEM_HEAVY_BALL:
+    case ITEM_LOVE_BALL:
+    case ITEM_SPORT_BALL:
+    case ITEM_PARK_BALL:
+        price = 500;
+        break;
+    case ITEM_LUXURY_BALL:
+        price = 50000;
+        break;
+    default:
+        price = GetItemPrice(item);
+        break;
+    }
+
+    return price >> IsPokeNewsActive(POKENEWS_SLATEPORT);
+}
+
 static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
 {
     u8 x;
@@ -644,7 +689,7 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
         {
             ConvertIntToDecimalStringN(
                 gStringVar1,
-                GetItemPrice(itemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT),
+                GetShopItemBuyPrice(itemId),
                 STR_CONV_MODE_LEFT_ALIGN,
                 6);
         }
@@ -1017,7 +1062,7 @@ static void Task_BuyMenu(u8 taskId)
             BuyMenuPrintCursor(tListTaskId, COLORID_GRAY_CURSOR);
 
             if (sMartInfo.martType == MART_TYPE_NORMAL)
-                sShopData->totalCost = (GetItemPrice(itemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT));
+                sShopData->totalCost = GetShopItemBuyPrice(itemId);
             else
                 sShopData->totalCost = gDecorations[itemId].price;
 
@@ -1037,7 +1082,7 @@ static void Task_BuyMenu(u8 taskId)
                         ConvertIntToDecimalStringN(gStringVar2, sShopData->totalCost, STR_CONV_MODE_LEFT_ALIGN, 6);
                         StringExpandPlaceholders(gStringVar4, gText_YouWantedVar1ThatllBeVar2);
                         tItemCount = 1;
-                        sShopData->totalCost = (GetItemPrice(tItemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT)) * tItemCount;
+                        sShopData->totalCost = GetShopItemBuyPrice(tItemId) * tItemCount;
                         BuyMenuDisplayMessage(taskId, gStringVar4, BuyMenuConfirmPurchase);
                     }
                     else if (GetItemPocket(itemId) == POCKET_TM_HM)
@@ -1104,7 +1149,7 @@ static void Task_BuyHowManyDialogueHandleInput(u8 taskId)
 
     if (AdjustQuantityAccordingToDPadInput(&tItemCount, sShopData->maxQuantity) == TRUE)
     {
-        sShopData->totalCost = (GetItemPrice(tItemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT)) * tItemCount;
+        sShopData->totalCost = GetShopItemBuyPrice(tItemId) * tItemCount;
         BuyMenuPrintItemQuantityAndPrice(taskId);
     }
     else

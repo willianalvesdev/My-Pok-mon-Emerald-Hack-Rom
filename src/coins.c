@@ -14,6 +14,7 @@ void PrintCoinsString(u32 coinAmount)
 {
     u32 xAlign;
 
+    FillWindowPixelBuffer(sCoinsWindowId, PIXEL_FILL(0));
     ConvertIntToDecimalStringN(gStringVar1, coinAmount, STR_CONV_MODE_RIGHT_ALIGN, MAX_COIN_DIGITS);
     StringExpandPlaceholders(gStringVar4, gText_Coins);
 
@@ -26,7 +27,6 @@ void ShowCoinsWindow(u32 coinAmount, u8 x, u8 y)
     struct WindowTemplate template;
     SetWindowTemplateFields(&template, 0, x + 1, y + 1, 8, 2, 0xF, 0x141);
     sCoinsWindowId = AddWindow(&template);
-    FillWindowPixelBuffer(sCoinsWindowId, PIXEL_FILL(0));
     PutWindowTilemap(sCoinsWindowId);
     DrawStdFrameWithCustomTileAndPalette(sCoinsWindowId, FALSE, 0x214, 0xE);
     PrintCoinsString(coinAmount);
@@ -40,33 +40,21 @@ void HideCoinsWindow(void)
 
 u16 GetCoins(void)
 {
-    return gSaveBlock1Ptr->coins ^ gSaveBlock2Ptr->encryptionKey;
+    u16 coins = gSaveBlock1Ptr->coins ^ gSaveBlock2Ptr->encryptionKey;
+    return min(coins, MAX_COINS);
 }
 
 void SetCoins(u16 coinAmount)
 {
-    gSaveBlock1Ptr->coins = coinAmount ^ gSaveBlock2Ptr->encryptionKey;
+    gSaveBlock1Ptr->coins = min(coinAmount, MAX_COINS) ^ gSaveBlock2Ptr->encryptionKey;
 }
 
 bool8 AddCoins(u16 toAdd)
 {
-    u16 newAmount;
     u16 ownedCoins = GetCoins();
     if (ownedCoins >= MAX_COINS)
         return FALSE;
-    // check overflow, can't have less coins than previously
-    if (ownedCoins > ownedCoins + toAdd)
-    {
-        newAmount = MAX_COINS;
-    }
-    else
-    {
-        ownedCoins += toAdd;
-        if (ownedCoins > MAX_COINS)
-            ownedCoins = MAX_COINS;
-        newAmount = ownedCoins;
-    }
-    SetCoins(newAmount);
+    SetCoins(min((u32)ownedCoins + toAdd, MAX_COINS));
     return TRUE;
 }
 

@@ -271,20 +271,10 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
     {gText_Exit},
 };
 
-static const struct MenuAction MultichoiceList_GameCornerTMs[] =
-{
-    {COMPOUND_STRING("TM32{CLEAR_TO 72}1,500 COINS")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 72}3,500 COINS")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 72}4,000 COINS")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 72}4,000 COINS")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 72}4,000 COINS")},
-    {gText_Exit},
-};
-
 static const struct MenuAction MultichoiceList_GameCornerCoins[] =
 {
     {COMPOUND_STRING("  50 COINS    ¥1,000")},
-    {COMPOUND_STRING("500 COINS  ¥10,000")},
+    {COMPOUND_STRING("550 COINS  ¥10,000")},
     {gText_Exit},
 };
 
@@ -1190,7 +1180,6 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SSTIDAL_SLATEPORT_WITH_BF]  = MULTICHOICE(MultichoiceList_SSTidalSlateportWithBF),
     [MULTI_SSTIDAL_BATTLE_FRONTIER]    = MULTICHOICE(MultichoiceList_SSTidalBattleFrontier),
     [MULTI_RIGHTLEFT]                  = MULTICHOICE(MultichoiceList_RightLeft),
-    [MULTI_GAME_CORNER_TMS]            = MULTICHOICE(MultichoiceList_GameCornerTMs),
     [MULTI_SSTIDAL_SLATEPORT_NO_BF]    = MULTICHOICE(MultichoiceList_SSTidalSlateportNoBF),
     [MULTI_FLOORS]                     = MULTICHOICE(MultichoiceList_Floors),
     [MULTI_SHARDS_R]                   = MULTICHOICE(MultichoiceList_ShardsR),
