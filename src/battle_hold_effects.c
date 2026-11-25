@@ -38,17 +38,17 @@ bool32 IsForceTriggerItemActivation(enum HoldEffect holdEffect)
         || gHoldEffectsInfo[holdEffect].onHpThreshold;
 }
 
-static enum ItemEffect TryDoublePrize(enum BattlerId battler)
+static enum ItemEffect TryBoostPrizeMoney(enum BattlerId battler)
 {
-    enum ItemEffect effect = ITEM_NO_EFFECT;
-
-    if (IsOnPlayerSide(battler) && !gBattleStruct->moneyMultiplierItem)
+    if (IsOnPlayerSide(battler))
     {
-        gBattleStruct->moneyMultiplier *= 2;
-        gBattleStruct->moneyMultiplierItem = TRUE;
+        u8 multiplier = gBattleMons[battler].item == ITEM_AMULET_COIN ? 5 : 4;
+        if (gBattleStruct->moneyMultiplierMove)
+            multiplier *= 2;
+        gBattleStruct->moneyMultiplier = max(gBattleStruct->moneyMultiplier, multiplier);
     }
 
-    return effect;
+    return ITEM_NO_EFFECT;
 }
 
 enum ItemEffect TryBoosterEnergy(enum BattlerId battler, enum Ability ability)
@@ -1037,7 +1037,7 @@ enum ItemEffect ItemBattleEffects(enum BattlerId itemBattler, enum BattlerId bat
     switch (holdEffect)
     {
     case HOLD_EFFECT_DOUBLE_PRIZE:
-        effect = TryDoublePrize(itemBattler);
+        effect = TryBoostPrizeMoney(itemBattler);
         break;
     case HOLD_EFFECT_ROOM_SERVICE:
         effect = TryRoomService(itemBattler);

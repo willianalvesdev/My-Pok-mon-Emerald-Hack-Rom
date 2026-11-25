@@ -16,6 +16,7 @@
 #define P_POKERUS_WEAK_VARIANT           FALSE      // If TRUE, the variant 0 of Pokérus can be erased by stronger variant when Pokérus is spreading
 
 #define P_POKERUS_INFECTION_ODDS         3          // Actual probability is POKERUS_INFECTION_ODDS/65536
+#define P_POKERUS_WILD_ONE_IN            400        // Chance a generated wild Pokémon is already infected.
 #define P_POKERUS_SPREAD_ODDS            21846      // Actual probability is POKERUS_SPREAD_ODDS/65536 (21846 should correspond to the vanilla Random() % 3)
 
 #endif // GUARD_CONFIG_POKERUS_H

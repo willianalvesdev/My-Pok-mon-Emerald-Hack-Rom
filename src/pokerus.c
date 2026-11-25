@@ -22,6 +22,20 @@ static u32 GetRandomPokerusStrain(void)
         return RandomWeighted(RNG_POKERUS_STRAIN_DISTRIBUTION, 0, 31, 31, 31, 31, 31, 31, 31, 0, 1, 1, 1, 1, 1, 1, 1);
 }
 
+static void GiveMonPokerus(struct Pokemon *mon)
+{
+    u32 strain = GetRandomPokerusStrain();
+    u32 daysLeft = GetDaysLeftBasedOnStrain(strain);
+    SetMonData(mon, MON_DATA_POKERUS_STRAIN, &strain);
+    SetMonData(mon, MON_DATA_POKERUS_DAYS_LEFT, &daysLeft);
+}
+
+void RandomlyGiveWildMonPokerus(struct Pokemon *mon)
+{
+    if (GetConfig(POKERUS_ENABLED) && Random32() % P_POKERUS_WILD_ONE_IN == 0)
+        GiveMonPokerus(mon);
+}
+
 void RandomlyGivePartyPokerus(void)
 {
     if (!GetConfig(POKERUS_ENABLED))
@@ -60,13 +74,7 @@ void RandomlyGivePartyPokerus(void)
         mon = &gParties[B_TRAINER_PLAYER][validTargets[randomIndex]];
 
         if (!CheckMonHasHadPokerus(mon))
-        {
-            u32 strain = GetRandomPokerusStrain();
-            u32 daysLeft = GetDaysLeftBasedOnStrain(strain);
-
-            SetMonData(mon, MON_DATA_POKERUS_STRAIN, &strain);
-            SetMonData(mon, MON_DATA_POKERUS_DAYS_LEFT, &daysLeft);
-        }
+            GiveMonPokerus(mon);
     }
 }
 

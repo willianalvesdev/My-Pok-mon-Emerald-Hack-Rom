@@ -605,8 +605,7 @@ struct BattleStruct
     u8 wildVictorySong;
     enum Type dynamicMoveType;
     enum BattlerId battlerPreventingSwitchout;
-    u8 moneyMultiplier:6;
-    u8 moneyMultiplierItem:1;
+    u8 moneyMultiplier:7; // Units of 0.5x, so 2 represents the normal payout.
     u8 moneyMultiplierMove:1;
     u8 savedTurnActionNumber;
     u8 scriptPartyIdx; // for printing the nickname
