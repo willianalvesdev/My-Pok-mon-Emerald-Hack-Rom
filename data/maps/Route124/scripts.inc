@@ -10,6 +10,14 @@ Route124_EventScript_HuntersHouseSign::
 	msgbox Route124_Text_HuntersHouse, MSGBOX_SIGN
 	end
 
+Route124_EventScript_EVResetHouseSign::
+	msgbox Route124_Text_EVResetHouseSign, MSGBOX_SIGN
+	end
+
+Route124_Text_EVResetHouseSign:
+	.string "Casa de Treino\n"
+	.string "Serviço gratuito de reset de EVs.$"
+
 Route124_EventScript_Spencer::
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE

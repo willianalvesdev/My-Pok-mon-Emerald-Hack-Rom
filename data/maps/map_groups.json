@@ -660,7 +660,8 @@
     "Route119_House"
   ],
   "gMapGroup_IndoorRoute124": [
-    "Route124_DivingTreasureHuntersHouse"
+    "Route124_DivingTreasureHuntersHouse",
+    "Route124_EVResetHouse"
   ],
   "gMapGroup_Link_Frlg": [
     "BattleColosseum_2P_Frlg",

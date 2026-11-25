@@ -365,6 +365,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_CyndaquilTransferredToPC::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedCyndaquil::
+	setvar VAR_GIFT_JOHTO_STARTER_SPECIES, SPECIES_CYNDAQUIL
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
@@ -406,6 +407,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_TotodileTransferredToPC::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedTotodile::
+	setvar VAR_GIFT_JOHTO_STARTER_SPECIES, SPECIES_TOTODILE
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6
@@ -447,6 +449,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_ChikoritaTransferredToPC::
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_ReceivedChikorita::
+	setvar VAR_GIFT_JOHTO_STARTER_SPECIES, SPECIES_CHIKORITA
 	hidemonpic
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting, MSGBOX_DEFAULT
 	setvar VAR_DEX_UPGRADE_JOHTO_STARTER_STATE, 6

@@ -3,7 +3,6 @@
   "name": "Route124",
   "layout": "LAYOUT_ROUTE124",
   "music": "MUS_ROUTE120",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_124",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -69,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 49,
-      "y": 45,
+      "x": 51,
+      "y": 43,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
@@ -196,6 +195,19 @@
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route124_EventScript_Isabella",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "x": 71,
+      "y": 50,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "StarterEggs_EventScript_KantoRoute124",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -204,6 +216,13 @@
       "y": 48,
       "elevation": 3,
       "dest_map": "MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 27,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE124_EV_RESET_HOUSE",
       "dest_warp_id": "0"
     }
   ],
@@ -216,6 +235,15 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route124_EventScript_HuntersHouseSign"
+    },
+    {
+      "type": "sign",
+      "x": 42,
+      "y": 27,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route124_EventScript_EVResetHouseSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

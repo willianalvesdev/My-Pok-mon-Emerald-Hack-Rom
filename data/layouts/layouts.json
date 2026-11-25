@@ -9323,6 +9323,17 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_ROUTE124_EV_RESET_HOUSE",
+      "name": "Route124_EVResetHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route124_EVResetHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route124_EVResetHouse/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

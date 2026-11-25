@@ -7,6 +7,24 @@ BattleFrontier_OutsideWest_OnTransition:
 	setflag FLAG_HIDE_BATTLE_TOWER_REPORTER
 	end
 
+BattleFrontier_OutsideWest_EventScript_Red::
+	trainerbattle_single TRAINER_RED, BattleFrontier_OutsideWest_Text_Red, BattleFrontier_OutsideWest_Text_Red, BattleFrontier_OutsideWest_EventScript_RedReward
+	msgbox BattleFrontier_OutsideWest_Text_Red, MSGBOX_DEFAULT
+
+BattleFrontier_OutsideWest_EventScript_RedReward::
+	goto_if_set FLAG_RECEIVED_OLD_SEA_MAP, BattleFrontier_OutsideWest_EventScript_RedEnd
+	giveitem ITEM_OLD_SEA_MAP
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	setflag FLAG_RECEIVED_OLD_SEA_MAP
+
+BattleFrontier_OutsideWest_EventScript_RedEnd::
+	release
+	end
+
+BattleFrontier_OutsideWest_Text_Red:
+	.string "...$"
+
 BattleFrontier_OutsideWest_EventScript_FerryAttendant::
 	lock
 	faceplayer

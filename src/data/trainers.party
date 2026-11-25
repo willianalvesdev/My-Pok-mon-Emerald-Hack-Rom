@@ -4597,45 +4597,71 @@ Double Battle: No
 AI: Basic Trainer / Force Setup First Turn
 Mugshot: Purple
 
-Mightyena
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
-
-Shiftry
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
-
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
-
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
-
-Absol @ Sitrus Berry
-Level: 49
+Shiftry @ ITEM_FOCUS_SASH
+Level: 50
+Ability: ABILITY_CHLOROPHYLL
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+EVs: 4 SpD / 252 SpA / 252 Spe
+Nature: Timid
+- Nasty Plot
+- Energy Ball
+- Dark Pulse
+- Focus Blast
+
+Houndoom @ ITEM_LIFE_ORB
+Level: 52
+Ability: ABILITY_FLASH_FIRE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Atk / 252 SpA / 252 Spe
+Nature: Hasty
+- Nasty Plot
+- Fire Blast
+- Dark Pulse
+- Sucker Punch
+
+Cacturne @ ITEM_LEFTOVERS
+Level: 53
+Ability: ABILITY_SAND_VEIL
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+Nature: Adamant
+- Spikes
+- Seed Bomb
+- Sucker Punch
+- Drain Punch
+
+Weavile @ ITEM_LIFE_ORB
+Level: 54
+Ability: ABILITY_PRESSURE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 SpD / 252 Atk / 252 Spe
+Nature: Jolly
+- Ice Punch
+- Ice Shard
+- Night Slash
+- Low Kick
+
+Absol @ ITEM_SCOPE_LENS
+Level: 55
+Ability: ABILITY_SUPER_LUCK
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Jolly
+- Night Slash
+- Psycho Cut
+- Sucker Punch
+- Superpower
+
+Umbreon @ ITEM_LEFTOVERS
+Level: 60
+Ability: ABILITY_SYNCHRONIZE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 120 Def / 136 SpD
+Nature: Careful
+- Toxic
+- Wish
+- Protect
+- Payback
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -4648,45 +4674,71 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Green
 
-Dusclops
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
+Banette @ ITEM_FOCUS_SASH
 Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
-Level: 51
+Ability: ABILITY_INSOMNIA
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Adamant
+- Shadow Claw
+- Sucker Punch
+- Will O Wisp
+- Destiny Bond
+
+Sableye @ ITEM_LEFTOVERS
+Level: 51
+Ability: ABILITY_KEEN_EYE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD
+Nature: Careful
+- Knock Off
+- Recover
+- Will O Wisp
+- Taunt
+
+Dusknoir @ ITEM_LEFTOVERS
+Level: 52
+Ability: ABILITY_PRESSURE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Nature: Impish
+- Shadow Sneak
 - Earthquake
+- Will O Wisp
+- Pain Split
+
+Spiritomb @ ITEM_LEFTOVERS
+Level: 53
+Ability: ABILITY_PRESSURE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Nature: Calm
+- Calm Mind
+- Dark Pulse
+- Rest
+- Sleep Talk
+
+Haunter @ ITEM_BLACK_SLUDGE
+Level: 55
+Ability: ABILITY_LEVITATE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+Nature: Timid
+- Shadow Ball
+- Thunderbolt
+- Sludge Bomb
+- Substitute
+
+Gengar @ ITEM_LIFE_ORB
+Level: 60
+Ability: ABILITY_LEVITATE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+Nature: Timid
+- Shadow Ball
+- Sludge Bomb
+- Focus Blast
+- Thunderbolt
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -4699,45 +4751,71 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Pink
 
-Sealeo
+Glaceon @ ITEM_CHOICE_SPECS
 Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
-
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
+Ability: ABILITY_SNOW_CLOAK
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 SpD / 252 SpA / 252 Spe
+Nature: Modest
 - Ice Beam
+- Shadow Ball
+- Water Pulse
+- Signal Beam
 
-Sealeo
+Froslass @ ITEM_FOCUS_SASH
+Level: 51
+Ability: ABILITY_SNOW_CLOAK
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Nature: Timid
+- Spikes
+- Taunt
+- Ice Beam
+- Destiny Bond
+
+Mamoswine @ ITEM_LIFE_ORB
 Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
+Ability: ABILITY_SNOW_CLOAK
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Jolly
+- Earthquake
+- Ice Shard
+- Ice Fang
+- Stone Edge
+
+Glalie @ ITEM_ICY_ROCK
+Level: 53
+Ability: ABILITY_INNER_FOCUS
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpA / 252 Spe
+Nature: Naive
 - Hail
 - Blizzard
-
-Glalie
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
+- Earthquake
 - Explosion
-- Hail
-- Ice Beam
 
-Walrein @ Sitrus Berry
-Level: 53
+Walrein @ ITEM_LEFTOVERS
+Level: 54
+Ability: ABILITY_ICE_BODY
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Nature: Bold
 - Surf
-- Body Slam
 - Ice Beam
-- Sheer Cold
+- Toxic
+- Protect
+
+Lapras @ ITEM_LEFTOVERS
+Level: 62
+Ability: ABILITY_WATER_ABSORB
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpA
+Nature: Modest
+- Surf
+- Ice Beam
+- Thunderbolt
+- Heal Bell
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -4750,45 +4828,71 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Blue
 
-Shelgon
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
-
-Altaria
+Altaria @ ITEM_LUM_BERRY
 Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
-
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
-
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
-
-Salamence @ Sitrus Berry
-Level: 55
+Ability: ABILITY_NATURAL_CURE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Adamant
+- Dragon Dance
 - Dragon Claw
-- Rock Slide
-- Crunch
+- Earthquake
+- Roost
+
+Kingdra @ ITEM_LIFE_ORB
+Level: 57
+Ability: ABILITY_SWIFT_SWIM
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Nature: Modest
+- Rain Dance
+- Hydro Pump
+- Draco Meteor
+- Ice Beam
+
+Flygon @ ITEM_CHOICE_SCARF
+Level: 59
+Ability: ABILITY_LEVITATE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 SpD / 252 Atk / 252 Spe
+Nature: Jolly
+- Earthquake
+- Outrage
+- U turn
+- Stone Edge
+
+Salamence @ ITEM_LIFE_ORB
+Level: 60
+Ability: ABILITY_INTIMIDATE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Atk / 252 SpA / 252 Spe
+Nature: Naive
+- Draco Meteor
+- Fire Blast
+- Earthquake
+- Roost
+
+Dragonite @ ITEM_LUM_BERRY
+Level: 67
+Ability: ABILITY_INNER_FOCUS
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Adamant
+- Dragon Dance
+- Outrage
+- Fire Punch
+- Extreme Speed
+
+Garchomp @ ITEM_YACHE_BERRY
+Level: 68
+Ability: ABILITY_SAND_VEIL
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 SpD / 252 Atk / 252 Spe
+Nature: Jolly
+- Swords Dance
+- Earthquake
+- Dragon Claw
+- Fire Fang
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -4801,7 +4905,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Geodude
-Level: 12
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
@@ -4809,7 +4913,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Tomb
 
 Geodude
-Level: 12
+Level: 14
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Tackle
 - Defense Curl
@@ -4817,7 +4921,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Tomb
 
 Nosepass @ Oran Berry
-Level: 15
+Level: 16
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
 - Harden
@@ -4835,7 +4939,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Machop
-Level: 16
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Karate Chop
 - Low Kick
@@ -4843,7 +4947,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bulk Up
 
 Meditite
-Level: 16
+Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
 - Light Screen
@@ -4869,7 +4973,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Voltorb
-Level: 20
+Level: 22
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Rollout
 - Spark
@@ -4877,7 +4981,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shock Wave
 
 Electrike
-Level: 20
+Level: 23
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Shock Wave
 - Leer
@@ -4885,7 +4989,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Howl
 
 Magneton
-Level: 22
+Level: 24
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Supersonic
 - Shock Wave
@@ -4893,7 +4997,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Sonic Boom
 
 Manectric @ Sitrus Berry
-Level: 24
+Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Quick Attack
 - Thunder Wave
@@ -4911,7 +5015,7 @@ Double Battle: No
 AI: Basic Trainer
 
 Numel
-Level: 24
+Level: 28
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Overheat
 - Take Down
@@ -4919,7 +5023,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Sunny Day
 
 Slugma
-Level: 24
+Level: 28
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Overheat
 - Smog
@@ -4927,7 +5031,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Sunny Day
 
 Camerupt
-Level: 26
+Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Overheat
 - Tackle
@@ -4935,7 +5039,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Attract
 
 Torkoal @ White Herb
-Level: 29
+Level: 32
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Overheat
 - Sunny Day
@@ -4961,7 +5065,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Encore
 
 Vigoroth
-Level: 27
+Level: 28
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Slash
 - Facade
@@ -4969,7 +5073,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Feint Attack
 
 Linoone
-Level: 29
+Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Slash
 - Belly Drum
@@ -4977,7 +5081,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Headbutt
 
 Slaking @ Sitrus Berry
-Level: 31
+Level: 40
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Counter
 - Yawn
@@ -4995,7 +5099,7 @@ Double Battle: No
 AI: Basic Trainer / Risky
 
 Swablu
-Level: 29
+Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Perish Song
 - Mirror Move
@@ -5003,7 +5107,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Aerial Ace
 
 Tropius
-Level: 29
+Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Sunny Day
 - Aerial Ace
@@ -5027,7 +5131,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Aerial Ace
 
 Altaria @ Oran Berry
-Level: 33
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Dragon Breath
@@ -5045,7 +5149,7 @@ Double Battle: Yes
 AI: Basic Trainer
 
 Claydol
-Level: 41
+Level: 42
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Earthquake
 - Ancient Power
@@ -5053,7 +5157,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Light Screen
 
 Xatu
-Level: 41
+Level: 42
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Psychic
 - Sunny Day
@@ -5061,7 +5165,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Calm Mind
 
 Lunatone @ Sitrus Berry
-Level: 42
+Level: 45
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Light Screen
 - Psychic
@@ -5069,7 +5173,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Calm Mind
 
 Solrock @ Sitrus Berry
-Level: 42
+Level: 45
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Sunny Day
 - Solar Beam
@@ -5095,7 +5199,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Flail
 
 Whiscash
-Level: 41
+Level: 42
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Rain Dance
 - Water Pulse
@@ -5119,7 +5223,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Leer
 
 Kingdra @ Chesto Berry
-Level: 46
+Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Water Pulse
 - Double Team
@@ -6253,53 +6357,71 @@ Double Battle: No
 AI: Basic Trainer
 Mugshot: Yellow
 
-Wailord
-Level: 57
+Rotom Wash @ ITEM_DAMP_ROCK
+Level: 58
+Ability: ABILITY_LEVITATE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpA
+Nature: Bold
 - Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
-
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
 - Hydro Pump
-- Sludge Bomb
+- Thunderbolt
+- Will O Wisp
+
+Ludicolo @ ITEM_LIFE_ORB
+Level: 60
+Ability: ABILITY_SWIFT_SWIM
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Nature: Modest
+- Surf
+- Energy Ball
 - Ice Beam
+- Rain Dance
 
-Ludicolo
-Level: 56
+Whiscash @ ITEM_LUM_BERRY
+Level: 61
+Ability: ABILITY_OBLIVIOUS
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
-
-Whiscash
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
-
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Adamant
 - Dragon Dance
 - Earthquake
-- Hyper Beam
-- Surf
+- Waterfall
+- Stone Edge
 
-Milotic @ Sitrus Berry
-Level: 58
+Gyarados @ ITEM_WACAN_BERRY
+Level: 67
+Ability: ABILITY_INTIMIDATE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Jolly
+- Dragon Dance
+- Waterfall
+- Ice Fang
+- Earthquake
+
+Milotic @ ITEM_LEFTOVERS
+Level: 70
+Ability: ABILITY_MARVEL_SCALE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Nature: Bold
 - Surf
 - Ice Beam
-- Toxic
+- Recover
+- Haze
+
+Suicune @ ITEM_LEFTOVERS
+Level: 72
+Ability: ABILITY_PRESSURE
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+Nature: Bold
+- Calm Mind
+- Surf
+- Rest
+- Sleep Talk
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -15867,49 +15989,61 @@ Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Skarmory
-Level: 77
+Skarmory @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_KEEN_EYE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
 - Toxic
 - Aerial Ace
 - Spikes
 - Steel Wing
 
-Claydol
-Level: 75
+Claydol @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_LEVITATE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 128 Def / 128 SpD
 - Reflect
 - Light Screen
 - Ancient Power
 - Earthquake
 
-Aggron
-Level: 76
+Aggron @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_STURDY
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 252 SpA
 - Thunder
 - Earthquake
 - Solar Beam
 - Dragon Claw
 
-Cradily
-Level: 76
+Cradily @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_SUCTION_CUPS
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD
 - Giga Drain
 - Ancient Power
 - Ingrain
 - Confuse Ray
 
-Armaldo
-Level: 76
+Armaldo @ ITEM_SCOPE_LENS
+Level: 80
+Ability: ABILITY_BATTLE_ARMOR
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpA
 - Water Pulse
 - Ancient Power
 - Aerial Ace
 - Slash
 
-Metagross @ Sitrus Berry
-Level: 78
+Metagross @ ITEM_LUM_BERRY
+Level: 90
+Ability: ABILITY_CLEAR_BODY
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpA
 - Earthquake
 - Psychic
 - Meteor Mash
@@ -16836,11 +16970,75 @@ Class: Rival
 Pic: Red
 Gender: Male
 Music: Male
+Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
+AI: Basic Trainer
 
-Charmander
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Pikachu @ ITEM_LIGHT_BALL
+Level: 88
+Ability: ABILITY_STATIC
+Nature: Naive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpA / 252 Spe
+- Volt Tackle
+- Iron Tail
+- Quick Attack
+- Thunderbolt
+
+Lapras @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_SHELL_ARMOR
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpA
+- Blizzard
+- Surf
+- Psychic
+- Body Slam
+
+Snorlax @ ITEM_LEFTOVERS
+Level: 82
+Ability: ABILITY_THICK_FAT
+Nature: Brave
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Def
+- Shadow Ball
+- Earthquake
+- Blizzard
+- Body Slam
+
+Venusaur @ ITEM_LEFTOVERS
+Level: 84
+Ability: ABILITY_OVERGROW
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Sludge Bomb
+- Giga Drain
+- Sleep Powder
+- Frenzy Plant
+
+Charizard @ ITEM_CHARCOAL
+Level: 84
+Ability: ABILITY_BLAZE
+Nature: Naive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Atk / 252 SpA / 252 Spe
+- Earthquake
+- Aerial Ace
+- Blast Burn
+- Dragon Claw
+
+Blastoise @ ITEM_LUM_BERRY
+Level: 84
+Ability: ABILITY_TORRENT
+Nature: Quiet
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 252 SpA
+- Brick Break
+- Hydro Cannon
+- Blizzard
+- Toxic
 
 === TRAINER_LEAF ===
 Name: LEAF
@@ -16877,3 +17075,153 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_WILLIAN ===
+Name: Willian
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Swampert @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_TORRENT
+Nature: Relaxed
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 216 Def / 40 SpA
+- Earthquake
+- Surf
+- Ice Beam
+- Substitute
+
+Sceptile @ ITEM_MIRACLE_SEED
+Level: 80
+Ability: ABILITY_OVERGROW
+Nature: Naive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpA / 252 Spe
+- Leaf Blade
+- Giga Drain
+- Earthquake
+- Facade
+
+Blaziken @ ITEM_CHARCOAL
+Level: 80
+Ability: ABILITY_BLAZE
+Nature: Naive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 128 Atk / 128 SpA / 252 Spe
+- Bulk Up
+- Sky Uppercut
+- Overheat
+- Flamethrower
+
+Metagross @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_CLEAR_BODY
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Spe
+- Meteor Mash
+- Earthquake
+- Shadow Ball
+- Hyper Beam
+
+Milotic @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_MARVEL_SCALE
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpA
+- Toxic
+- Ice Beam
+- Surf
+- Recover
+
+Gardevoir @ ITEM_TWISTED_SPOON
+Level: 80
+Ability: ABILITY_TRACE
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Psychic
+- Thunderbolt
+- Calm Mind
+- Shock Wave
+
+=== TRAINER_GUSTAVO ===
+Name: Gustavo
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Blaziken (F) @ ITEM_LUM_BERRY
+Level: 80
+Ability: ABILITY_BLAZE
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 6 SpA / 252 Spe
+- Sky Uppercut
+- Blaze Kick
+- Rock Slide
+- Bulk Up
+
+Milotic (F) @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_MARVEL_SCALE
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 6 SpA
+- Surf
+- Ice Beam
+- Recover
+- Toxic
+
+Dusclops (M) @ ITEM_LEFTOVERS
+Level: 80
+Ability: ABILITY_PRESSURE
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 6 SpD
+- Night Shade
+- Protect
+- Will-O-Wisp
+- Confuse Ray
+
+Metagross @ ITEM_CHOICE_BAND
+Level: 80
+Ability: ABILITY_CLEAR_BODY
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 6 Def
+- Earthquake
+- Meteor Mash
+- Rock Slide
+- Explosion
+
+Flygon (F) @ ITEM_LUM_BERRY
+Level: 80
+Ability: ABILITY_LEVITATE
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 6 SpA / 252 Spe
+- Earthquake
+- Rock Slide
+- Flamethrower
+- Dragon Claw
+
+Manectric (M) @ ITEM_MAGNET
+Level: 80
+Ability: ABILITY_LIGHTNING_ROD
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 Atk / 252 SpA / 252 Spe
+- Thunderbolt
+- Thunder Wave
+- Bite
+- Charge

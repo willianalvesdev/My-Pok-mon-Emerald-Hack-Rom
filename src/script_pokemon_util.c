@@ -476,6 +476,24 @@ void Script_GetChosenMonOffensiveEVs(void)
     ConvertIntToDecimalStringN(gStringVar3, GetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_SPEED_EV), STR_CONV_MODE_LEFT_ALIGN, 3);
 }
 
+bool32 Script_ResetChosenMonEVs(void)
+{
+    u16 slot = gSpecialVar_0x8004;
+    if (slot >= PARTY_SIZE || slot >= gPlayerPartyCount)
+        return FALSE;
+
+    struct Pokemon *mon = &gPlayerParty[slot];
+    enum Species species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
+    if (species == SPECIES_NONE || species == SPECIES_EGG)
+        return FALSE;
+
+    u8 zero = 0;
+    for (u32 stat = 0; stat < NUM_STATS; stat++)
+        SetMonData(mon, MON_DATA_HP_EV + stat, &zero);
+    CalculateMonStats(mon);
+    return TRUE;
+}
+
 void Script_GetChosenMonDefensiveEVs(void)
 {
     ConvertIntToDecimalStringN(gStringVar1, GetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_HP_EV), STR_CONV_MODE_LEFT_ALIGN, 3);
