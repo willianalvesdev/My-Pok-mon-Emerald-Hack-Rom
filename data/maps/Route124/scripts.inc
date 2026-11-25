@@ -26,6 +26,13 @@ Route124_Text_GoldsmithHouseSign:
 	.string "Casa do Ourives\n"
 	.string "Compra de Nuggets.$"
 
+Route124_EventScript_ShinyCollectorHouseSign::
+	msgbox Route124_Text_ShinyCollectorHouseSign, MSGBOX_SIGN
+	end
+
+Route124_Text_ShinyCollectorHouseSign:
+	.string "Casa do Colecionador de Shinies.$"
+
 Route124_EventScript_Spencer::
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE

@@ -880,11 +880,11 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
     if (P_NO_SHINIES_WITHOUT_POKEBALLS && !HasAtLeastOnePokeBall() && FlagGet(FLAG_SYS_POKEDEX_GET))
         return FALSE;
 
-    u32 totalRerolls = 0;
-
+    u32 shinyOdds = SHINY_ODDS;
     if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
-        totalRerolls += I_SHINY_CHARM_ADDITIONAL_ROLLS;
+        shinyOdds *= I_SHINY_CHARM_ODDS_MULTIPLIER;
 
+    u32 totalRerolls = 0;
     if (LURE_STEP_COUNT != 0)
         totalRerolls += 1;
 
@@ -893,13 +893,13 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
     if (gDexNavSpecies)
         totalRerolls += CalculateDexNavShinyRolls();
 
-    while (GET_SHINY_VALUE(value, personality) >= SHINY_ODDS && totalRerolls > 0)
+    while (GET_SHINY_VALUE(value, personality) >= shinyOdds && totalRerolls > 0)
     {
         personality = Random32();
         totalRerolls--;
     }
 
-    return GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+    return GET_SHINY_VALUE(value, personality) < shinyOdds;
 }
 
 void SetBoxMonIVs(struct BoxPokemon *mon, u8 fixedIV)

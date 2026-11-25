@@ -7,6 +7,7 @@
 #include "daycare.h"
 #include "decompress.h"
 #include "event_data.h"
+#include "event_object_movement.h"
 #include "international_string_util.h"
 #include "item.h"
 #include "link.h"
@@ -30,6 +31,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
+#include "constants/field_specials.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -492,6 +494,61 @@ bool32 Script_ResetChosenMonEVs(void)
         SetMonData(mon, MON_DATA_HP_EV + stat, &zero);
     CalculateMonStats(mon);
     return TRUE;
+}
+
+static enum ShinyDonationResult TryDonateShinyMon(u32 slot, bool32 confirm)
+{
+    u32 partyCount = gPartiesCount[B_TRAINER_PLAYER];
+    struct Pokemon *party = gParties[B_TRAINER_PLAYER];
+    if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+        return SHINY_DONATION_ALREADY_REWARDED;
+
+    if (slot >= PARTY_SIZE || slot >= partyCount)
+        return SHINY_DONATION_INVALID;
+
+    struct Pokemon *mon = &party[slot];
+    enum Species species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
+    if (species == SPECIES_NONE || species == SPECIES_EGG || !IsMonShiny(mon))
+        return SHINY_DONATION_INVALID;
+    if (GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE)
+        return SHINY_DONATION_HAS_ITEM;
+
+    bool32 hasPartner = FALSE;
+    for (u32 i = 0; i < partyCount; i++)
+    {
+        if (i != slot && GetMonData(&party[i], MON_DATA_HP) != 0)
+        {
+            species = GetMonData(&party[i], MON_DATA_SPECIES_OR_EGG);
+            if (species != SPECIES_NONE && species != SPECIES_EGG)
+            {
+                hasPartner = TRUE;
+                break;
+            }
+        }
+    }
+    if (!hasPartner)
+        return SHINY_DONATION_NEEDS_PARTNER;
+
+    if (!CheckBagHasSpace(ITEM_SHINY_CHARM, 1))
+        return SHINY_DONATION_BAG_FULL;
+    if (!confirm)
+        return SHINY_DONATION_OK;
+
+    if (!AddBagItem(ITEM_SHINY_CHARM, 1))
+        return SHINY_DONATION_BAG_FULL;
+
+    ZeroMonData(mon);
+    CompactPartySlots();
+    CalculatePlayerPartyCount();
+    return SHINY_DONATION_OK;
+}
+
+void Script_TryDonateShinyMon(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
+    gSpecialVar_Result = TryDonateShinyMon(gSpecialVar_0x8004, gSpecialVar_0x8005);
+    if (gSpecialVar_Result == SHINY_DONATION_OK && gSpecialVar_0x8005)
+        UpdateFollowingPokemon();
 }
 
 void Script_GetChosenMonDefensiveEVs(void)
