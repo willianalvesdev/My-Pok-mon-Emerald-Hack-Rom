@@ -1,0 +1,6 @@
+#ifndef GUARD_CONSTANTS_MONEY_H
+#define GUARD_CONSTANTS_MONEY_H
+
+#define MAX_MONEY 999999 // Can be increased to INT_MAX
+
+#endif // GUARD_CONSTANTS_MONEY_H

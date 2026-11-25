@@ -224,6 +224,13 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE124_EV_RESET_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 38,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE124_GOLDSMITH_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
@@ -243,6 +250,14 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route124_EventScript_EVResetHouseSign"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 38,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route124_EventScript_GoldsmithHouseSign"
     }
   ],
   "region": "REGION_HOENN"

@@ -47,6 +47,7 @@
 #include "constants/mass_outbreak.h"
 #include "constants/mauville_old_man.h"
 #include "constants/metatile_labels.h"
+#include "constants/money.h"
 #include "constants/move_relearner.h"
 #include "constants/moves.h"
 #include "constants/mystery_gift.h"
@@ -600,6 +601,7 @@ gStdScripts_End::
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
 	.include "data/maps/Route124_EVResetHouse/scripts.inc"
+	.include "data/maps/Route124_GoldsmithHouse/scripts.inc"
 
 .if IS_FRLG
 

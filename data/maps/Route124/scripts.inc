@@ -18,6 +18,14 @@ Route124_Text_EVResetHouseSign:
 	.string "Casa de Treino\n"
 	.string "Serviço gratuito de reset de EVs.$"
 
+Route124_EventScript_GoldsmithHouseSign::
+	msgbox Route124_Text_GoldsmithHouseSign, MSGBOX_SIGN
+	end
+
+Route124_Text_GoldsmithHouseSign:
+	.string "Casa do Ourives\n"
+	.string "Compra de Nuggets.$"
+
 Route124_EventScript_Spencer::
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE
