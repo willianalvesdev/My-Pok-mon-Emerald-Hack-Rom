@@ -9,9 +9,9 @@ Média simples nas 45 tabelas alteradas, sem ponderar quantas vezes se passa em 
 | Geração | Antes | Aplicado |
 |---|---:|---:|
 | Gen 1 | 37,4% | 24,4% |
-| Gen 2 | 10,5% | 19,0% |
+| Gen 2 | 10,5% | 18,8% |
 | Gen 3 | 52,1% | 31,9% |
-| Gen 4 | 0% | 24,7% |
+| Gen 4 | 0% | 24,9% |
 
 Os valores descrevem um encontro comum já iniciado. Na pesca, valem depois da fisgada. Repel, habilidades, iscas e situações especiais podem alterar o resultado. Encontros de evento e a pesca do Feebas estão no fim.
 
@@ -61,7 +61,7 @@ Os valores descrevem um encontro comum já iniciado. Na pesca, valem depois da f
 | Route 110 | Old Rod | 0% | Magikarp 70% · Nv. 5–10<br>Tentacool 30% · Nv. 5–10 |
 | Route 110 | Good Rod | 24% | **Buizel** 24% · Nv. 12–22<br>Magikarp 35,4% · Nv. 10–30<br>Wooper † 17% · Nv. 12–22<br>Tentacool 11,8% · Nv. 10–30<br>Wailmer 11,8% · Nv. 10–30 |
 | Route 110 | Super Rod | 0% | Wailmer 100% · Nv. 20–25 (15%), Nv. 25–30 (40%), Nv. 30–35 (40%), Nv. 35–40 (4%), Nv. 40–45 (1%) |
-| Route 111 | Areia do deserto | 24% | **Hippopotas** 24% · Nv. 19–22<br>Sandshrew 24,19% · Nv. 19 (3,46%), Nv. 20 (13,82%), Nv. 21 (6,91%)<br>Trapinch 24,18% · Nv. 19 (3,45%), Nv. 20 (13,82%), Nv. 21 (6,91%)<br>Larvitar 13,82% · Nv. 21<br>Baltoy 9,67% · Nv. 19 (6,91%), Nv. 20 (2,76%)<br>Cacnea 4,14% · Nv. 20 (2,76%), Nv. 22 (1,38%) |
+| Route 111 | Areia do deserto | 30,91% | **Hippopotas** 24% · Nv. 19–22<br>**Gible** 6,91% · Nv. 21<br>Sandshrew 24,19% · Nv. 19 (3,46%), Nv. 20 (13,82%), Nv. 21 (6,91%)<br>Trapinch 24,18% · Nv. 19 (3,45%), Nv. 20 (13,82%), Nv. 21 (6,91%)<br>Baltoy 9,67% · Nv. 19 (6,91%), Nv. 20 (2,76%)<br>Larvitar 6,91% · Nv. 21<br>Cacnea 4,14% · Nv. 20 (2,76%), Nv. 22 (1,38%) |
 | Route 111 | Surf | 0% | Marill 99% · Nv. 5–10 (4%), Nv. 10–20 (30%), Nv. 20–30 (60%), Nv. 30–35 (5%)<br>Goldeen 1% · Nv. 20–30 |
 | Route 111 | Rock Smash | 0% | Geodude 100% · Nv. 5–10 (30%), Nv. 10–15 (60%), Nv. 15–20 (10%) |
 | Route 111 | Old Rod | 0% | Magikarp 70% · Nv. 5–10<br>Goldeen 30% · Nv. 5–10 |

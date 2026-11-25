@@ -136,7 +136,8 @@ static const struct ExtraWildEncounter sRoute110ExtraEncounters[] =
 static const struct ExtraWildEncounter sRoute111ExtraEncounters[] =
 {
     { {19, 22, SPECIES_HIPPOPOTAS}, WILD_AREA_LAND, OLD_ROD, 2400 },
-    { {21, 21, SPECIES_LARVITAR}, WILD_AREA_LAND, OLD_ROD, 692 },
+    { {21, 21, SPECIES_GIBLE}, WILD_AREA_LAND, OLD_ROD, 691 },
+    { {21, 21, SPECIES_LARVITAR}, WILD_AREA_LAND, OLD_ROD, 1 },
     { {20, 20, SPECIES_SANDSHREW}, WILD_AREA_LAND, OLD_ROD, 2 },
     { {20, 20, SPECIES_TRAPINCH}, WILD_AREA_LAND, OLD_ROD, 2 },
     { {19, 19, SPECIES_BALTOY}, WILD_AREA_LAND, OLD_ROD, 1 },
