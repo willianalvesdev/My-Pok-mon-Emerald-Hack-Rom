@@ -12,13 +12,13 @@ Route124_ShinyCollectorHouse_EventScript_Collector::
 	goto_if_ge VAR_0x8004, PARTY_SIZE, Route124_ShinyCollectorHouse_End
 	setvar VAR_0x8005, FALSE
 	callnative Script_TryDonateShinyMon, requests_effects=1
-	goto_if_ne VAR_RESULT, SHINY_DONATION_OK, Route124_ShinyCollectorHouse_Refuse
+	goto_if_ne VAR_RESULT, MON_DONATION_OK, Route124_ShinyCollectorHouse_Refuse
 	bufferpartymonnick STR_VAR_1, VAR_0x8004
 	msgbox Route124_ShinyCollectorHouse_Text_Confirm, MSGBOX_YESNO
 	goto_if_ne VAR_RESULT, YES, Route124_ShinyCollectorHouse_End
 	setvar VAR_0x8005, TRUE
 	callnative Script_TryDonateShinyMon, requests_effects=1
-	goto_if_ne VAR_RESULT, SHINY_DONATION_OK, Route124_ShinyCollectorHouse_Refuse
+	goto_if_ne VAR_RESULT, MON_DONATION_OK, Route124_ShinyCollectorHouse_Refuse
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Route124_ShinyCollectorHouse_Text_Reward, MSGBOX_DEFAULT
 	waitfanfare
@@ -26,10 +26,10 @@ Route124_ShinyCollectorHouse_EventScript_Collector::
 
 Route124_ShinyCollectorHouse_Refuse:
 	switch VAR_RESULT
-	case SHINY_DONATION_ALREADY_REWARDED, Route124_ShinyCollectorHouse_AlreadyRewarded
-	case SHINY_DONATION_NEEDS_PARTNER, Route124_ShinyCollectorHouse_NeedsPartner
-	case SHINY_DONATION_HAS_ITEM, Route124_ShinyCollectorHouse_HasItem
-	case SHINY_DONATION_BAG_FULL, Route124_ShinyCollectorHouse_BagFull
+	case MON_DONATION_ALREADY_REWARDED, Route124_ShinyCollectorHouse_AlreadyRewarded
+	case MON_DONATION_NEEDS_PARTNER, Route124_ShinyCollectorHouse_NeedsPartner
+	case MON_DONATION_HAS_ITEM, Route124_ShinyCollectorHouse_HasItem
+	case MON_DONATION_BAG_FULL, Route124_ShinyCollectorHouse_BagFull
 	msgbox Route124_ShinyCollectorHouse_Text_Invalid, MSGBOX_DEFAULT
 	goto Route124_ShinyCollectorHouse_End
 

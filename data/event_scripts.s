@@ -603,6 +603,7 @@ gStdScripts_End::
 	.include "data/maps/Route124_EVResetHouse/scripts.inc"
 	.include "data/maps/Route124_GoldsmithHouse/scripts.inc"
 	.include "data/maps/Route124_ShinyCollectorHouse/scripts.inc"
+	.include "data/maps/Route124_FishermansHouse/scripts.inc"
 
 .if IS_FRLG
 

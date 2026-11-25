@@ -32,6 +32,7 @@
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
 #include "constants/field_specials.h"
+#include "constants/flags.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -496,22 +497,21 @@ bool32 Script_ResetChosenMonEVs(void)
     return TRUE;
 }
 
-static enum ShinyDonationResult TryDonateShinyMon(u32 slot, bool32 confirm)
+static enum MonDonationResult TryDonatePartyMon(u32 slot, bool32 confirm, enum Species requestedSpecies, enum Item reward, u16 quantity)
 {
     u32 partyCount = gPartiesCount[B_TRAINER_PLAYER];
     struct Pokemon *party = gParties[B_TRAINER_PLAYER];
-    if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
-        return SHINY_DONATION_ALREADY_REWARDED;
-
     if (slot >= PARTY_SIZE || slot >= partyCount)
-        return SHINY_DONATION_INVALID;
+        return MON_DONATION_INVALID;
 
     struct Pokemon *mon = &party[slot];
     enum Species species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
-    if (species == SPECIES_NONE || species == SPECIES_EGG || !IsMonShiny(mon))
-        return SHINY_DONATION_INVALID;
+    if (species == SPECIES_NONE || species == SPECIES_EGG)
+        return MON_DONATION_INVALID;
+    if (requestedSpecies == SPECIES_NONE ? !IsMonShiny(mon) : species != requestedSpecies)
+        return MON_DONATION_INVALID;
     if (GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE)
-        return SHINY_DONATION_HAS_ITEM;
+        return MON_DONATION_HAS_ITEM;
 
     bool32 hasPartner = FALSE;
     for (u32 i = 0; i < partyCount; i++)
@@ -527,28 +527,44 @@ static enum ShinyDonationResult TryDonateShinyMon(u32 slot, bool32 confirm)
         }
     }
     if (!hasPartner)
-        return SHINY_DONATION_NEEDS_PARTNER;
+        return MON_DONATION_NEEDS_PARTNER;
 
-    if (!CheckBagHasSpace(ITEM_SHINY_CHARM, 1))
-        return SHINY_DONATION_BAG_FULL;
+    if (!CheckBagHasSpace(reward, quantity))
+        return MON_DONATION_BAG_FULL;
     if (!confirm)
-        return SHINY_DONATION_OK;
+        return MON_DONATION_OK;
 
-    if (!AddBagItem(ITEM_SHINY_CHARM, 1))
-        return SHINY_DONATION_BAG_FULL;
+    if (!AddBagItem(reward, quantity))
+        return MON_DONATION_BAG_FULL;
 
     ZeroMonData(mon);
     CompactPartySlots();
     CalculatePlayerPartyCount();
-    return SHINY_DONATION_OK;
+    UpdateFollowingPokemon();
+    return MON_DONATION_OK;
 }
 
 void Script_TryDonateShinyMon(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
-    gSpecialVar_Result = TryDonateShinyMon(gSpecialVar_0x8004, gSpecialVar_0x8005);
-    if (gSpecialVar_Result == SHINY_DONATION_OK && gSpecialVar_0x8005)
-        UpdateFollowingPokemon();
+    if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+        gSpecialVar_Result = MON_DONATION_ALREADY_REWARDED;
+    else
+        gSpecialVar_Result = TryDonatePartyMon(gSpecialVar_0x8004, gSpecialVar_0x8005, SPECIES_NONE, ITEM_SHINY_CHARM, 1);
+}
+
+void Script_TryDonateFeebas(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
+    if (FlagGet(FLAG_ROUTE124_FISHERMAN_RECEIVED_FEEBAS))
+    {
+        gSpecialVar_Result = MON_DONATION_ALREADY_REWARDED;
+        return;
+    }
+
+    gSpecialVar_Result = TryDonatePartyMon(gSpecialVar_0x8004, gSpecialVar_0x8005, SPECIES_FEEBAS, ITEM_PAMTRE_BERRY, 5);
+    if (gSpecialVar_Result == MON_DONATION_OK && gSpecialVar_0x8005)
+        FlagSet(FLAG_ROUTE124_FISHERMAN_RECEIVED_FEEBAS);
 }
 
 void Script_GetChosenMonDefensiveEVs(void)

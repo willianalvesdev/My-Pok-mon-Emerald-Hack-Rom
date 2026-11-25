@@ -663,7 +663,8 @@
     "Route124_DivingTreasureHuntersHouse",
     "Route124_EVResetHouse",
     "Route124_GoldsmithHouse",
-    "Route124_ShinyCollectorHouse"
+    "Route124_ShinyCollectorHouse",
+    "Route124_FishermansHouse"
   ],
   "gMapGroup_Link_Frlg": [
     "BattleColosseum_2P_Frlg",

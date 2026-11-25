@@ -33,6 +33,104 @@ Route124_EventScript_ShinyCollectorHouseSign::
 Route124_Text_ShinyCollectorHouseSign:
 	.string "Casa do Colecionador de Shinies.$"
 
+Route124_EventScript_FishermansHouseSign::
+	msgbox Route124_Text_FishermansHouseSign, MSGBOX_SIGN
+	end
+
+Route124_Text_FishermansHouseSign:
+	.string "Casa do Pescador$"
+
+Route124_EventScript_FeebasFisherman::
+	lock
+	faceplayer
+	goto_if_set FLAG_ROUTE124_FISHERMAN_RECEIVED_FEEBAS, Route124_FeebasFisherman_Thanks
+	msgbox Route124_Text_FeebasFisherman_Story, MSGBOX_DEFAULT
+	setvar VAR_0x8004, SPECIES_FEEBAS
+	specialvar VAR_RESULT, DoesPlayerPartyContainSpecies
+	goto_if_eq VAR_RESULT, FALSE, Route124_FeebasFisherman_End
+	msgbox Route124_Text_FeebasFisherman_Offer, MSGBOX_YESNO
+	goto_if_ne VAR_RESULT, YES, Route124_FeebasFisherman_End
+	special ChoosePartyMon
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Route124_FeebasFisherman_End
+	setvar VAR_0x8005, FALSE
+	callnative Script_TryDonateFeebas, requests_effects=1
+	goto_if_ne VAR_RESULT, MON_DONATION_OK, Route124_FeebasFisherman_Refuse
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
+	msgbox Route124_Text_FeebasFisherman_Confirm, MSGBOX_YESNO
+	goto_if_ne VAR_RESULT, YES, Route124_FeebasFisherman_End
+	setvar VAR_0x8005, TRUE
+	callnative Script_TryDonateFeebas, requests_effects=1
+	goto_if_ne VAR_RESULT, MON_DONATION_OK, Route124_FeebasFisherman_Refuse
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route124_Text_FeebasFisherman_Reward, MSGBOX_DEFAULT
+	waitfanfare
+	goto Route124_FeebasFisherman_End
+
+Route124_FeebasFisherman_Refuse:
+	switch VAR_RESULT
+	case MON_DONATION_ALREADY_REWARDED, Route124_FeebasFisherman_Thanks
+	case MON_DONATION_NEEDS_PARTNER, Route124_FeebasFisherman_NeedsPartner
+	case MON_DONATION_HAS_ITEM, Route124_FeebasFisherman_HasItem
+	case MON_DONATION_BAG_FULL, Route124_FeebasFisherman_BagFull
+	msgbox Route124_Text_FeebasFisherman_Invalid, MSGBOX_DEFAULT
+	goto Route124_FeebasFisherman_End
+
+Route124_FeebasFisherman_NeedsPartner:
+	msgbox Route124_Text_FeebasFisherman_NeedsPartner, MSGBOX_DEFAULT
+	goto Route124_FeebasFisherman_End
+
+Route124_FeebasFisherman_HasItem:
+	msgbox Route124_Text_FeebasFisherman_HasItem, MSGBOX_DEFAULT
+	goto Route124_FeebasFisherman_End
+
+Route124_FeebasFisherman_BagFull:
+	msgbox Route124_Text_FeebasFisherman_BagFull, MSGBOX_DEFAULT
+	goto Route124_FeebasFisherman_End
+
+Route124_FeebasFisherman_Thanks:
+	msgbox Route124_Text_FeebasFisherman_Thanks, MSGBOX_DEFAULT
+
+Route124_FeebasFisherman_End:
+	release
+	end
+
+Route124_Text_FeebasFisherman_Story:
+	.string "Pesco faz anos tentando achar\n"
+	.string "um Feebas. Nunca vi nem a cauda!$"
+
+Route124_Text_FeebasFisherman_Offer:
+	.string "Pera, você tem um Feebas?\n"
+	.string "Me daria um por 5 Pamtre Berries?$"
+
+Route124_Text_FeebasFisherman_Confirm:
+	.string "Quer me entregar {STR_VAR_1}?\n"
+	.string "Vou ficar com ele de vez.$"
+
+Route124_Text_FeebasFisherman_Reward:
+	.string "Valeu! Aqui, 5 Pamtre Berries.\p"
+	.string "Berries raras! Dizem que, em\n"
+	.string "Pokéblocks, ajudam o Feebas\l"
+	.string "a evoluir.$"
+
+Route124_Text_FeebasFisherman_Invalid:
+	.string "Escolha um Feebas da sua equipe.$"
+
+Route124_Text_FeebasFisherman_NeedsPartner:
+	.string "Outro Pokémon da sua equipe\n"
+	.string "precisa estar apto a lutar.$"
+
+Route124_Text_FeebasFisherman_HasItem:
+	.string "Tire o item que ele segura\n"
+	.string "antes de fazer a troca.$"
+
+Route124_Text_FeebasFisherman_BagFull:
+	.string "Abra espaço na Bolsa para\n"
+	.string "as 5 Pamtre Berries.$"
+
+Route124_Text_FeebasFisherman_Thanks:
+	.string "Meu Feebas está bem cuidado.\n"
+	.string "Valeu por realizar meu sonho!$"
+
 Route124_EventScript_Spencer::
 	trainerbattle_single TRAINER_SPENCER, Route124_Text_SpencerIntro, Route124_Text_SpencerDefeat
 	msgbox Route124_Text_SpencerPostBattle, MSGBOX_AUTOCLOSE
