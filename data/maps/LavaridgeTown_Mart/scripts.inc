@@ -15,9 +15,6 @@ LavaridgeTown_Mart_EventScript_Clerk::
 LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_LEVEL_BALL
-	.2byte ITEM_FAST_BALL
-	.2byte ITEM_MOON_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL

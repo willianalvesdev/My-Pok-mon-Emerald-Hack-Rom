@@ -3681,13 +3681,7 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Apricorns
-#if (I_PRICE >= GEN_8 || I_PRICE <= GEN_2)
-    #define APRICORN_PRICE 200
-#elif I_PRICE >= GEN_5
-    #define APRICORN_PRICE 20
-#else
-    #define APRICORN_PRICE 0
-#endif
+#define APRICORN_PRICE 50
 
     [ITEM_RED_APRICORN] =
     {

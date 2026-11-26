@@ -1117,6 +1117,18 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction sMultichoiceList_ApricornBalls[] =
+{
+    {COMPOUND_STRING("Fast Ball")},
+    {COMPOUND_STRING("Love Ball")},
+    {COMPOUND_STRING("Level Ball")},
+    {COMPOUND_STRING("Lure Ball")},
+    {COMPOUND_STRING("Moon Ball")},
+    {COMPOUND_STRING("Friend Ball")},
+    {COMPOUND_STRING("Heavy Ball")},
+    {gText_Cancel2},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -1283,6 +1295,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
+    [MULTI_APRICORN_BALLS]                             = MULTICHOICE(sMultichoiceList_ApricornBalls),
 };
 
 const u8 *const gStdStrings[] =

@@ -9367,6 +9367,39 @@
       "border_filepath": "data/layouts/Route124_FishermansHouse/border.bin",
       "blockdata_filepath": "data/layouts/Route124_FishermansHouse/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ROUTE131_LAPRAS_TRADE_HOUSE",
+      "name": "Route131_LaprasTradeHouse_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route131_LaprasTradeHouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route131_LaprasTradeHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SOOTOPOLIS_CITY_APRICORN_HOUSE",
+      "name": "SootopolisCity_ApricornHouse_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SootopolisCity_ApricornHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_ApricornHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ROUTE131_APRICORN_WORKSHOP",
+      "name": "Route131_ApricornWorkshop_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route131_ApricornWorkshop/border.bin",
+      "blockdata_filepath": "data/layouts/Route131_ApricornWorkshop/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

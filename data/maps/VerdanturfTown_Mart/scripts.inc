@@ -18,8 +18,6 @@ VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_NEST_BALL
 	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_HEAL_BALL
-	.2byte ITEM_FRIEND_BALL
-	.2byte ITEM_LOVE_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL

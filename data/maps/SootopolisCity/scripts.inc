@@ -16,6 +16,7 @@ SootopolisCity_EventScript_LegendariesNotArrived::
 	end
 
 SootopolisCity_EventScript_LockHouseDoors::
+	setmetatile 23, 5, METATILE_Sootopolis_Door_Closed, TRUE
 	setmetatile 9, 6, METATILE_Sootopolis_Door_Closed, TRUE
 	setmetatile 9, 17, METATILE_Sootopolis_Door_Closed, TRUE
 	setmetatile 9, 26, METATILE_Sootopolis_Door_Closed, TRUE

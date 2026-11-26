@@ -162,6 +162,7 @@ struct InGameTrade {
     u8 otGender;
     u8 sheen;
     enum Species requestedSpecies;
+    u8 fixedLevel;
 };
 
 static EWRAM_DATA u8 *sMenuTextTileBuffer = NULL;
@@ -4563,7 +4564,9 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
 {
     const struct InGameTrade *inGameTrade = &sIngameTrades[whichInGameTrade];
     struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
-    u32 level = GetLevelFromBoxMonExp(boxmon);
+    u32 level = inGameTrade->fixedLevel;
+    if (level == 0)
+        level = GetLevelFromBoxMonExp(boxmon);
 
     struct Mail mail;
     metloc_u8_t metLocation = METLOC_IN_GAME_TRADE;

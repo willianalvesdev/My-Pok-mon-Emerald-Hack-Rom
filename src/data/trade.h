@@ -1211,7 +1211,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_PONYTA
-    }
+    },
+    [INGAME_TRADE_LAPRAS] =
+    {
+        .nickname = _("Lapras"),
+        .species = SPECIES_LAPRAS,
+        .ivs = {10, 10, 10, 10, 10, 10},
+        .abilityNum = 0,
+        .otId = 13130,
+        .personality = 0x8172,
+        .heldItem = ITEM_NONE,
+        .mailNum = MAIL_NONE,
+        .otName = _("Caio"),
+        .otGender = MALE,
+        .requestedSpecies = SPECIES_PSYDUCK,
+        .fixedLevel = 30,
+    },
 };
 
 static const u16 sIngameTradeMail[][MAIL_WORDS_COUNT + 1] =

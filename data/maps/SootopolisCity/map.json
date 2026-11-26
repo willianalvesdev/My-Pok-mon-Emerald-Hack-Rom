@@ -357,6 +357,13 @@
       "elevation": 0,
       "dest_map": "MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY_APRICORN_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
