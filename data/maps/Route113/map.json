@@ -393,6 +393,38 @@
   "bg_events": [
     {
       "type": "sign",
+      "x": 55,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route113_EventScript_SpeedMeteorite"
+    },
+    {
+      "type": "sign",
+      "x": 50,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route113_EventScript_NormalMeteorite"
+    },
+    {
+      "type": "sign",
+      "x": 43,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route113_EventScript_DefenseMeteorite"
+    },
+    {
+      "type": "sign",
+      "x": 45,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route113_EventScript_AttackMeteorite"
+    },
+    {
+      "type": "sign",
       "x": 85,
       "y": 6,
       "elevation": 0,

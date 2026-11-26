@@ -3449,6 +3449,33 @@ void IncrementBirthIslandRockStepCount(void)
 }
 
 // called before fade-in
+bool32 ChangePartyDeoxysForm(void)
+{
+    enum Species targetSpecies = gSpecialVar_0x8004;
+
+    if (SpeciesToNationalPokedexNum(targetSpecies) != NATIONAL_DEX_DEOXYS)
+        return FALSE;
+
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
+        enum Species species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
+
+        if (SpeciesToNationalPokedexNum(species) != NATIONAL_DEX_DEOXYS)
+            continue;
+
+        if (species != targetSpecies)
+        {
+            SetMonData(mon, MON_DATA_SPECIES, &targetSpecies);
+            CalculateMonStats(mon);
+            UpdateFollowingPokemon();
+        }
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
 void SetDeoxysRockPalette(void)
 {
     u32 paletteNum = IndexOfSpritePaletteTag(OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE);

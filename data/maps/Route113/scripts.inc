@@ -164,3 +164,41 @@ Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
+Route113_EventScript_SpeedMeteorite::
+	setvar VAR_0x8004, SPECIES_DEOXYS_SPEED
+	goto Route113_EventScript_DeoxysMeteorite
+
+Route113_EventScript_NormalMeteorite::
+	setvar VAR_0x8004, SPECIES_DEOXYS_NORMAL
+	goto Route113_EventScript_DeoxysMeteorite
+
+Route113_EventScript_DefenseMeteorite::
+	setvar VAR_0x8004, SPECIES_DEOXYS_DEFENSE
+	goto Route113_EventScript_DeoxysMeteorite
+
+Route113_EventScript_AttackMeteorite::
+	setvar VAR_0x8004, SPECIES_DEOXYS_ATTACK
+	goto Route113_EventScript_DeoxysMeteorite
+
+Route113_EventScript_DeoxysMeteorite::
+	lock
+	specialvar VAR_RESULT, ChangePartyDeoxysForm
+	goto_if_eq VAR_RESULT, FALSE, Route113_EventScript_InspectMeteorite
+	playse SE_RG_DEOXYS_MOVE
+	msgbox Route113_Text_DeoxysMeteorite, MSGBOX_DEFAULT
+	release
+	end
+
+Route113_EventScript_InspectMeteorite::
+	msgbox Route113_Text_InspectMeteorite, MSGBOX_DEFAULT
+	release
+	end
+
+Route113_Text_DeoxysMeteorite:
+	.string "Deoxys reagiu à energia\n"
+	.string "do meteoro!$"
+
+Route113_Text_InspectMeteorite:
+	.string "Um meteoro escuro repousa\n"
+	.string "no fundo da cratera.$"
+

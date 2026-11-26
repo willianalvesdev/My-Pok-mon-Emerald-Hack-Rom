@@ -639,3 +639,4 @@ gSpecials::
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
 	def_special Script_ResetChosenMonEVs
+	def_special ChangePartyDeoxysForm
