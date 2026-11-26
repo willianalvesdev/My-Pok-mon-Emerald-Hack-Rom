@@ -41,8 +41,44 @@ void SetRandomLotteryNumber(u16 i)
 
 void RetrieveLotteryNumber(void)
 {
-    u16 lottoNumber = GetLotteryNumber();
-    gSpecialVar_Result = lottoNumber;
+    u32 dailyNumber = GetLotteryNumber();
+    u16 prizeRoll = (dailyNumber >> 16) % 100;
+    u8 i;
+
+    gSpecialVar_Result = (u16)dailyNumber;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
+        u16 otId, placeValue, suffix, prefixCount, prefix;
+
+        if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE)
+            break;
+        if (GetMonData(mon, MON_DATA_IS_EGG))
+            continue;
+
+        otId = GetMonData(mon, MON_DATA_OT_ID);
+        if (prizeRoll == 0)
+        {
+            gSpecialVar_Result = otId;
+            return;
+        }
+
+        if (prizeRoll < 10)
+            placeValue = 10000;
+        else if (prizeRoll < 35)
+            placeValue = 1000;
+        else
+            placeValue = 100;
+
+        suffix = otId % placeValue;
+        prefixCount = (USHRT_MAX - suffix) / placeValue + 1;
+        prefix = gSpecialVar_Result % prefixCount;
+        // Keep the next digit different so this Pokémon matches the drawn prize tier.
+        if (prefix % 10 == (otId / placeValue) % 10)
+            prefix = prefix == 0 ? 1 : prefix - 1;
+        gSpecialVar_Result = prefix * placeValue + suffix;
+        return;
+    }
 }
 
 void PickLotteryCornerTicket(void)
