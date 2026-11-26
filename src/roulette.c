@@ -3825,19 +3825,42 @@ static void HideWheelBalls(void)
 #define sSlotMidpointDist data[2]
 #define sBallAngle        data[3]
 #define sBallDistToCenter data[4]
+#define sLandingAngle     data[5]
 #define sBallWheelAngle   data[6]
 
-#define LandBall()                                                                                  \
-{                                                                                                   \
-    sRoulette->ballState = BALL_STATE_LANDED;                                                       \
-    sRoulette->ballRolling = FALSE;                                                                 \
-    StartSpriteAnim(sprite, sprite->animCmdIndex + 3);                                              \
-    UpdateSlotBelowBall(sprite);                                                                    \
-    sprite->sBallDistToCenter = 30;                                                                 \
-    UpdateBallRelativeWheelAngle(sprite);                                                           \
-    sprite->sBallWheelAngle = (sprite->sBallWheelAngle / DEGREES_PER_SLOT) * DEGREES_PER_SLOT + 15; \
-    sprite->callback = SpriteCB_BallLandInSlot;                                                     \
-    m4aSongNumStartOrChange(SE_BRIDGE_WALK);                                                              \
+static u8 ChooseBallLandingSlot(u8 slotId)
+{
+    u8 selection = sRoulette->betSelection[sRoulette->curBallNum];
+    u32 betFlags = sGridSelections[selection].inSelectionFlags;
+    u8 winningSlots[NUM_ROULETTE_SLOTS];
+    u8 numWinningSlots = 0;
+    u8 numLosingSlots = 0;
+    u8 i;
+
+    if (sRouletteSlots[slotId].flag & betFlags)
+        return slotId;
+
+    for (i = 0; i < NUM_ROULETTE_SLOTS; i++)
+    {
+        u32 slotFlag = sRouletteSlots[i].flag;
+        if (slotFlag & sRoulette->hitFlags)
+            continue;
+        if (slotFlag & betFlags)
+            winningSlots[numWinningSlots++] = i;
+        else
+            numLosingSlots++;
+    }
+
+    // For equally likely slots, converting this share of losses doubles the
+    // hit rate, capped at a guaranteed hit if half the open slots can win.
+    if (numWinningSlots != 0 && numLosingSlots != 0)
+    {
+        u8 roll = Random() % numLosingSlots;
+        if (roll < numWinningSlots)
+            return winningSlots[roll];
+    }
+
+    return slotId;
 }
 
 // "wheelAngle" and "sBallAngle" are relative to the screen (e.g. 180 degrees for either is always screen bottom)
@@ -3919,6 +3942,26 @@ static void UpdateBallPos(struct Sprite *sprite)
 static void SpriteCB_BallLandInSlot(struct Sprite *sprite)
 {
     s16 sin, cos;
+
+    if (sprite->sBallWheelAngle != sprite->sLandingAngle)
+    {
+        s16 distance = sprite->sLandingAngle - sprite->sBallWheelAngle;
+
+        if (distance > 180)
+            distance -= 360;
+        else if (distance < -180)
+            distance += 360;
+
+        if (distance > 8)
+            distance = 8;
+        else if (distance < -8)
+            distance = -8;
+
+        sprite->sBallWheelAngle = (sprite->sBallWheelAngle + distance + 360) % 360;
+        if (sprite->sBallWheelAngle == sprite->sLandingAngle)
+            sRoulette->ballState = BALL_STATE_LANDED;
+    }
+
     sprite->sBallAngle = sRoulette->wheelAngle + sprite->sBallWheelAngle;
     if (sprite->sBallAngle >= 360)
         sprite->sBallAngle -= 360;
@@ -3927,6 +3970,21 @@ static void SpriteCB_BallLandInSlot(struct Sprite *sprite)
     sprite->x2 =  sin * sprite->sBallDistToCenter >> 12;
     sprite->y2 = -cos * sprite->sBallDistToCenter >> 12;
     sprite->y2 += gSpriteCoordOffsetY;
+}
+
+static void LandBall(struct Sprite *sprite)
+{
+    u8 slotId = UpdateSlotBelowBall(sprite);
+
+    sRoulette->hitSlot = ChooseBallLandingSlot(slotId);
+    sRoulette->ballState = sRoulette->hitSlot == slotId ? BALL_STATE_LANDED : BALL_STATE_ROLLING;
+    sRoulette->ballRolling = FALSE;
+    StartSpriteAnim(sprite, sprite->animCmdIndex + 3);
+    sprite->sBallDistToCenter = 30;
+    sprite->sBallWheelAngle = slotId * DEGREES_PER_SLOT + DEGREES_PER_SLOT / 2;
+    sprite->sLandingAngle = sRoulette->hitSlot * DEGREES_PER_SLOT + DEGREES_PER_SLOT / 2;
+    sprite->callback = SpriteCB_BallLandInSlot;
+    m4aSongNumStartOrChange(SE_BRIDGE_WALK);
 }
 
 static void SpriteCB_UnstickBall_ShroomishBallFall(struct Sprite *sprite)
@@ -3944,7 +4002,7 @@ static void SpriteCB_UnstickBall_ShroomishBallFall(struct Sprite *sprite)
         {
             if (sRoulette->ballDistToCenter <= sRoulette->varA0 - 2.0f)
             {
-                LandBall()
+                LandBall(sprite);
                 sRoulette->ballFallAccel = sRoulette->ballFallSpeed = 0.0f;
                 sRoulette->ballAngleSpeed = -1.0f;
             }
@@ -3953,7 +4011,7 @@ static void SpriteCB_UnstickBall_ShroomishBallFall(struct Sprite *sprite)
         {
             if (sRoulette->ballDistToCenter >= sRoulette->varA0 - 2.0f)
             {
-                LandBall()
+                LandBall(sprite);
                 sRoulette->ballFallAccel = sRoulette->ballFallSpeed = 0.0f;
                 sRoulette->ballAngleSpeed = -1.0f;
             }
@@ -4013,7 +4071,7 @@ static void SpriteCB_UnstickBall_TaillowDrop(struct Sprite *sprite)
     sprite->data[2]++;
     if (sprite->data[2] >= DEGREES_PER_SLOT && sprite->y2 >= 0)
     {
-        LandBall()
+        LandBall(sprite);
         sRoulette->ballUnstuck = TRUE;
     }
 }
@@ -4110,7 +4168,7 @@ static void SpriteCB_RollBall_TryLandAdjacent(struct Sprite *sprite)
         if (!sprite->sStillStuck)
         {
             // Ball can successfully fall into adjacent space
-            LandBall()
+            LandBall(sprite);
         }
         else
         {
@@ -4130,7 +4188,7 @@ static void SpriteCB_RollBall_TryLand(struct Sprite *sprite)
     if (!(sRouletteSlots[sRoulette->hitSlot].flag & sRoulette->hitFlags))
     {
         // Space is empty, land successfully
-        LandBall()
+        LandBall(sprite);
     }
     else
     {

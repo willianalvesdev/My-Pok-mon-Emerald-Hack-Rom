@@ -1852,14 +1852,12 @@ static u8 GetBiasSymbol(u8 machineBias)
 // Decides whether you will be given the opportunity to draw for a Special bias.
 // Depends on your bet and the machine you're using.
 //
-// The probability of getting to draw a Special is miniscule if you don't bet 3
-// coins: barely 1% even on the luckiest machine.
-//
-// The odds increase to roughly ~5% if you bet 3 coins.
+// The probability of getting to draw a Special is below 2.4% with a 1- or
+// 2-coin bet, and about 9 to 13% with a 3-coin bet.
 static bool8 ShouldTrySpecialBias(void)
 {
     u8 rval = Random();
-    if (sSpecialDrawOdds[sSlotMachine->machineId][sSlotMachine->bet - 1] > rval)
+    if (2 * sSpecialDrawOdds[sSlotMachine->machineId][sSlotMachine->bet - 1] > rval)
         return TRUE;
     return FALSE;
 }
@@ -1906,6 +1904,11 @@ static u8 TrySelectBias_Regular(void)
             if (value < 0)
                 value = 0;
         }
+        // These checks are sequential. A 2.5x boost per paying bias roughly
+        // doubles the combined chance to draw one.
+        if (sBiasesRegular[whichBias] != BIAS_REPLAY)
+            value = value * 5 / 2;
+
         if (value > rval)
             break;
     }
