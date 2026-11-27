@@ -13735,6 +13735,22 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_OvalCharm,
     },
 
+    [ITEM_DREAM_ORB] =
+    {
+        .name = ITEM_NAME("Dream Orb"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Uma esfera sombria.\n"
+            "Ela pulsa perto da\n"
+            "cama da bruxa."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_GriseousOrb,
+        .iconPalette = gItemIconPalette_GriseousOrb,
+    },
+
     [ITEM_SHINY_CHARM] =
     {
         .name = ITEM_NAME("Shiny Charm"),

@@ -364,6 +364,13 @@
       "elevation": 0,
       "dest_map": "MAP_SOOTOPOLIS_CITY_APRICORN_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_SOOTOPOLIS_CITY_DREAM_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

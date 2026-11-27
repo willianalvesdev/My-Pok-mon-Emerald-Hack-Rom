@@ -529,12 +529,12 @@ static enum MonDonationResult TryDonatePartyMon(u32 slot, bool32 confirm, enum S
     if (!hasPartner)
         return MON_DONATION_NEEDS_PARTNER;
 
-    if (!CheckBagHasSpace(reward, quantity))
+    if (reward != ITEM_NONE && !CheckBagHasSpace(reward, quantity))
         return MON_DONATION_BAG_FULL;
     if (!confirm)
         return MON_DONATION_OK;
 
-    if (!AddBagItem(reward, quantity))
+    if (reward != ITEM_NONE && !AddBagItem(reward, quantity))
         return MON_DONATION_BAG_FULL;
 
     ZeroMonData(mon);
@@ -565,6 +565,24 @@ void Script_TryDonateFeebas(struct ScriptContext *ctx)
     gSpecialVar_Result = TryDonatePartyMon(gSpecialVar_0x8004, gSpecialVar_0x8005, SPECIES_FEEBAS, ITEM_PAMTRE_BERRY, 5);
     if (gSpecialVar_Result == MON_DONATION_OK && gSpecialVar_0x8005)
         FlagSet(FLAG_ROUTE124_FISHERMAN_RECEIVED_FEEBAS);
+}
+
+void Script_TryDonateDreamMon(struct ScriptContext *ctx)
+{
+    static const enum Species requestedSpecies[] = {SPECIES_CUBONE, SPECIES_BANETTE, SPECIES_SPIRITOMB};
+    u16 stage = VarGet(VAR_DREAM_WITCH_STAGE);
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
+    if (!FlagGet(FLAG_SYS_GAME_CLEAR) || stage >= ARRAY_COUNT(requestedSpecies))
+    {
+        gSpecialVar_Result = MON_DONATION_ALREADY_REWARDED;
+        return;
+    }
+
+    enum Item reward = stage == ARRAY_COUNT(requestedSpecies) - 1 ? ITEM_DREAM_ORB : ITEM_NONE;
+    gSpecialVar_Result = TryDonatePartyMon(gSpecialVar_0x8004, gSpecialVar_0x8005, requestedSpecies[stage], reward, 1);
+    if (gSpecialVar_Result == MON_DONATION_OK && gSpecialVar_0x8005)
+        VarSet(VAR_DREAM_WITCH_STAGE, stage + 1);
 }
 
 void Script_GetChosenMonDefensiveEVs(void)

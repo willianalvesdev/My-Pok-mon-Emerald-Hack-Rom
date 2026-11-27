@@ -320,7 +320,8 @@
     "SootopolisCity_LotadAndSeedotHouse",
     "SootopolisCity_MysteryEventsHouse_1F",
     "SootopolisCity_MysteryEventsHouse_B1F",
-    "SootopolisCity_ApricornHouse"
+    "SootopolisCity_ApricornHouse",
+    "SootopolisCity_DreamHouse"
   ],
   "gMapGroup_IndoorEverGrande": [
     "EverGrandeCity_SidneysRoom",
@@ -627,7 +628,9 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom",
-    "TrainerHill_Elevator"
+    "TrainerHill_Elevator",
+    "DreamIsland_Shore",
+    "DreamIsland_Forest"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

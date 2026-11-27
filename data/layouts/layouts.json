@@ -9400,6 +9400,39 @@
       "border_filepath": "data/layouts/Route131_ApricornWorkshop/border.bin",
       "blockdata_filepath": "data/layouts/Route131_ApricornWorkshop/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SOOTOPOLIS_CITY_DREAM_HOUSE",
+      "name": "SootopolisCity_DreamHouse_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SootopolisCity_DreamHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SootopolisCity_DreamHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DREAM_ISLAND_SHORE",
+      "name": "DreamIsland_Shore_Layout",
+      "width": 33,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/DreamIsland_Shore/border.bin",
+      "blockdata_filepath": "data/layouts/DreamIsland_Shore/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_DREAM_ISLAND_FOREST",
+      "name": "DreamIsland_Forest_Layout",
+      "width": 23,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/DreamIsland_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/DreamIsland_Forest/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

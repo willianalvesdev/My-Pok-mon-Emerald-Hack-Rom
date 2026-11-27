@@ -725,7 +725,9 @@ static void CB2_EndScriptedWildBattle(void)
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {
-        if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+        if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE
+         || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_DREAM_ISLAND_FOREST)
+          && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_DREAM_ISLAND_FOREST)))
             SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
         else
             SetMainCallback2(CB2_WhiteOut);
