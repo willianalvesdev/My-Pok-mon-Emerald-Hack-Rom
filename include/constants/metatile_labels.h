@@ -221,6 +221,8 @@
 #define METATILE_Fallarbor_RedRockWall               0x269
 
 // gTileset_Fortree
+#define METATILE_Fortree_DreamForestExit_Left              0x318
+#define METATILE_Fortree_DreamForestExit_Right             0x319
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F
 #define METATILE_Fortree_BridgeOverGrass_Raised            0x24E
 #define METATILE_Fortree_BridgeOverTrees_Lowered           0x257
@@ -581,6 +583,8 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
 // gTileset_Rustboro
+#define METATILE_Rustboro_DreamForestEntrance_Left   0x35E
+#define METATILE_Rustboro_DreamForestEntrance_Right  0x35F
 #define METATILE_Rustboro_Door_Gray  0x21F
 #define METATILE_Rustboro_Door_Tan   0x22F
 

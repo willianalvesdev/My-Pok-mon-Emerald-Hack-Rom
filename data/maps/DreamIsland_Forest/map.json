@@ -28,27 +28,23 @@
       "flag": "FLAG_FINISHED_DREAM_DARKRAI"
     }
   ],
-  "warp_events": [],
-  "coord_events": [
+  "warp_events": [
     {
-      "type": "trigger",
       "x": 11,
       "y": 20,
-      "elevation": 3,
-      "var": "VAR_TEMP_F",
-      "var_value": "0",
-      "script": "DreamIsland_Forest_EventScript_LeaveForest"
+      "elevation": 0,
+      "dest_map": "MAP_DREAM_ISLAND_SHORE",
+      "dest_warp_id": "0"
     },
     {
-      "type": "trigger",
       "x": 12,
       "y": 20,
-      "elevation": 3,
-      "var": "VAR_TEMP_F",
-      "var_value": "0",
-      "script": "DreamIsland_Forest_EventScript_LeaveForest"
+      "elevation": 0,
+      "dest_map": "MAP_DREAM_ISLAND_SHORE",
+      "dest_warp_id": "1"
     }
   ],
+  "coord_events": [],
   "bg_events": [],
   "region": "REGION_HOENN"
 }

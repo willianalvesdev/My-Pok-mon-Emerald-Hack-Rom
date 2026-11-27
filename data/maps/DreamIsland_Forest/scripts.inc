@@ -1,11 +1,6 @@
 DreamIsland_Forest_MapScripts::
 	.byte 0
 
-DreamIsland_Forest_EventScript_LeaveForest::
-	lockall
-	warpsilent MAP_DREAM_ISLAND_SHORE, 7, 9
-	waitstate
-	end
 
 DreamIsland_Forest_EventScript_Darkrai::
 	lockall
@@ -26,7 +21,7 @@ DreamIsland_Forest_EventScript_Darkrai::
 DreamIsland_Forest_WakeUp:
 	fadescreen FADE_TO_BLACK
 	delay 40
-	warpsilent MAP_SOOTOPOLIS_CITY_DREAM_HOUSE, 1, 4
+	warpsilent MAP_SOOTOPOLIS_CITY_DREAM_HOUSE, 2, 4
 	waitstate
 	end
 

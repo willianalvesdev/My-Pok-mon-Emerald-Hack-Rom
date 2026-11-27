@@ -1698,6 +1698,12 @@ const struct BlendSettings gTimeOfDayBlend[] =
 
 #define MORNING_HOUR_MIDDLE (MORNING_HOUR_BEGIN + ((MORNING_HOUR_END - MORNING_HOUR_BEGIN) / 2))
 
+static bool32 IsDreamIslandMap(void)
+{
+    return gMapHeader.mapLayoutId == LAYOUT_DREAM_ISLAND_SHORE
+        || gMapHeader.mapLayoutId == LAYOUT_DREAM_ISLAND_FOREST;
+}
+
 void UpdateTimeOfDay(bool32 updateBlend)
 {
     s32 hours, minutes;
@@ -1768,6 +1774,13 @@ void UpdateTimeOfDay(bool32 updateBlend)
         }
         gTimeOfDay = TIME_DAY;
     }
+
+    if (updateBlend && IsDreamIslandMap())
+    {
+        gTimeBlend.weight = DEFAULT_WEIGHT;
+        gTimeBlend.altWeight = 0;
+        gTimeBlend.startBlend = gTimeBlend.endBlend = gTimeOfDayBlend[TIME_NIGHT];
+    }
 }
 
 #undef MORNING_HOUR_MIDDLE
@@ -1777,7 +1790,7 @@ void UpdateTimeOfDay(bool32 updateBlend)
 // Whether a map type is naturally lit/outside
 bool32 MapHasNaturalLight(enum MapType mapType)
 {
-    return (OW_ENABLE_DNS
+    return IsDreamIslandMap() || (OW_ENABLE_DNS
          && (mapType == MAP_TYPE_TOWN
           || mapType == MAP_TYPE_CITY
           || mapType == MAP_TYPE_ROUTE
