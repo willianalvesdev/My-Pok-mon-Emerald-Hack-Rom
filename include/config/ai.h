@@ -21,11 +21,11 @@
 #define SHOULD_SWITCH_ENCORE_STATUS_PERCENTAGE                      100
 #define SHOULD_SWITCH_ENCORE_DAMAGE_PERCENTAGE                      50
 #define SHOULD_SWITCH_CHOICE_LOCKED_PERCENTAGE                      100 // Only if locked into status move
-#define SHOULD_SWITCH_ATTACKING_STAT_MINUS_TWO_PERCENTAGE           50
+#define SHOULD_SWITCH_ATTACKING_STAT_MINUS_TWO_PERCENTAGE           75
 #define SHOULD_SWITCH_ATTACKING_STAT_MINUS_THREE_PLUS_PERCENTAGE    100
 #define SHOULD_SWITCH_ALL_SCORES_BAD_PERCENTAGE                     100
 #define SHOULD_SWITCH_DYN_FUNC_PERCENTAGE                           50 // Dynamic switching function switch chance
-#define SHOULD_SWITCH_LOSES_1V1_PERCENTAGE                          0 // Keeping this disabled by default makes evaluating and testing switching behaviour when developing much easier
+#define SHOULD_SWITCH_LOSES_1V1_PERCENTAGE                          75 // Chance to leave a losing matchup when a suitable switch-in exists
 
 // AI smart switching chances for bad statuses
 #define SHOULD_SWITCH_PERISH_SONG_PERCENTAGE                    100
@@ -69,7 +69,7 @@
 // AI move scoring
 #define STATUS_MOVE_FOCUS_PUNCH_CHANCE                          50 // Chance the AI will use a status move if the player's best move is Focus Punch
 #define BOOST_INTO_HAZE_CHANCE                                  0 // Chance the AI will use a stat boosting move if the player has used Haze
-#define SHOULD_RECOVER_CHANCE                                   50 // Chance the AI will give recovery moves score increase if less than ENABLE_RECOVERY_THRESHOLD and in no immediate danger
+#define SHOULD_RECOVER_CHANCE                                   75 // Chance the AI will give recovery moves score increase if less than ENABLE_RECOVERY_THRESHOLD and in no immediate danger
 #define ENABLE_RECOVERY_THRESHOLD                               60 // HP percentage beneath which SHOULD_RECOVER_CHANCE is active
 #define SUCKER_PUNCH_CHANCE                                     50 // Chance for the AI to not use Sucker Punch if the player has a status move
 #define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // Additional chance for the AI to not use Sucker Punch if actively predicting a status move if SUCKER_PUNCH_CHANCE fails
@@ -97,12 +97,12 @@
 #define AI_ROLL_TYPE_COUNT                                      5
 
 // Define which roll type to use in each context; overridden by AI_FLAG_RISKY and AI_FLAG_CONSERVATIVE
-#define AI_ROLL_ATTACKING                                       AI_ROLL_MAX
+#define AI_ROLL_ATTACKING                                       AI_ROLL_MEDIAN
 #define AI_ROLL_DEFENDING                                       AI_ROLL_MEDIAN
 #define AI_ROLL_SWITCHIN_ATTACKING                              AI_ROLL_MEDIAN
 #define AI_ROLL_SWITCHIN_DEFENDING                              AI_ROLL_MEDIAN
 #define AI_ROLL_SHOULD_SETUP_DEFENDING                          AI_ROLL_MAX
-#define AI_ROLL_ATTACKING_PARTNER                               AI_ROLL_MAX
+#define AI_ROLL_ATTACKING_PARTNER                               AI_ROLL_MEDIAN
 
 // AI prediction chances
 #define PREDICT_SWITCH_CHANCE                                   50
