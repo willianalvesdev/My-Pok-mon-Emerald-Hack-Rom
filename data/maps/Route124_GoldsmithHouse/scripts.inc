@@ -31,17 +31,18 @@ Route124_GoldsmithHouse_End:
 	end
 
 Route124_GoldsmithHouse_Text_Offer:
-	.string "Sou ourives. Pago ¥10000 por\n"
-	.string "um Nugget. Quer vender um?$"
+	.string "Sou ourives. Pago ¥10.000 por um\n"
+	.string "Nugget. Quer vender?$"
 
 Route124_GoldsmithHouse_Text_Sold:
-	.string "Aqui vai o seu pagamento.\n"
-	.string "Obrigado pelo Nugget!$"
+	.string "Aqui ta seu pagamento. Valeu pelo\n"
+	.string "Nugget!$"
 
 Route124_GoldsmithHouse_Text_NoNugget:
-	.string "Compro Nuggets por ¥10000 cada.\n"
-	.string "Se achar um, traga pra mim.$"
+	.string "Compro Nuggets por ¥10.000 cada.\n"
+	.string "Se achar algum, traz pra mim.$"
 
 Route124_GoldsmithHouse_Text_WalletFull:
-	.string "Sua carteira está quase cheia.\n"
-	.string "Volte quando puder receber tudo.$"
+	.string "Sua carteira ta quase cheia. Volta\n"
+	.string "quando tiver espaço pra receber\l"
+	.string "tudo.$"

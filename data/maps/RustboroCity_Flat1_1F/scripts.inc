@@ -10,9 +10,10 @@ RustboroCity_Flat1_1F_EventScript_Woman::
 	end
 
 RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:
-	.string "Every POKéMON has a special ability\n"
-	.string "that it can use.$"
+	.string "Todo Pokémon tem uma habilidade\n"
+	.string "especial.$"
 
 RustboroCity_Flat1_1F_Text_PokemonStrange:
-	.string "POKéMON are such strange creatures.$"
+	.string "Os Pokémon sao criaturas tao\n"
+	.string "estranhas.$"
 

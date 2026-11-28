@@ -38,25 +38,26 @@ OldaleTown_PokemonCenter_1F_EventScript_WirelessClubAvailable::
 	end
 
 OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
-	.string "That PC in the corner there is\n"
-	.string "for any POKéMON TRAINER to use.\p"
-	.string "Naturally, that means you're welcome\n"
-	.string "to use it, too.$"
+	.string "Qualquer treinador pode usar\n"
+	.string "aquele PC no canto.\p"
+	.string "Isso inclui você, claro.$"
 
 OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
-	.string "POKéMON CENTERS are great!\p"
-	.string "You can use their services as much\n"
-	.string "as you like, and it's all for free.\l"
-	.string "You never have to worry!$"
+	.string "Os Centros Pokémon sao ótimos!\p"
+	.string "Você pode usar o quanto quiser e\n"
+	.string "tudo é de graça. Nao precisa se\l"
+	.string "preocupar!$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
-	.string "The POKéMON WIRELESS CLUB on\n"
-	.string "the second floor was built recently.\p"
-	.string "But they say they're still making\n"
-	.string "adjustments.$"
+	.string "O Pokémon Wireless Club do segundo\n"
+	.string "andar foi construído faz pouco\l"
+	.string "tempo.\p"
+	.string "Mas dizem que ainda tao ajustando\n"
+	.string "algumas coisas.$"
 
 OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
-	.string "The POKéMON WIRELESS CLUB on\n"
-	.string "the second floor was built recently.\p"
-	.string "I traded POKéMON right away.$"
+	.string "O Pokémon Wireless Club do segundo\n"
+	.string "andar foi construído faz pouco\l"
+	.string "tempo.\p"
+	.string "Já aproveitei pra trocar Pokémon!$"
 

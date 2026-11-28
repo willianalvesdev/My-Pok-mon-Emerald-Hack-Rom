@@ -16,9 +16,11 @@ SootopolisCity_MysteryEventsHouse_B1F_EventScript_GustavoEnd::
 	end
 
 SootopolisCity_MysteryEventsHouse_B1F_Text_GustavoIntro:
-	.string "Como ousa desafiar o rei do Emerald?,\n"
-	.string "irei te mostrar o meu poder máximo!$"
+	.string "Como ousa desafiar o rei do\n"
+	.string "Emerald? Vou te mostrar meu poder\l"
+	.string "máximo!$"
 
 SootopolisCity_MysteryEventsHouse_B1F_Text_GustavoDefeat:
 	.string "Uuh, nunca me senti tao humilhado\n"
-	.string "desde que fui molestado pelo suicune...$"
+	.string "desde que fui molestado pelo\l"
+	.string "suicune...$"

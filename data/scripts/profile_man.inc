@@ -92,75 +92,64 @@ ProfileMan_EventScript_Ret::
 	return
 
 ProfileMan_Text_CollectTrainerProfiles:
-	.string "Hello there, TRAINER!\n"
-	.string "You've got a wonderful smile, there.\p"
-	.string "I have a hobby--collecting the profiles\n"
-	.string "of POKéMON TRAINERS.$"
+	.string "Oi, treinador! Que sorriso bonito!\p"
+	.string "Meu passatempo é colecionar perfis\n"
+	.string "de treinadores Pokémon.$"
 
 ProfileMan_Text_MayISeeYourProfile:
-	.string "So, how about it?\n"
-	.string "May I see your profile?$"
+	.string "E entao, posso ver seu perfil?$"
 
 ProfileMan_Text_EasyChatExplanation:
-	.string "You make your own profile by putting\n"
-	.string "together four words or phrases.\p"
-	.string "Here, I'll show you an example of a\n"
-	.string "profile using four pieces of text.\p"
-	.string "You can switch those four pieces with\n"
-	.string "other text pieces any which way you\l"
-	.string "like to make your own profile.\p"
-	.string "There are a lot of text pieces that\n"
-	.string "you can use.\p"
-	.string "They are arranged in groups like\n"
-	.string "POKéMON, lifestyles, and hobbies so\l"
-	.string "it is easier to look them up.\p"
-	.string "So, first, choose the group of text\n"
-	.string "pieces to display a list of choices.\p"
-	.string "Then, pick the choice you want.\p"
-	.string "Repeat for the remaining text choices,\n"
-	.string "and you'll have your very own profile.$"
+	.string "Você cria um perfil juntando\n"
+	.string "quatro palavras ou frases.\p"
+	.string "Vou mostrar um exemplo com quatro\n"
+	.string "partes. Pode trocar cada uma delas\l"
+	.string "pra deixar do seu jeito.\p"
+	.string "Tem várias opçoes, organizadas em\n"
+	.string "grupos como Pokémon, dia a dia e\l"
+	.string "passatempos.\p"
+	.string "Escolha um grupo pra abrir a lista\n"
+	.string "e depois escolha uma opçao.\p"
+	.string "Repita com as outras partes e seu\n"
+	.string "perfil vai ficar pronto.$"
 
 ProfileMan_Text_LetsSeeItThen:
-	.string "Yes! Thank you!\n"
-	.string "So, let's see it, then.$"
+	.string "Sim! Obrigado! Vamos ver.$"
 
 ProfileMan_Text_ImagineYouWouldHaveWonderfulProfile:
-	.string "Oh, no, really?\p"
-	.string "I imagine someone like you would have\n"
-	.string "a wonderful profile…$"
+	.string "Ah, sério?\p"
+	.string "Imaginei que alguém como você\n"
+	.string "teria um perfil ótimo...$"
 
 ProfileMan_Text_NotIntoItRightNow:
-	.string "Oh? You're not into it right now?\p"
-	.string "Well, anytime is good by me!$"
+	.string "Ah, nao quer agora?\p"
+	.string "Tudo bem, pode ser quando quiser!$"
 
 ProfileMan_Text_YouHaveWonderfulSmile:
-	.string "Hello there, TRAINER!\n"
-	.string "You've got a wonderful smile.$"
+	.string "Oi, treinador! Que sorriso bonito!$"
 
 ProfileMan_Text_MayISeeYourNewProfile:
-	.string "May I see your new profile?$"
+	.string "Posso ver seu perfil novo?$"
 
 ProfileMan_Text_EvenBetterThanLastProfile:
-	.string "Yes! Thank you!\p"
-	.string "I hope it's even better than the profile\n"
-	.string "you showed me before.$"
+	.string "Sim! Obrigado!\p"
+	.string "Espero que fique ainda melhor que\n"
+	.string "o perfil da última vez.$"
 
 ProfileMan_Text_LikeProfileWayItIs:
-	.string "Oh, you like your profile the way it is.\p"
-	.string "I don't blame you--it's a wonderful\n"
-	.string "profile the way it is now.$"
+	.string "Ah, você gosta do perfil como ele\n"
+	.string "ta.\p"
+	.string "Entendo, ele já ficou muito bom.$"
 
 ProfileMan_Text_FantasticProfile:
-	.string "F-fantastic!\p"
-	.string "Your profile, it's wonderful!\n"
-	.string "It really says what you're about.\p"
-	.string "Why, anyone hearing this profile would\n"
-	.string "be captivated by you!\p"
-	.string "Thank you!$"
+	.string "F-fantástico! Seu perfil ficou\n"
+	.string "ótimo! Mostra muito bem quem você\l"
+	.string "é.\p"
+	.string "Qualquer um ia se interessar ao\n"
+	.string "ouvir isso! Obrigado!$"
 
 @ Unused
 ProfileMan_Text_YouKnowSecretSaying:
-	.string "Oh?\n"
-	.string "You know the secret saying!\p"
-	.string "That means you're now a fellow member\n"
-	.string "of the MYSTERY EVENT CLUB!$"
+	.string "Ah, conhece a frase secreta!\p"
+	.string "Entao agora faz parte do Mystery\n"
+	.string "Event Club!$"

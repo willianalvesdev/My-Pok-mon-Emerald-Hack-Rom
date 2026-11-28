@@ -905,112 +905,111 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MAE: Aleluia peste, achei que tu tinha\n"
-	.string "morrido. viajar nesse caminhao velho e\l"
-	.string "fedorento deve ter sido horrivel né?,\l"
+	.string "MAE: Aleluia, achei que o caminhao\n"
+	.string "tinha se perdido. viajar nesse\l"
+	.string "caminhao deve ter sido horrivel,\l"
 	.string "fazer oque, nóis é pobre\p"
-	.string "Bom, aqui é Littleroot. E aí, curtiu?\n"
-	.string "Essa é a nossa nova casinha!\p"
-	.string "A cidade é meio favelada, mas da pro\n"
-	.string "gasto né?\p"
-	.string "Pelo menos você ganhou um quarto só\n"
-	.string "seu!, Bora entrar pra conhecer a casa.$"
+	.string "Bom, aqui é Littleroot. E aí, oque\n"
+	.string "achou? Essa é a nossa nova\l"
+	.string "casinha!\p"
+	.string "É pequena mais bem aconchegante!\p"
+	.string "E você tem um quarto só seu!,\n"
+	.string "vamos entrar pra conhecer a casa!$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MOM: Wait, {PLAYER}!$"
+	.string "MAE: Espera, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
-	.string "introduce yourself to PROF. BIRCH?\p"
-	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. BIRCH. How nice!\p"
-	.string "You're your father's child, all right.\n"
-	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "MAE: {PLAYER}! {PLAYER}! Já foi\n"
+	.string "falar com o professor Birch?\p"
+	.string "Ah, que Pokémon mais bonitinho!\n"
+	.string "Ele te deu? Que bom!\p"
+	.string "Puxou seu pai mesmo. Você combina\n"
+	.string "com os Pokémon.\p"
+	.string "Toma, meu bem! Se vai sair em uma\n"
+	.string "aventura, usa estes Running Shoes.\p"
+	.string "Com eles você corre bem mais!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+	.string "{PLAYER} trocou seus sapatos pelos\n"
+	.string "Running Shoes.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "MAE: {PLAYER}, os sapatos vieram\n"
+	.string "com instruçoes.\p"
+	.string "“Segure o botao B usando os\n"
+	.string "Running Shoes pra correr mais\l"
+	.string "rápido.\p"
+	.string "Calce seus Running Shoes e\n"
+	.string "aproveite a estrada!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
-	.string "Your father will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "...\p"
+	.string "Você já tem seu próprio Pokémon...\n"
+	.string "Seu pai vai ficar tao feliz.\p"
+	.string "Mas toma cuidado, ta? Se acontecer\n"
+	.string "alguma coisa, pode voltar pra\l"
+	.string "casa.\p"
+	.string "Vai lá, meu bem!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
-	.string "The power of science is staggering!$"
+	.string "No PC, dá pra guardar itens e\n"
+	.string "Pokémon.\p"
+	.string "A ciência é uma coisa incrível!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "PROF. BIRCH spends days in his LAB\n"
-	.string "studying, then he'll suddenly go out in\l"
-	.string "the wild to do more research…\p"
-	.string "When does PROF. BIRCH spend time\n"
-	.string "at home?$"
+	.string "O professor Birch passa dias no\n"
+	.string "laboratório e depois sai do nada\l"
+	.string "pra pesquisar no mato...\p"
+	.string "Será que ele lembra onde mora?$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "Um, um, um!\p"
-	.string "If you go outside and go in the grass,\n"
-	.string "wild POKéMON will jump out!$"
+	.string "É... é...\p"
+	.string "Se você sair da cidade e entrar no\n"
+	.string "mato, os Pokémon selvagens\l"
+	.string "aparecem!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "It's dangerous if you don't have\n"
-	.string "your own POKéMON.$"
+	.string "É perigoso sair sem ter seu próprio\n"
+	.string "Pokémon.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
-	.string "Um, hi!\p"
-	.string "There are scary POKéMON outside!\n"
-	.string "I can hear their cries!\p"
-	.string "I want to go see what's going on,\n"
-	.string "but I don't have any POKéMON…\p"
-	.string "Can you go see what's happening\n"
-	.string "for me?$"
+	.string "Oi!\p"
+	.string "Tem uns Pokémon assustadores lá\n"
+	.string "fora! Dá pra ouvir eles gritando!\p"
+	.string "Queria ver oque ta acontecendo,\n"
+	.string "mas nao tenho nenhum Pokémon...\p"
+	.string "Você pode ir olhar por mim?$"
 
 LittlerootTown_Text_YouSavedBirch:
-	.string "You saved PROF. BIRCH!\n"
-	.string "I'm so glad!$"
+	.string "Você salvou o professor Birch!\n"
+	.string "Ainda bem!$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Are you going to catch POKéMON?\n"
-	.string "Good luck!$"
+	.string "Vai capturar Pokémon? Boa sorte!$"
 
 LittlerootTown_Text_TownSign:
-	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "Littleroot Town\p"
+	.string "“Uma cidade com suas próprias\n"
+	.string "cores.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "PROF. BIRCH'S POKéMON LAB$"
+	.string "Laboratório Pokémon do professor\n"
+	.string "Birch$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "{PLAYER}'s HOUSE$"
+	.string "Casa de {PLAYER}$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "PROF. BIRCH'S HOUSE$"
+	.string "Casa do professor Birch$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "PROF. BIRCH: Well, well, {PLAYER}{KUN}!\n"
-	.string "That was good work out there!\p"
-	.string "I knew there was something special\n"
-	.string "about you when I first saw you,\l"
-	.string "but I never expected this.\p"
-	.string "Oh, yes. Do you still have the POKéDEX\n"
-	.string "I gave you?\p"
-	.string "I have something to show you.\n"
-	.string "Let's go to my LAB.$"
+	.string "PROF. BIRCH: Olha só, {PLAYER}{KUN}!\n"
+	.string "Você foi muito bem!\p"
+	.string "Desde o começo vi algo especial em\n"
+	.string "você, mas nao esperava tudo isso.\p"
+	.string "Ah, ainda tem a Pokédex que te\n"
+	.string "dei?\p"
+	.string "Quero te mostrar uma coisa. Vamos\n"
+	.string "pro laboratório.$"
 

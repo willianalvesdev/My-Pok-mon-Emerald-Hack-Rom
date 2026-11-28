@@ -10,12 +10,12 @@ LilycoveCity_House4_EventScript_Man2::
 	end
 
 LilycoveCity_House4_Text_MysteriesAtBottomOfSea:
-	.string "This planet's biggest mysteries are\n"
-	.string "at the bottom of the sea.\p"
-	.string "Somebody said that, but I don't know…$"
+	.string "Os maiores mistérios do planeta\n"
+	.string "estao no fundo do mar.\p"
+	.string "Foi oque me disseram, pelo menos...$"
 
 LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis:
-	.string "There's a deep underwater trench\n"
-	.string "between MOSSDEEP and SOOTOPOLIS.\p"
-	.string "That's what someone told me, anyway.$"
+	.string "Tem um buraco bem fundo no mar\n"
+	.string "entre Mossdeep e Sootopolis.\p"
+	.string "Pelo menos foi oque me contaram.$"
 

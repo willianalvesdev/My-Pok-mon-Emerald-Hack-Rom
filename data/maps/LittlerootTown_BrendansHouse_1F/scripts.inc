@@ -284,154 +284,156 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "MAE: Olha só, {PLAYER}! Aqui\n"
-	.string "dentro até que é bonitinho, né?$"
+	.string "MAE: Olha só, {PLAYER}! Aqui dentro\n"
+	.string "até que é bonitinho, nao é?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "Os Pokémons da mudança carregam tudo\n"
-	.string "e ainda deixam a casa arrumada. Que\l"
-	.string "belezinha!\p"
+	.string "Os Pokémons da mudança carregam\n"
+	.string "tudo e ainda deixam a casa\l"
+	.string "arrumada. Que belezinha!\p"
 	.string "{PLAYER}, seu quarto fica lá em\n"
 	.string "cima. Vai lá ver!\p"
-	.string "Seu pai aquele vagabundo ausente\n"
-	.string "comprou um relógio novo pra você, pelo\l"
-	.string "menos pra isso ele presta. Lembra de\l"
-	.string "acertar a hora depois tabaum?$"
+	.string "Seu pai aquele ausente comprou um\n"
+	.string "relógio novo pra você. Lembra de\l"
+	.string "acertar a hora depois tabom?$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
 	.string "MAE: Eai, {PLAYER}? Cadê a\n"
 	.string "curiosidade pra ver o seu quarto\l"
-	.string "novuuu?$"
+	.string "novo?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
-	.string "MAE: Porra {PLAYER}, vai acertar o\n"
-	.string "relógio do seu quarto.$"
+	.string "MAE: {PLAYER}, vai acertar o relógio\n"
+	.string "do seu quarto.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
-	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"
-	.string "Quick! Come quickly!$"
+	.string "MAE: {PLAYER}! {PLAYER}! Vem cá,\n"
+	.string "rápido!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
-	.string "MOM: Look! It's PETALBURG GYM!\n"
-	.string "Maybe DAD will be on!$"
+	.string "MAE: Olha! É o ginásio de\n"
+	.string "Petalburg! Talvez seu pai apareça!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
-	.string "MOM: Oh… It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
-	.string "Too bad.$"
+	.string "MAE: Ah... Acabou.\p"
+	.string "Acho que seu pai apareceu, mas a\n"
+	.string "gente perdeu. Que pena.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
-	.string "Oh, yes.\n"
-	.string "One of DAD's friends lives in town.\p"
-	.string "PROF. BIRCH is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "Ah, um amigo do seu pai mora aqui\n"
+	.string "na cidade.\p"
+	.string "É o professor Birch.\p"
+	.string "Ele mora bem ao lado. Vai lá se\n"
+	.string "apresentar.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "MOM: See you, honey!$"
+	.string "MAE: Até mais, meu bem!$"
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
-	.string "MOM: Did you introduce yourself to\n"
-	.string "PROF. BIRCH?$"
+	.string "MAE: Já foi se apresentar pro\n"
+	.string "professor Birch?$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "MOM: How are you doing, {PLAYER}?\n"
-	.string "You look a little tired.\p"
-	.string "I think you should rest a bit.$"
+	.string "MAE: Como você ta, {PLAYER}?\n"
+	.string "Parece meio cansado.\p"
+	.string "Descansa um pouco.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "MOM: Take care, honey!$"
+	.string "MAE: Se cuida, meu bem!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "MOM: Oh? Did DAD give you that BADGE?\p"
-	.string "Then here's something from your MOM!$"
+	.string "MAE: Ah, seu pai te deu essa\n"
+	.string "insígnia?\p"
+	.string "Entao aqui vai um presente da sua\n"
+	.string "mae!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
-	.string "Don't push yourself too hard, dear.\n"
-	.string "You can always come home.\p"
-	.string "Go for it, honey!$"
+	.string "Nao precisa se cobrar tanto, meu\n"
+	.string "bem. Você sempre pode voltar pra\l"
+	.string "casa.\p"
+	.string "Vai lá, você consegue!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "MOM: What is that, honey? A POKéNAV?\n"
-	.string "Someone from DEVON gave it to you?\p"
-	.string "Well, honey, how about registering\n"
-	.string "your mom?\p"
-	.string "… … …$"
+	.string "MAE: Oque é isso, meu bem? Um\n"
+	.string "PokéNav? Alguém da Devon te deu?\p"
+	.string "Que tal registrar sua mae também?\p"
+	.string "...$"
 
 PlayersHouse_1F_Text_RegisteredMom:
-	.string "Registered MOM\n"
-	.string "in the POKéNAV.$"
+	.string "MAE foi registrada no PokéNav.$"
 
 PlayersHouse_1F_Text_Vigoroth1:
 	.string "Fugiiiiih!$"
 
 PlayersHouse_1F_Text_Vigoroth2:
-	.string "Huggoh, uggo uggo…$"
+	.string "Huggoh, uggo uggo...$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
-	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "REPÓRTER: ...Esta foi nossa\n"
+	.string "reportagem direto da frente do\l"
+	.string "ginásio de Petalburg.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
-	.string "There is a movie on TV.\p"
-	.string "Two men are dancing on a big piano\n"
-	.string "keyboard.\p"
-	.string "Better get going!$"
+	.string "Tem um filme passando na\n"
+	.string "televisao.\p"
+	.string "Dois homens dançam em um teclado\n"
+	.string "de piano gigante.\p"
+	.string "Melhor ir!$"
 
 PlayersHouse_1F_Text_RunningShoesManual:
-	.string "It's the instruction booklet for the\n"
-	.string "RUNNING SHOES.\p"
-	.string "“Press the B Button to run while\n"
-	.string "wearing your RUNNING SHOES.\p"
-	.string "“Lace up your RUNNING SHOES and hit\n"
-	.string "the road running!”$"
+	.string "É o manual dos Running Shoes.\p"
+	.string "“Segure o botao B pra correr\n"
+	.string "usando os Running Shoes.\p"
+	.string "Amarre os cadarços e pegue a\n"
+	.string "estrada!”$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
-	.string "DAD: Hm?\p"
-	.string "Hey, it's {PLAYER}!\p"
-	.string "It's been a while since I saw you,\n"
-	.string "but you look…stronger, somehow.\p"
-	.string "That's the impression I get.\n"
-	.string "But your old man hasn't given up yet!\p"
-	.string "Oh, yes, I have something for you.\n"
-	.string "This came to you from someone named\l"
-	.string "MR. BRINEY.$"
+	.string "PAI: Hum?\p"
+	.string "Olha só, {PLAYER}!\p"
+	.string "Faz tempo que nao vejo você.\n"
+	.string "Parece mais forte.\p"
+	.string "É a impressao que eu tenho. Mas\n"
+	.string "seu velho ainda nao desistiu!\p"
+	.string "Ah, tenho uma coisa pra você.\n"
+	.string "Alguém chamado Mr. Briney mandou\l"
+	.string "isto.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
-	.string "DAD: Hm, a TICKET for a ferry?\p"
-	.string "If I recall, there are ferry ports in\n"
-	.string "SLATEPORT and LILYCOVE.$"
+	.string "PAI: Hum, um Ticket de barco?\p"
+	.string "Se nao me engano, tem portos em\n"
+	.string "Slateport e Lilycove.$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
-	.string "I'd better get back to PETALBURG GYM.\p"
-	.string "MOM, thanks for looking after the house\n"
-	.string "while I'm away.$"
+	.string "Preciso voltar pro ginásio de\n"
+	.string "Petalburg.\p"
+	.string "Obrigado por cuidar da casa\n"
+	.string "enquanto tô fora.$"
 
 PlayersHouse_1F_Text_DadShouldStayLonger:
-	.string "MOM: That DAD of yours…\p"
-	.string "He comes home for the first time in a\n"
-	.string "while, but all he talks about is POKéMON.\p"
-	.string "He should relax and stay a little longer.$"
+	.string "MAE: Esse seu pai...\p"
+	.string "Depois de tanto tempo sem vir, só\n"
+	.string "fala de Pokémon.\p"
+	.string "Podia relaxar e ficar mais um\n"
+	.string "pouco.$"
 
 PlayersHouse_1F_Text_IsThatABreakingStory:
-	.string "MOM: Is that a breaking news story?$"
+	.string "MAE: É uma notícia de última hora?$"
 
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
-	.string "We bring you this emergency\n"
-	.string "news flash!\p"
-	.string "In various HOENN locales, there have\n"
-	.string "been reports of a BZZT…colored\l"
-	.string "POKéMON in flight.\p"
-	.string "The identity of this POKéMON is\n"
-	.string "currently unknown.\p"
-	.string "We now return you to the regular\n"
-	.string "movie program.$"
+	.string "Interrompemos a programaçao com\n"
+	.string "uma notícia urgente!\p"
+	.string "Um Pokémon de cor BZZT... foi\n"
+	.string "visto voando em vários lugares de\l"
+	.string "Hoenn.\p"
+	.string "Ainda nao sabemos que Pokémon é\n"
+	.string "esse.\p"
+	.string "Voltamos agora ao filme.$"
 
 PlayersHouse_1F_Text_WhatColorDidTheySay:
-	.string "MOM: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
-	.string "that POKéMON was?$"
+	.string "MAE: {PLAYER}, você ouviu?\p"
+	.string "Que cor o repórter disse que o\n"
+	.string "Pokémon tinha?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "MOM: Well, isn't that something!\n"
-	.string "There are still unknown POKéMON.$"
+	.string "MAE: Olha só! Ainda tem Pokémon\n"
+	.string "que ninguém conhece.$"

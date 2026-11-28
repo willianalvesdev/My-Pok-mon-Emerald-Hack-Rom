@@ -19,28 +19,26 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 	end
 
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
-	.string "Woohoo!\p"
-	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
-	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
-	.string "Woohoo!\p"
-	.string "Anyways, your POKéMON look pretty\n"
-	.string "strong.\p"
-	.string "I like that!\n"
-	.string "Here, take this HIDDEN MACHINE!$"
+	.string "Uhuu!\p"
+	.string "Me chamam de cara do Rock Smash,\n"
+	.string "mas acho meio sem graça.\p"
+	.string "Eu mereço um título melhor. Mestre\n"
+	.string "Supremo do Rock Smash já serve.\p"
+	.string "Uhuu! Seus Pokémon parecem\n"
+	.string "fortes! Gostei!\p"
+	.string "Toma esta HM!$"
 
 MauvilleCity_House1_Text_ExplainRockSmash:
-	.string "That HM contains ROCK SMASH.\p"
-	.string "If you come across large boulders\n"
-	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
-	.string "them right out of your way!\p"
-	.string "Yes, sir! Smash rocks aside, I say!\n"
-	.string "Woohoo!$"
+	.string "Essa HM tem Rock Smash.\p"
+	.string "Se encontrar pedras bloqueando o\n"
+	.string "caminho, use esse golpe pra\l"
+	.string "quebrar elas!\p"
+	.string "É isso aí! Pode quebrar sem medo!\n"
+	.string "Uhuu!$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
-	.string "Woohoo!$"
+	.string "Ah, quando você quebra uma pedra,\n"
+	.string "pode aparecer um Pokémon escondido\l"
+	.string "nela.\p"
+	.string "Uhuu!$"
 

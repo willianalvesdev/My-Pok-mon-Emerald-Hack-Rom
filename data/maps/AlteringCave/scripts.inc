@@ -21,10 +21,13 @@ AlteringCave_EventScript_WillianEnd::
 	end
 
 AlteringCave_Text_WillianIntro:
-	.string "Um jogador jamais vencerá\n"
-	.string "o ADM SUPREMO$"
+	.string "Ora, ora, ora, um jogador mediocre\n"
+	.string "ousa desafiar o ADM SUPREMO? É\l"
+	.string "oque veremos.. Boa sorte, você irá\l"
+	.string "precisar.$"
 
 AlteringCave_Text_WillianDefeat:
-	.string "Eu nao estava jogando sério,\n"
-	.string "mas você mereceu isso:$"
+	.string "AHAHAHA, você só me venceu pois\n"
+	.string "usei 100% do meu 1% do meu poder.\l"
+	.string "Tome isto$"
 

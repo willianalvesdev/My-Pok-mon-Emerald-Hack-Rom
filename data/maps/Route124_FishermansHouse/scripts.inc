@@ -34,12 +34,12 @@ Route124_FishermansHouse_ReceivedMagikarp:
 	return
 
 Route124_FishermansHouse_Text_Offer:
-	.string "Tem um Magikarp dourado aqui!\n"
-	.string "Quer pegar a Poké Bola?$"
+	.string "Tem um Magikarp dourado aqui! Quer\n"
+	.string "pegar a Poké Ball?$"
 
 Route124_FishermansHouse_Text_ReceivedMagikarp:
 	.string "Você recebeu um Magikarp shiny!$"
 
 Route124_FishermansHouse_Text_NoRoom:
-	.string "Falta espaço na equipe e no PC.\n"
-	.string "A Poké Bola ficou na mesa.$"
+	.string "Nao há espaço no time nem no PC.\n"
+	.string "A Poké Ball ficou na mesa.$"

@@ -28,35 +28,33 @@ Route116_TunnelersRestHouse_EventScript_TunnelOpened::
 	end
 
 Route116_TunnelersRestHouse_Text_WeHadToStopBoring:
-	.string "That RUSTURF TUNNEL there…\p"
-	.string "At first, we had a huge work crew boring\n"
-	.string "through rock with the latest machinery.\l"
-	.string "But, we had to stop.\p"
-	.string "It turns out that we would have had\n"
-	.string "a negative effect on wild POKéMON in\l"
-	.string "the area.\p"
-	.string "So, we've got nothing to do but loll\n"
-	.string "around here doing nothing.$"
+	.string "Aquele Rusturf Tunnel...\p"
+	.string "No começo, uma equipe enorme usava\n"
+	.string "máquinas modernas pra abrir caminho\l"
+	.string "pela pedra. Mas tivemos que parar.\p"
+	.string "O trabalho ia prejudicar os\n"
+	.string "Pokémon selvagens da regiao.\p"
+	.string "Agora só ficamos aqui sem fazer\n"
+	.string "nada.$"
 
 Route116_TunnelersRestHouse_Text_ManDiggingHisWayToVerdanturf:
-	.string "There's a man digging his way to\n"
-	.string "VERDANTURF all by his lonesome.\l"
-	.string "He's desperate to get through.\p"
-	.string "He says that if he digs little by little\n"
-	.string "without using machines, he won't\l"
-	.string "disturb POKéMON, and he'll avoid\l"
-	.string "harming the natural environment.\p"
-	.string "I wonder if he made it through yet.$"
+	.string "Tem um homem cavando sozinho até\n"
+	.string "Verdanturf. Ele quer muito abrir o\l"
+	.string "caminho.\p"
+	.string "Diz que, cavando aos poucos e sem\n"
+	.string "máquinas, nao vai assustar os\l"
+	.string "Pokémon nem prejudicar a natureza.\p"
+	.string "Será que já conseguiu?$"
 
 Route116_TunnelersRestHouse_Text_GetToVerdanturfWithoutTunnel:
-	.string "To get to VERDANTURF without using\n"
-	.string "this TUNNEL, you'd have to cross the\l"
-	.string "sea to DEWFORD, sail on to SLATEPORT,\l"
-	.string "then travel through MAUVILLE.$"
+	.string "Sem o túnel, você precisa\n"
+	.string "atravessar o mar até Dewford,\l"
+	.string "navegar pra Slateport e passar por\l"
+	.string "Mauville pra chegar a Verdanturf.$"
 
 Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
-	.string "Did you hear? The TUNNEL to VERDANTURF\n"
-	.string "has gone through!\p"
-	.string "Sometimes, if you hope strongly enough,\n"
-	.string "dreams do come true.$"
+	.string "Ficou sabendo? O túnel até\n"
+	.string "Verdanturf foi aberto!\p"
+	.string "Às vezes, quando a gente quer\n"
+	.string "muito, os sonhos se realizam.$"
 

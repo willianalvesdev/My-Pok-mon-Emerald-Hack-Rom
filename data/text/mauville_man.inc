@@ -1,63 +1,63 @@
 @ Only contains the text for the Mauville Man named Giddy. The rest is in scripts/mauville_man.inc
 GiddyText_SoPretty::
-	.string " so pretty!$"
+	.string " que coisa linda!$"
 
 GiddyText_SoDarling::
-	.string " so darling!$"
+	.string " que gracinha!$"
 
 GiddyText_SoRelaxed::
-	.string " so relaxed!$"
+	.string " que sossego!$"
 
 GiddyText_SoSunny::
-	.string " so sunny!$"
+	.string " que dia bonito!$"
 
 GiddyText_SoDesirable::
-	.string " so desirable!$"
+	.string " que vontade!$"
 
 GiddyText_SoExciting::
-	.string " so exciting!$"
+	.string " que emoçao!$"
 
 GiddyText_SoAmusing::
-	.string " so amusing!$"
+	.string " que divertido!$"
 
 GiddyText_SoMagical::
-	.string " so magical!$"
+	.string " que mágico!$"
 
 GiddyText_Is::
-	.string " is$"
+	.string " é$"
 
 GiddyText_DontYouAgree::
-	.string "\n"
-	.string "Don't you agree?$"
+	.string "Nao acha?$"
 
 GiddyText_ISoWantToGoOnAVacation::
-	.string "I so want to go on a vacation.\n"
-	.string "Would you happen to know a nice place?$"
+	.string "Tô com tanta vontade de tirar\n"
+	.string "férias. Conhece algum lugar legal?$"
 
 GiddyText_IBoughtCrayonsWith120Colors::
-	.string "I bought crayons with 120 colors!\n"
-	.string "Don't you think that's nice?$"
+	.string "Comprei uma caixa com 120 cores de\n"
+	.string "giz de cera! Legal, né?$"
 
 GiddyText_WouldntItBeNiceIfWeCouldFloat::
-	.string "Wouldn't it be nice if we could float\n"
-	.string "away on a cloud of bubbles?$"
+	.string "Já pensou que bom sair flutuando\n"
+	.string "numa nuvem de bolhas?$"
 
 GiddyText_WhenYouWriteOnASandyBeach::
-	.string "When you write on a sandy beach,\n"
-	.string "they wash away. It makes me sad.$"
+	.string "Quando a gente escreve na areia da\n"
+	.string "praia, o mar apaga tudo. Dá uma\l"
+	.string "tristeza.$"
 
 GiddyText_WhatsTheBottomOfTheSeaLike::
-	.string "What's the bottom of the sea like?\n"
-	.string "Just once I would so love to go!$"
+	.string "Como será o fundo do mar? Queria\n"
+	.string "ir lá pelo menos uma vez!$"
 
 GiddyText_WhenYouSeeTheSettingSunDoesIt::
-	.string "When you see the setting sun, does it\n"
-	.string "make you want to go home?$"
+	.string "Quando você vê o sol se pondo, dá\n"
+	.string "vontade de voltar pra casa?$"
 
 GiddyText_LyingBackInTheGreenGrass::
-	.string "Lying back in the green grass…\n"
-	.string "Oh, it's so, so nice!$"
+	.string "Deitar na grama verdinha... Ah, é\n"
+	.string "bom demais!$"
 
 GiddyText_SecretBasesAreSoWonderful::
-	.string "SECRET BASES are so wonderful!\n"
-	.string "Can't you feel the excitement?$"
+	.string "Secret Bases sao incríveis! Nao dá\n"
+	.string "uma empolgaçao?$"

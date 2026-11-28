@@ -177,146 +177,136 @@ MauvilleCity_BikeShop_EventScript_ExitAcroHandbook::
 	end
 
 MauvilleCity_BikeShop_Text_RydelGreeting:
-	.string "Well, well, what have we here?\n"
-	.string "A most energetic customer!\p"
-	.string "Me? You may call me RYDEL.\n"
-	.string "I'm the owner of this cycle shop.$"
+	.string "Olha só quem chegou! Um cliente\n"
+	.string "cheio de energia!\p"
+	.string "Pode me chamar de Rydel. Sou o\n"
+	.string "dono desta loja de bicicletas.$"
 
 MauvilleCity_BikeShop_Text_DidYouComeFromFarAway:
-	.string "RYDEL: Your RUNNING SHOES…\n"
-	.string "They're awfully filthy.\p"
-	.string "Did you come from far away?$"
+	.string "RYDEL: Seus Running Shoes tao bem\n"
+	.string "sujos...\p"
+	.string "Você veio de longe?$"
 
 MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
-	.string "RYDEL: Is that right?\p"
-	.string "Then, I guess you have no need for\n"
-	.string "any of my BIKES.$"
+	.string "RYDEL: Ah, é?\p"
+	.string "Entao acho que você nao precisa\n"
+	.string "de uma das minhas bicicletas.$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
-	.string "RYDEL: Hm, hm… … … … …\p"
-	.string "You're saying that you came all this\n"
-	.string "way from LITTLEROOT?\p"
-	.string "My goodness!\n"
-	.string "That's ridiculously far!\p"
-	.string "If you had one of my BIKES, you could\n"
-	.string "go anywhere easily while feeling the\l"
-	.string "gentle caress of the wind!\p"
-	.string "I'll tell you what!\n"
-	.string "I'll give you a BIKE!\p"
-	.string "Oh, wait a second!\p"
-	.string "I forgot to tell you that there are\n"
-	.string "two kinds of BIKES!\p"
-	.string "They are the MACH BIKE and\n"
-	.string "the ACRO BIKE!\p"
-	.string "The MACH BIKE is for cyclists who want\n"
-	.string "to feel the wind with their bodies!\p"
-	.string "And an ACRO BIKE is for those who\n"
-	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+	.string "RYDEL: Hum...\p"
+	.string "Você veio andando desde\n"
+	.string "Littleroot? Nossa, é longe demais!\p"
+	.string "Com uma bicicleta minha, você vai\n"
+	.string "pra qualquer canto sentindo o\l"
+	.string "vento no rosto.\p"
+	.string "Já sei! Vou te dar uma bicicleta!\p"
+	.string "Ah, espera! Temos dois tipos: Mach\n"
+	.string "Bike e Acro Bike.\p"
+	.string "A Mach Bike é pra quem gosta de\n"
+	.string "velocidade. A Acro Bike é pra quem\l"
+	.string "prefere manobras.\p"
+	.string "Pode escolher a que quiser! Qual\n"
+	.string "vai ser?$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
-	.string "{PLAYER} chose the MACH BIKE.$"
+	.string "{PLAYER} escolheu a Mach Bike.$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike:
-	.string "{PLAYER} chose the ACRO BIKE.$"
+	.string "{PLAYER} escolheu a Acro Bike.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+	.string "RYDEL: Quando quiser trocar de\n"
+	.string "bicicleta, é só vir falar comigo!$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
-	.string "RYDEL: Oh? Were you thinking about\n"
-	.string "switching BIKES?$"
+	.string "RYDEL: Opa! Ta pensando em trocar\n"
+	.string "de bicicleta?$"
 
 MauvilleCity_BikeShop_Text_IllSwitchBikes:
-	.string "RYDEL: Okay, no problem!\n"
-	.string "I'll switch BIKES for you!$"
+	.string "RYDEL: Claro, sem problema! Vou\n"
+	.string "trocar pra você!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
-	.string "for an ACRO BIKE.$"
+	.string "{PLAYER} trocou a Mach Bike por uma\n"
+	.string "Acro Bike.$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
-	.string "for a MACH BIKE.$"
+	.string "{PLAYER} trocou a Acro Bike por uma\n"
+	.string "Mach Bike.$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
-	.string "RYDEL: Good, good!\n"
-	.string "I'm happy that you like it!$"
+	.string "RYDEL: Muito bem! Fico feliz que\n"
+	.string "gostou!$"
 
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
-	.string "Oh? What happened to that BIKE\n"
-	.string "I gave you?\p"
-	.string "Oh, I get it, you stored it using your PC.\p"
-	.string "Well, take it out of PC storage,\n"
-	.string "and I'll be happy to exchange it!\p"
-	.string "May the wind always be at your back\n"
-	.string "on your adventure!$"
+	.string "Opa, cadê a bicicleta que te dei?\p"
+	.string "Ah, entendi. Você guardou no PC.\p"
+	.string "Tire ela de lá que eu faço a\n"
+	.string "troca!\p"
+	.string "Que o vento acompanhe você na\n"
+	.string "aventura!$"
 
 MauvilleCity_BikeShop_Text_HandbooksAreInBack:
-	.string "I'm learning about BIKES while\n"
-	.string "I work here.\p"
-	.string "If you need advice on how to ride your\n"
-	.string "BIKE, there're a couple handbooks in\l"
-	.string "the back.$"
+	.string "Tô aprendendo sobre bicicletas\n"
+	.string "enquanto trabalho aqui.\p"
+	.string "Se precisar de ajuda pra pedalar,\n"
+	.string "tem uns manuais no fundo da loja.$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
-	.string "It's a handbook on the MACH BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "É um manual da Mach Bike.\p"
+	.string "Qual página quer ler?$"
 
 MauvilleCity_BikeShop_Text_HowToRideMachBike:
-	.string "A BIKE moves in the direction that\n"
-	.string "the + Control Pad is pressed.\p"
-	.string "It will speed up once it gets rolling.\p"
-	.string "To stop, release the + Control Pad.\n"
-	.string "The BIKE will slow to a stop.\p"
-	.string "Want to read a different page?$"
+	.string "A bicicleta anda na direçao que\n"
+	.string "você aperta no direcional.\p"
+	.string "Ela ganha velocidade enquanto\n"
+	.string "pedala.\p"
+	.string "Solte o direcional pra ela\n"
+	.string "desacelerar até parar.\p"
+	.string "Quer ler outra página?$"
 
 MauvilleCity_BikeShop_Text_HowToTurnMachBike:
-	.string "A MACH BIKE is speedy, but it can't\n"
-	.string "stop very quickly.\p"
-	.string "It gets a little tricky to get around\n"
-	.string "a corner.\p"
-	.string "Release the + Control Pad a little\n"
-	.string "before the corner and slow down.\p"
-	.string "Want to read a different page?$"
+	.string "A Mach Bike é rápida, mas demora\n"
+	.string "pra parar. Isso dificulta fazer\l"
+	.string "curvas.\p"
+	.string "Solte o direcional um pouco antes\n"
+	.string "da curva pra reduzir a velocidade.\p"
+	.string "Quer ler outra página?$"
 
 MauvilleCity_BikeShop_Text_SandySlopes:
-	.string "There are small sandy slopes\n"
-	.string "throughout the HOENN region.\p"
-	.string "The loose, crumbly sand makes it\n"
-	.string "impossible to climb normally.\p"
-	.string "But if you have a MACH BIKE, you can\n"
-	.string "zip up a sandy slope.\p"
-	.string "Want to read a different page?$"
+	.string "Existem ladeiras de areia por toda\n"
+	.string "Hoenn.\p"
+	.string "A areia solta impede você de subir\n"
+	.string "andando.\p"
+	.string "Com a Mach Bike, dá pra subir\n"
+	.string "ganhando velocidade antes.\p"
+	.string "Quer ler outra página?$"
 
 MauvilleCity_BikeShop_Text_AcroHandbookWhichPage:
-	.string "It's a handbook on the ACRO BIKE.\p"
-	.string "Which page do you want to read?$"
+	.string "É um manual da Acro Bike.\p"
+	.string "Qual página quer ler?$"
 
 MauvilleCity_BikeShop_Text_Wheelies:
-	.string "Press the B Button while riding,\n"
-	.string "and the front wheel lifts up.\p"
-	.string "You can zip around with the front\n"
-	.string "wheel up using the + Control Pad.\p"
-	.string "This technique is called a wheelie.\p"
-	.string "Want to read a different page?$"
+	.string "Aperte B enquanto pedala pra\n"
+	.string "levantar a roda da frente.\p"
+	.string "Use o direcional pra andar assim.\n"
+	.string "Essa manobra se chama empinar.\p"
+	.string "Quer ler outra página?$"
 
 MauvilleCity_BikeShop_Text_BunnyHops:
-	.string "Keeping the B Button pressed,\n"
-	.string "your BIKE can hop on the spot.\p"
-	.string "This technique is called a bunny hop.\p"
-	.string "You can ride while hopping, too.\p"
-	.string "Want to read a different page?$"
+	.string "Segure B pra bicicleta começar a\n"
+	.string "pular no mesmo lugar.\p"
+	.string "Essa manobra se chama salto\n"
+	.string "parado. Você também pode andar\l"
+	.string "enquanto pula.\p"
+	.string "Quer ler outra página?$"
 
 MauvilleCity_BikeShop_Text_Jumps:
-	.string "Press the B Button and the + Control\n"
-	.string "Pad at the same time to jump.\p"
-	.string "Press the + Control Pad to the side\n"
-	.string "to jump sideways.\p"
-	.string "Press it backwards to make the BIKE\n"
-	.string "change directions while jumping.\p"
-	.string "Want to read a different page?$"
+	.string "Aperte B e uma direçao ao mesmo\n"
+	.string "tempo pra saltar.\p"
+	.string "Aperte uma direçao pro lado pra\n"
+	.string "saltar de lado.\p"
+	.string "Aperte na direçao oposta pra virar\n"
+	.string "durante o salto.\p"
+	.string "Quer ler outra página?$"
 

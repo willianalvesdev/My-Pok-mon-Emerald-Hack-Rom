@@ -9,8 +9,8 @@ SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan::
 	end
 
 SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles:
-	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
-	.string "Now that I've become an old buzzard,\n"
-	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "Quando era jovem, viajei pelo\n"
+	.string "mundo como treinador Pokémon.\p"
+	.string "Agora que fiquei velho, minha\n"
+	.string "diversao é ver os jovens\l"
+	.string "batalhando.$"

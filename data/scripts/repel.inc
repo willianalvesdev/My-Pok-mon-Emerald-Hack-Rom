@@ -137,16 +137,16 @@ EventScript_UseSpray::
 
 
 Text_SprayWoreOff::
-	.string "{STR_VAR_1}'s effect wore off…$"
+	.string "O efeito de {STR_VAR_1}\n"
+	.string "acabou...$"
 
 Text_SprayWoreOffAskUseAnother::
-	.string "{STR_VAR_1}'s effect wore off!\n"
-	.string "Use another?$"
+	.string "O efeito de {STR_VAR_1}\n"
+	.string "acabou! Usar outro?$"
 
 Text_SprayWoreOffAskUseX::
-	.string "{STR_VAR_1}'s effect wore off…\n"
-	.string "Use a {STR_VAR_2}?$"
+	.string "O efeito de {STR_VAR_1}\n"
+	.string "acabou... Usar {STR_VAR_2}?$"
 
 Text_SprayWoreOffUseX::
-	.string "{PLAYER} used the\n"
-	.string "{STR_VAR_2}.$"
+	.string "{PLAYER} usou {STR_VAR_2}.$"

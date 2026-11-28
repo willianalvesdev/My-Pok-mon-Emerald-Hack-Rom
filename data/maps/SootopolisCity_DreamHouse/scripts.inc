@@ -94,43 +94,43 @@ SootopolisCity_DreamHouse_End:
 	end
 
 SootopolisCity_DreamHouse_Text_Request:
-	.string "Preciso de um {STR_VAR_1}.\p"
-	.string "Quer me entregar um da equipe?$"
+	.string "Preciso de um {STR_VAR_1}. Quer\n"
+	.string "me entregar um do seu time?$"
 
 SootopolisCity_DreamHouse_Text_Confirm:
-	.string "Quer mesmo me entregar\n"
-	.string "{STR_VAR_1}?\p"
-	.string "A entrega é definitiva.$"
+	.string "Tem certeza de que quer me\n"
+	.string "entregar {STR_VAR_1}? Nao vai\l"
+	.string "poder pegar ele de volta.$"
 
 SootopolisCity_DreamHouse_Text_Thanks:
-	.string "Obrigada. Ainda preciso de mais\n"
-	.string "um ajudante. Fale comigo de novo.$"
+	.string "Obrigada. Ainda preciso de mais um\n"
+	.string "ajudante. Fale comigo de novo.$"
 
 SootopolisCity_DreamHouse_Text_Reward:
-	.string "Agora sim. Pegue esta Dream Orb.\p"
-	.string "Deite na cama e descanse um pouco.\n"
-	.string "Deixe que a esfera guie seu sono.$"
+	.string "Agora sim. Pegue esta Dream Orb.\n"
+	.string "Deite na cama e descanse um\l"
+	.string "pouco. Deixe a esfera guiar seu\l"
+	.string "sono.$"
 
 SootopolisCity_DreamHouse_Text_Rest:
 	.string "Descanse um pouco na minha cama.\n"
 	.string "A esfera vai guiar seu sono.$"
 
 SootopolisCity_DreamHouse_Text_Invalid:
-	.string "Esse Pokémon é diferente\n"
-	.string "do que eu pedi.$"
+	.string "Esse nao é o Pokémon que eu pedi.$"
 
 SootopolisCity_DreamHouse_Text_NeedsPartner:
-	.string "Deixe outro Pokémon apto a lutar\n"
-	.string "na sua equipe antes da entrega.$"
+	.string "Antes de entregar, deixe outro\n"
+	.string "Pokémon que possa batalhar no seu\l"
+	.string "time.$"
 
 SootopolisCity_DreamHouse_Text_HasItem:
-	.string "Retire o item que ele segura\n"
-	.string "antes de entregá-lo.$"
+	.string "Tire o item que ele segura antes\n"
+	.string "de entregar.$"
 
 SootopolisCity_DreamHouse_Text_Sleep:
 	.string "A Dream Orb pulsa perto da cama.\n"
-	.string "Quer se deitar e dormir?$"
+	.string "Quer deitar e dormir?$"
 
 SootopolisCity_DreamHouse_Text_QuietBed:
-	.string "Uma cama coberta por um\n"
-	.string "edredom pesado.$"
+	.string "Uma cama com um edredom pesado.$"

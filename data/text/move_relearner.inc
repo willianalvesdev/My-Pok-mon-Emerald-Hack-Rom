@@ -1,58 +1,59 @@
 MoveRelearner_Text_WouldLearnNewMoves:
-	.string "Hi, I'm the Move Relearner.\n"
-	.string "Would you like to learn new moves?$"
+	.string "Oi, eu sou o Move Relearner. Quer\n"
+	.string "que seu Pokémon aprenda outros\l"
+	.string "golpes?$"
 
 MoveRelearner_Text_LevelUpMoves:
-	.string "Level Up Moves$"
+	.string "Golpes por nível$"
 
 MoveRelearner_Text_EggMoves:
-	.string "Egg Moves$"
+	.string "Golpes de ovo$"
 
 MoveRelearner_Text_TMMoves:
-	.string "TM Moves$"
+	.string "Golpes de TM$"
 
 MoveRelearner_Text_TutormoveMoves:
-	.string "Tutor Moves$"
+	.string "Golpes de tutor$"
 
 MoveRelearner_Text_SeeYa:
-	.string "See ya!$"
+	.string "Até mais!$"
 
 MoveRelearner_Text_AnythingElse:
-	.string "Is there anything else I may do for you?$"
+	.string "Posso ajudar com mais alguma\n"
+	.string "coisa?$"
 
 MoveRelearner_Text_ChoosePkmn:
-	.string "Please choose your Pokémon.$"
+	.string "Escolha seu Pokémon.$"
 
 MoveRelearner_Text_HaveNoPkmn:
-	.string "You have no Pokémon.$"
+	.string "Você nao tem Pokémon.$"
 
 MoveRelearner_Text_CantTeachMoveToEgg:
-	.string "Sorry…\n"
-	.string "But an Egg can't learn moves.$"
+	.string "Desculpa... Mas ovo nao aprende\n"
+	.string "golpes.$"
 
 MoveRelearner_Text_CantTeachMoveToPkmn:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that Pokémon.$"
+	.string "Desculpa... Nao tenho nenhum golpe\n"
+	.string "que esse Pokémon possa aprender.$"
 
 MoveRelearner_Text_LevelUpMoveLWR::
-	.string "level up move$"
+	.string "golpe por nível$"
 
 MoveRelearner_Text_EggMoveLWR::
-	.string "egg move$"
+	.string "golpe de ovo$"
 
 MoveRelearner_Text_TMMoveLWR::
-	.string "TM move$"
+	.string "golpe de TM$"
 
 MoveRelearner_Text_TutorMoveLWR::
-	.string "tutor move$"
+	.string "golpe de tutor$"
 
 MoveRelearner_Text_MoveLWR::
-	.string "move$"
+	.string "golpe$"
 
 MoveRelearner_Text_WhichXmoveShouldTeach:
-	.string "Which {STR_VAR_3} should I teach?$"
+	.string "Qual {STR_VAR_3} quer que eu\n"
+	.string "ensine?$"
 
 MoveRelearner_Text_ThankYouComeAgain:
-	.string "Thank you for using our services.\n"
-	.string "Please come again!$"
+	.string "Obrigado pela visita. Volte sempre!$"

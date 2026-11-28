@@ -95,40 +95,41 @@ Route124_FeebasFisherman_End:
 	end
 
 Route124_Text_FeebasFisherman_Story:
-	.string "Pesco faz anos tentando achar\n"
-	.string "um Feebas. Nunca vi nem a cauda!$"
+	.string "Pesco há anos atrás de um Feebas.\n"
+	.string "Nunca vi nem a cauda!$"
 
 Route124_Text_FeebasFisherman_Offer:
-	.string "Pera, você tem um Feebas?\n"
-	.string "Me daria um por 5 Pamtre Berries?$"
+	.string "Pera, você tem um Feebas? Me dá\n"
+	.string "um em troca de cinco Pamtre\l"
+	.string "Berries?$"
 
 Route124_Text_FeebasFisherman_Confirm:
 	.string "Quer me entregar {STR_VAR_1}?\n"
 	.string "Vou ficar com ele de vez.$"
 
 Route124_Text_FeebasFisherman_Reward:
-	.string "Valeu! Aqui, 5 Pamtre Berries.\p"
-	.string "Berries raras! Dizem que, em\n"
-	.string "Pokéblocks, ajudam o Feebas\l"
-	.string "a evoluir.$"
+	.string "Valeu! Toma, cinco Pamtre Berries.\n"
+	.string "Sao raras! Dizem que, se usar pra\l"
+	.string "fazer Pokéblocks, ajudam Feebas a\l"
+	.string "evoluir.$"
 
 Route124_Text_FeebasFisherman_Invalid:
-	.string "Escolha um Feebas da sua equipe.$"
+	.string "Escolha um Feebas do seu time.$"
 
 Route124_Text_FeebasFisherman_NeedsPartner:
-	.string "Outro Pokémon da sua equipe\n"
-	.string "precisa estar apto a lutar.$"
+	.string "Você precisa deixar outro Pokémon\n"
+	.string "que possa batalhar no time.$"
 
 Route124_Text_FeebasFisherman_HasItem:
-	.string "Tire o item que ele segura\n"
-	.string "antes de fazer a troca.$"
+	.string "Tira o item que ele segura antes\n"
+	.string "de fazer a troca.$"
 
 Route124_Text_FeebasFisherman_BagFull:
-	.string "Abra espaço na Bolsa para\n"
-	.string "as 5 Pamtre Berries.$"
+	.string "Libera espaço na bolsa pras cinco\n"
+	.string "Pamtre Berries.$"
 
 Route124_Text_FeebasFisherman_Thanks:
-	.string "Meu Feebas está bem cuidado.\n"
+	.string "Tô cuidando bem do meu Feebas.\n"
 	.string "Valeu por realizar meu sonho!$"
 
 Route124_EventScript_Spencer::
@@ -221,5 +222,5 @@ Route124_EventScript_Isabella::
 	end
 
 Route124_Text_HuntersHouse:
-	.string "HUNTER'S HOUSE$"
+	.string "Casa do caçador de tesouros$"
 

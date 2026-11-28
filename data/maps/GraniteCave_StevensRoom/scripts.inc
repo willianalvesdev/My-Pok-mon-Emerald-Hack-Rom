@@ -80,40 +80,39 @@ GraniteCave_StevensRoom_Movement_StevenExitSouth:
 	step_end
 
 GraniteCave_StevensRoom_Text_ImStevenLetterForMe:
-	.string "My name is STEVEN.\p"
-	.string "I'm interested in rare stones,\n"
-	.string "so I travel here and there.\p"
-	.string "Oh?\n"
-	.string "A LETTER for me?$"
+	.string "Meu nome é STEVEN.\p"
+	.string "Gosto de pedras raras, entao vivo\n"
+	.string "viajando por aí.\p"
+	.string "Ah? Uma LETTER pra mim?$"
 
 GraniteCave_StevensRoom_Text_ThankYouTakeThis:
-	.string "STEVEN: Okay, thank you.\p"
-	.string "You went through all this trouble to\n"
-	.string "deliver that. I need to thank you.\p"
-	.string "Let me see…\n"
-	.string "I'll give you this TM.\p"
-	.string "It contains my favorite move,\n"
+	.string "STEVEN: Certo, obrigado.\p"
+	.string "Você teve todo esse trabalho pra\n"
+	.string "entregar a carta. Preciso\l"
+	.string "agradecer.\p"
+	.string "Deixe eu ver... Vou te dar esta\n"
+	.string "TM.\p"
+	.string "Ela ensina meu golpe favorito,\n"
 	.string "STEEL WING.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "STEVEN: Your POKéMON appear quite\n"
-	.string "capable.\p"
-	.string "If you keep training, you could even\n"
-	.string "become the CHAMPION of the POKéMON\l"
-	.string "LEAGUE one day. That's what I think.\p"
-	.string "I know, since we've gotten to know each\n"
-	.string "other, let's register one another in\l"
-	.string "our POKéNAVS.\p"
-	.string "… … … … … …$"
+	.string "STEVEN: Seus POKÉMONS parecem\n"
+	.string "muito bons.\p"
+	.string "Se continuar treinando, acho que\n"
+	.string "um dia pode até virar campeao da\l"
+	.string "POKéMON LEAGUE.\p"
+	.string "Já que a gente se conheceu, vamos\n"
+	.string "registrar nossos contatos no\l"
+	.string "POKéNAV.\p"
+	.string "... ... ... ... ... ...$"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
-	.string "Registered STEVEN\n"
-	.string "in the POKéNAV.$"
+	.string "STEVEN foi registrado no POKéNAV.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
-	.string "Now, I've got to hurry along.$"
+	.string "Agora preciso seguir meu caminho.$"
 
 GraniteCave_StevensRoom_Text_OhBagIsFull:
-	.string "Oh, your BAG is full…\n"
-	.string "That's too bad, then.$"
+	.string "Ah, sua Bolsa ta cheia... Que\n"
+	.string "pena.$"
 

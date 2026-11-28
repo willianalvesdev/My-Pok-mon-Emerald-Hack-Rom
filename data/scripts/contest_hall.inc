@@ -1356,430 +1356,404 @@ LilycoveCity_ContestLobby_EventScript_DelayForRSPlayer::
 	return
 
 LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase:
-	.string "Hello!\p"
-	.string "This is the reception counter for\n"
-	.string "POKéMON CONTESTS.\p"
-	.string "Oh? It appears that you don't have\n"
-	.string "a {POKEBLOCK} CASE yet.\p"
-	.string "In that case, we need to provide you\n"
-	.string "with this!$"
+	.string "Oi! Aqui é a recepçao dos\n"
+	.string "concursos Pokémon.\p"
+	.string "Parece que você ainda nao tem uma\n"
+	.string "caixa de {POKEBLOCK}.\p"
+	.string "Entao precisamos dar isto a você!$"
 
 LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp:
-	.string "Okay, now that we've cleared that\n"
-	.string "up…\p"
-	.string "Hello!\p"
-	.string "This is the reception counter for\n"
-	.string "POKéMON CONTESTS.$"
+	.string "Pronto, agora que resolvemos\n"
+	.string "isso...\p"
+	.string "Oi! Aqui é a recepçao dos\n"
+	.string "concursos Pokémon.$"
 
 LilycoveCity_ContestLobby_Text_ContestReception:
-	.string "Hello!\p"
-	.string "This is the reception counter for\n"
-	.string "POKéMON CONTESTS.$"
+	.string "Oi! Aqui é a recepçao dos\n"
+	.string "concursos Pokémon.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_CounterOnlyFor4PlayerContests:
-	.string "Hello!\p"
-	.string "This reception counter is only\n"
-	.string "for 4-player POKéMON CONTESTS.$"
+	.string "Oi! Este balcao é só pros\n"
+	.string "concursos Pokémon com quatro\l"
+	.string "jogadores.$"
 
 LilycoveCity_ContestLobby_Text_EnterContest1:
-	.string "Would you like to enter your POKéMON\n"
-	.string "in our CONTESTS?$"
+	.string "Quer inscrever seu Pokémon nos\n"
+	.string "concursos?$"
 
 LilycoveCity_ContestLobby_Text_WhichTopic1:
-	.string "Which topic would you like?$"
+	.string "Qual assunto você quer?$"
 
 LilycoveCity_ContestLobby_Text_ExplainContests:
-	.string "A POKéMON CONTEST involves four\n"
-	.string "TRAINERS entering one POKéMON each\l"
-	.string "in competitive judging.\p"
-	.string "A CONTEST has two stages of judging,\n"
-	.string "primary and secondary.\p"
-	.string "Primary judging is a popularity poll\n"
-	.string "involving the audience.\p"
-	.string "Secondary judging features appeals\n"
-	.string "by the POKéMON using their moves.\p"
-	.string "Plan appeals carefully to earn the\n"
-	.string "most attention of the JUDGE and\l"
-	.string "excite the audience.\l"
-	.string "Do your best to stand out.\p"
-	.string "The primary and secondary scores are\n"
-	.string "added at the end.\p"
-	.string "The POKéMON garnering the highest\n"
-	.string "score is declared the winner.$"
+	.string "Num concurso Pokémon, quatro\n"
+	.string "treinadores inscrevem um Pokémon\l"
+	.string "cada.\p"
+	.string "Sao duas avaliaçoes. Na primeira, o\n"
+	.string "público avalia a aparência.\p"
+	.string "Na segunda, os Pokémon usam\n"
+	.string "golpes pra se apresentar.\p"
+	.string "Planeje bem pra chamar a atençao\n"
+	.string "do juiz e animar o público.\p"
+	.string "No final, somamos as duas notas. O\n"
+	.string "Pokémon com mais pontos vence.$"
 
 LilycoveCity_ContestLobby_Text_ExplainContestTypes:
-	.string "There are five kinds of CONTESTS.\p"
-	.string "COOL, BEAUTY, CUTE, SMART, and\n"
-	.string "TOUGH are the five categories.\p"
-	.string "Choose the CONTEST that is right for\n"
-	.string "the POKéMON you plan to enter.$"
+	.string "Existem cinco categorias de\n"
+	.string "concurso: estilo, beleza, fofura,\l"
+	.string "inteligência e força.\p"
+	.string "Escolha a que combina com o\n"
+	.string "Pokémon que vai inscrever.$"
 
 LilycoveCity_ContestLobby_Text_ExplainContestRanks:
-	.string "There are four ranks of POKéMON\n"
-	.string "CONTESTS.\p"
-	.string "NORMAL, SUPER, HYPER, and MASTER\n"
-	.string "are the four ranks.\p"
-	.string "In the NORMAL Rank, any POKéMON may\n"
-	.string "enter.\p"
-	.string "Any POKéMON that won a NORMAL Rank\n"
-	.string "CONTEST may move up to the SUPER Rank\l"
-	.string "in the same category.\p"
-	.string "In the same way, a SUPER Rank winner\n"
-	.string "can move up to the HYPER Rank, and\l"
-	.string "a HYPER Rank winner can advance to\l"
-	.string "the MASTER Rank in the same category.\p"
-	.string "A POKéMON that won in the MASTER Rank\n"
-	.string "may compete in the MASTER Rank as\l"
-	.string "often as its TRAINER wants.$"
+	.string "Existem quatro níveis de concurso:\n"
+	.string "Normal, Super, Hyper e Master.\p"
+	.string "Qualquer Pokémon pode participar\n"
+	.string "do Normal.\p"
+	.string "Quem vence pode ir pro Super na\n"
+	.string "mesma categoria. Depois, Hyper e\l"
+	.string "Master.\p"
+	.string "Quem já venceu o Master pode\n"
+	.string "participar dele quantas vezes\l"
+	.string "quiser.$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichRank:
-	.string "Which Rank would you like to enter?$"
+	.string "Em qual nível quer participar?$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichContest1:
-	.string "Which CONTEST would you like to enter?$"
+	.string "Em qual concurso quer participar?$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichPokemon1:
-	.string "Which POKéMON would you like to enter?$"
+	.string "Qual Pokémon quer inscrever?$"
 
 LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank:
-	.string "I'm terribly sorry, but your POKéMON\n"
-	.string "is not qualified to compete at this\l"
-	.string "Rank yet…$"
+	.string "Desculpa, seu Pokémon ainda nao\n"
+	.string "pode participar deste nível...$"
 
 LilycoveCity_ContestLobby_Text_EggCannotTakePart:
-	.string "I'm sorry, but an EGG cannot take part\n"
-	.string "in a POKéMON CONTEST.$"
+	.string "Desculpa, um ovo nao pode\n"
+	.string "participar de concursos Pokémon.$"
 
 LilycoveCity_ContestLobby_Text_MonInNoConditionForContest:
-	.string "Your POKéMON appears to be in no\n"
-	.string "condition to take part in a CONTEST…$"
+	.string "Seu Pokémon nao está em condiçoes\n"
+	.string "de participar de um concurso...$"
 
 LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway:
-	.string "Oh, but that RIBBON…\p"
-	.string "Your POKéMON has won this CONTEST\n"
-	.string "before, hasn't it?\p"
-	.string "Would you like to enter it in this\n"
-	.string "CONTEST anyway?$"
+	.string "Ah, essa fita... Seu Pokémon já\n"
+	.string "venceu este concurso, né?\p"
+	.string "Quer participar dele mesmo assim?$"
 
 LilycoveCity_ContestLobby_Text_ConfirmContestMon:
-	.string "Is that your CONTEST POKéMON?$"
+	.string "Este é o Pokémon que vai\n"
+	.string "participar?$"
 
 LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4:
-	.string "Okay, your POKéMON will be entered\n"
-	.string "in this CONTEST.\p"
-	.string "Your POKéMON is Entry No. 4.\n"
-	.string "The CONTEST will begin shortly.$"
+	.string "Certo, seu Pokémon foi inscrito no\n"
+	.string "concurso.\p"
+	.string "Ele é o participante número 4. Já\n"
+	.string "vamos começar.$"
 
 LilycoveCity_ContestLobby_Text_ComeThroughHere:
-	.string "Please come in through here.\n"
-	.string "Good luck!$"
+	.string "Entre por aqui, por favor. Boa\n"
+	.string "sorte!$"
 
 LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize:
-	.string "Congratulations! Your POKéMON is the\n"
-	.string "CONTEST winner!\p"
-	.string "We have your prize right here.\n"
-	.string "Please, right this way!$"
+	.string "Parabéns! Seu Pokémon venceu o\n"
+	.string "concurso!\p"
+	.string "Seu prêmio está aqui. Por este\n"
+	.string "lado, por favor!$"
 
 LilycoveCity_ContestLobby_Text_ComeBackForPrizeLater:
-	.string "Please come back for your prize\n"
-	.string "later on.$"
+	.string "Volte depois pra buscar seu\n"
+	.string "prêmio.$"
 
 ContestHall_Text_GettingStartedParticipantsAsFollows:
-	.string "MC: Hello! We're just getting started\n"
-	.string "with a {STR_VAR_3} Rank POKéMON\l"
-	.string "{STR_VAR_2}!\p"
-	.string "The participating TRAINERS and their\n"
-	.string "POKéMON are as follows:$"
+	.string "APRESENTADOR: Oi! Vai começar o\n"
+	.string "concurso Pokémon {STR_VAR_2}\l"
+	.string "do nível {STR_VAR_3}!\p"
+	.string "Estes sao os treinadores e Pokémon\n"
+	.string "participantes:$"
 
 ContestHall_Text_GettingStartedParticipantsAsFollowsLink:
-	.string "MC: Hello! We're just getting started\n"
-	.string "with a 4-player linked POKéMON\l"
-	.string "{STR_VAR_2}!\p"
-	.string "The participating TRAINERS and their\n"
-	.string "POKéMON are as follows:$"
+	.string "APRESENTADOR: Oi! Vai começar o\n"
+	.string "concurso Pokémon {STR_VAR_2}\l"
+	.string "com quatro jogadores conectados!\p"
+	.string "Estes sao os treinadores e Pokémon\n"
+	.string "participantes:$"
 
 ContestHall_Text_EntryXTrainersMon:
-	.string "MC: Entry No. {STR_VAR_2}!\n"
-	.string "{STR_VAR_1}'s {STR_VAR_3}!$"
+	.string "APRESENTADOR: Participante número\n"
+	.string "{STR_VAR_2}! {STR_VAR_3},\l"
+	.string "de {STR_VAR_1}!$"
 
 ContestHall_Text_SeenContestantsAudienceWillVote:
-	.string "MC: We've just seen the four POKéMON\n"
-	.string "contestants.\p"
-	.string "Now it's time for primary judging!\p"
-	.string "The audience will vote on their\n"
-	.string "favorite POKéMON contestants.\p"
-	.string "Without any further ado, let the\n"
-	.string "voting begin!$"
+	.string "APRESENTADOR: Conhecemos os\n"
+	.string "quatro Pokémon participantes.\p"
+	.string "Agora começa a primeira avaliaçao!\p"
+	.string "O público vai votar nos seus\n"
+	.string "favoritos. Sem mais demora, podem\l"
+	.string "votar!$"
 
 ContestHall_Text_VotingUnderWay:
-	.string "Voting under way…$"
+	.string "Votaçao em andamento...$"
 
 ContestHall_Text_VotingCompleteLetsAppeal:
-	.string "Voting is now complete!\p"
-	.string "While the votes are being tallied,\n"
-	.string "let's move on to secondary judging!\p"
-	.string "The second stage of judging is the\n"
-	.string "much anticipated appeal time!\p"
-	.string "May the contestants amaze us with\n"
-	.string "superb appeals of dazzling moves!\p"
-	.string "Let's see a little enthusiasm!\n"
-	.string "Let's appeal!$"
+	.string "A votaçao acabou!\p"
+	.string "Enquanto contamos os votos, vamos\n"
+	.string "pra segunda avaliaçao: a hora das\l"
+	.string "apresentaçoes!\p"
+	.string "Queremos ver golpes incríveis e\n"
+	.string "apresentaçoes de tirar o fôlego!\p"
+	.string "Vamos animar esse público! Podem\n"
+	.string "começar!$"
 
 ContestHall_Text_ThatsItForJudging:
-	.string "MC: That's it for judging!$"
+	.string "APRESENTADOR: Encerramos as\n"
+	.string "avaliaçoes!$"
 
 ContestHall_Text_ThankYouForAppeals:
-	.string "Thank you all for a most wonderful\n"
-	.string "display of quality appeals!\p"
-	.string "This concludes all judging!\n"
-	.string "Thank you for your fine efforts!$"
+	.string "Obrigado pelas ótimas\n"
+	.string "apresentaçoes!\p"
+	.string "Todas as avaliaçoes terminaram.\n"
+	.string "Parabéns pelo esforço!$"
 
 ContestHall_Text_JudgeLooksReady:
-	.string "Now, all that remains is the pulse-\n"
-	.string "pounding proclamation of the winner.\p"
-	.string "The JUDGE looks ready to make\n"
-	.string "the announcement!$"
+	.string "Agora só falta o grande anúncio do\n"
+	.string "vencedor.\p"
+	.string "O juiz parece pronto pra anunciar!$"
 
 ContestHall_Text_WeWillNowDeclareWinner:
-	.string "JUDGE: We will now declare the winner!$"
+	.string "JUIZ: Vamos anunciar o vencedor!$"
 
 ContestHall_Text_CongratsTrainerXandMon:
-	.string "MC: Entry No. {STR_VAR_2}!\p"
-	.string "{STR_VAR_3} and {STR_VAR_1},\n"
-	.string "congratulations!$"
+	.string "APRESENTADOR: Participante número\n"
+	.string "{STR_VAR_2}!\p"
+	.string "Parabéns, {STR_VAR_3} e\n"
+	.string "{STR_VAR_1}!$"
 
 ContestHall_Text_CongratsPleaseCompeteAgain:
-	.string "MC: Congratulations!\n"
-	.string "Please do compete again!$"
+	.string "APRESENTADOR: Parabéns! Voltem pra\n"
+	.string "participar de novo!$"
 
 ContestHall_Text_AcceptYourPrize:
-	.string "MC: Here you are!\n"
-	.string "Please accept your prize!$"
+	.string "APRESENTADOR: Aqui está! Aceite\n"
+	.string "seu prêmio!$"
 
 ContestHall_Text_ConferRibbonAsPrize:
-	.string "We confer on you this RIBBON\n"
-	.string "as your prize!$"
+	.string "Esta fita é sua recompensa!$"
 
 ContestHall_Text_ReceivedRibbon:
-	.string "{PLAYER} received a RIBBON.$"
+	.string "{PLAYER} recebeu uma fita.$"
 
 ContestHall_Text_PutRibbonOnMon:
-	.string "{PLAYER} put the RIBBON on\n"
+	.string "{PLAYER} colocou a fita em\n"
 	.string "{STR_VAR_1}.$"
 
 ContestHall_Text_PickUpPrizeAtCounterLater:
-	.string "Please pick up your prize at\n"
-	.string "the reception counter later.\l"
-	.string "Please do compete again!$"
+	.string "Pegue seu prêmio na recepçao\n"
+	.string "depois. Participe de novo!$"
 
 @ Unused
 ContestHall_Text_OnlyRegister4Players:
-	.string "I only register four players for\n"
-	.string "POKéMON CONTESTS.\p"
-	.string "If three other players link up, all\n"
-	.string "four may enter the same CONTEST.\p"
-	.string "Would you like to take part?$"
+	.string "Aqui só inscrevemos concursos com\n"
+	.string "quatro jogadores.\p"
+	.string "Se conectar com outras três\n"
+	.string "pessoas, vocês podem participar\l"
+	.string "juntos.\p"
+	.string "Quer participar?$"
 
 LilycoveCity_ContestLobby_Text_ProgressWillBeSaved:
-	.string "Before entering a CONTEST, your\n"
-	.string "progress will be saved.$"
+	.string "Seu progresso será salvo antes de\n"
+	.string "entrar no concurso.$"
 
 LilycoveCity_ContestLobby_Text_ParticipateAnotherTime:
-	.string "We hope you will participate another\n"
-	.string "time.$"
+	.string "Esperamos que participe outra\n"
+	.string "hora.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterContest2:
-	.string "Would you like to enter a CONTEST?$"
+	.string "Quer participar de um concurso?$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_Explain4PlayerContest:
-	.string "When four players are ready, connect\n"
-	.string "over a Game Link cable, and register\l"
-	.string "with me, please.\p"
-	.string "Please choose the same CONTEST\n"
-	.string "as your fellow contestants.\p"
-	.string "The CONTEST begins as soon as all\n"
-	.string "players register their entry.\p"
-	.string "After that, the usual CONTEST rules\n"
-	.string "apply.$"
+	.string "Com quatro jogadores prontos,\n"
+	.string "conectem pelo cabo Game Link e\l"
+	.string "façam a inscriçao comigo.\p"
+	.string "Todos precisam escolher o mesmo\n"
+	.string "concurso.\p"
+	.string "Quando todos se inscreverem, ele\n"
+	.string "começa com as regras normais.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterWhichContest2:
-	.string "Which CONTEST would you like to enter?$"
+	.string "Em qual concurso quer participar?$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_EnterWhichPokemon2:
-	.string "Which POKéMON would you like to enter?$"
+	.string "Qual Pokémon quer inscrever?$"
 
 LilycoveCity_ContestLobby_Text_Transmitting:
-	.string "Transmitting…$"
+	.string "Transmitindo...$"
 
 LilycoveCity_ContestLobby_Text_TransmissionError:
-	.string "Transmission error…$"
+	.string "Erro de transmissao...$"
 
 LilycoveCity_ContestLobby_Text_PlayersChoseDifferentContest:
-	.string "You may have chosen a different\n"
-	.string "CONTEST than another player.$"
+	.string "Talvez você tenha escolhido um\n"
+	.string "concurso diferente de outro\l"
+	.string "jogador.$"
 
 LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice:
-	.string "You may have made a different\n"
-	.string "choice than another player.$"
+	.string "Talvez você tenha feito uma\n"
+	.string "escolha diferente de outro\l"
+	.string "jogador.$"
 
 LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel:
-	.string "Please wait.\n"
-	.string "… … B Button: Cancel$"
+	.string "Aguarde.\p"
+	.string "Botao B: Cancelar$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_ParticipateAnotherTime2:
-	.string "We hope you will participate another\n"
-	.string "time.$"
+	.string "Esperamos que participe outra\n"
+	.string "hora.$"
 
 @ Unused
 LilycoveCity_ContestLobby_Text_TransmissionErrorTryAgain:
-	.string "Transmission error.\n"
-	.string "Please try again.$"
+	.string "Erro de transmissao. Tente de\n"
+	.string "novo.$"
 
 LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX:
-	.string "Your POKéMON will be entered in\n"
-	.string "the CONTEST.\p"
-	.string "Your POKéMON is Entry No. {STR_VAR_2}.$"
+	.string "Seu Pokémon foi inscrito no\n"
+	.string "concurso.\p"
+	.string "Ele é o participante número\n"
+	.string "{STR_VAR_2}.$"
 
 LilycoveCity_ContestLobby_Text_ContestBeginShortly:
-	.string "The CONTEST will begin shortly.$"
+	.string "O concurso vai começar em breve.$"
 
 LilycoveCity_ContestLobby_Text_LinkContestReception:
-	.string "Welcome! This is the POKéMON CONTEST\n"
-	.string "link reception counter.\p"
-	.string "You may enter CONTESTS together with\n"
-	.string "one or more friends.$"
+	.string "Bem-vindo à recepçao dos concursos\n"
+	.string "Pokémon por conexao.\p"
+	.string "Você pode participar com um ou\n"
+	.string "mais amigos.$"
 
 LilycoveCity_ContestLobby_Text_WhichTopic2:
-	.string "Which topic would you like?$"
+	.string "Qual assunto você quer?$"
 
 LilycoveCity_ContestLobby_Text_EnterContest3:
-	.string "Would you like to enter a CONTEST?$"
+	.string "Quer participar de um concurso?$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichContest3:
-	.string "Which CONTEST would you like to enter?$"
+	.string "Em qual concurso quer participar?$"
 
 LilycoveCity_ContestLobby_Text_MonInNoCondition2:
-	.string "Your POKéMON appears to be in no\n"
-	.string "condition to take part in a CONTEST…$"
+	.string "Seu Pokémon nao está em condiçoes\n"
+	.string "de participar de um concurso...$"
 
 LilycoveCity_ContestLobby_Text_EggCannotTakePart2:
-	.string "I'm sorry, but an EGG cannot take part\n"
-	.string "in a POKéMON CONTEST.$"
+	.string "Desculpa, um ovo nao pode\n"
+	.string "participar de concursos Pokémon.$"
 
 LilycoveCity_ContestLobby_Text_EnterWhichPokemon3:
-	.string "Which POKéMON would you like to enter?$"
+	.string "Qual Pokémon quer inscrever?$"
 
 LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader:
-	.string "Please decide which of you will\n"
-	.string "become the GROUP LEADER.\p"
-	.string "The other players must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "Escolham quem vai ser o líder do\n"
+	.string "grupo.\p"
+	.string "Os outros jogadores devem escolher\n"
+	.string "“ENTRAR NO GRUPO”.$"
 
 LilycoveCity_ContestLobby_Text_PlayerAt4PCounterUseGMode:
-	.string "At least one player has entered using\n"
-	.string "the 4-player reception counter.\p"
-	.string "There must be four players connected\n"
-	.string "using a GBA Game Link cable.\p"
-	.string "When the four players are ready,\n"
-	.string "select G-MODE (GLOBAL MODE),\l"
-	.string "then register to enter again, please.$"
+	.string "Pelo menos um jogador se inscreveu\n"
+	.string "no balcao de quatro participantes.\p"
+	.string "Precisam ser quatro jogadores\n"
+	.string "conectados pelo cabo GBA Game\l"
+	.string "Link.\p"
+	.string "Quando todos estiverem prontos,\n"
+	.string "escolham G-MODE e façam a\l"
+	.string "inscriçao de novo.$"
 
 LilycoveCity_ContestLobby_Text_ExplainLinkContest:
-	.string "This is a CONTEST for two to four\n"
-	.string "players linked using a Wireless\l"
-	.string "Adapter or a GBA Game Link cable.\p"
-	.string "Participants are first asked to choose\n"
-	.string "the mode they wish to enter.\p"
-	.string "There are two different modes.\p"
-	.string "E-MODE (EMERALD MODE) is for\n"
-	.string "two to four players, each with a\l"
-	.string "POKéMON Emerald Game Pak.\p"
-	.string "G-MODE (GLOBAL MODE) is only for\n"
-	.string "four players, each with a POKéMON\l"
-	.string "Emerald, Ruby, or Sapphire Game Pak.\p"
-	.string "The players should discuss which mode\n"
-	.string "they want, then choose the same mode.\p"
-	.string "Once all the players have chosen\n"
-	.string "the same CONTEST in the same mode,\l"
-	.string "the entry registration is complete.\p"
-	.string "After that, a CONTEST will start in\n"
-	.string "the usual manner.$"
+	.string "Este concurso aceita de dois a\n"
+	.string "quatro jogadores conectados por\l"
+	.string "Wireless Adapter ou cabo GBA Game\l"
+	.string "Link.\p"
+	.string "Primeiro, escolham um dos dois\n"
+	.string "modos.\p"
+	.string "E-MODE aceita de dois a quatro\n"
+	.string "jogadores, todos com Pokémon\l"
+	.string "Emerald.\p"
+	.string "G-MODE aceita só quatro jogadores,\n"
+	.string "com Pokémon Emerald, Ruby ou\l"
+	.string "Sapphire.\p"
+	.string "Todos precisam escolher o mesmo\n"
+	.string "modo e o mesmo concurso.\p"
+	.string "Depois das inscriçoes, o concurso\n"
+	.string "começa normalmente.$"
 
 LilycoveCity_ContestLobby_Text_ExplainEMode:
-	.string "In E-MODE (EMERALD MODE),\n"
-	.string "a LINK CONTEST can be held with\l"
-	.string "two to four players. Each player must\l"
-	.string "have a POKéMON Emerald Game Pak.\p"
-	.string "The players must be linked with each\n"
-	.string "other using Wireless Adapters or\l"
-	.string "GBA Game Link cables.\p"
-	.string "If there are fewer than four players,\n"
-	.string "TRAINERS in the hall will join to fill\l"
-	.string "the 4-player CONTEST lineup.\p"
-	.string "Please be aware that E-MODE is not\n"
-	.string "available in POKéMON Ruby or Sapphire.$"
+	.string "E-MODE aceita de dois a quatro\n"
+	.string "jogadores com Pokémon Emerald.\p"
+	.string "A conexao pode ser por Wireless\n"
+	.string "Adapter ou cabo GBA Game Link.\p"
+	.string "Se faltarem participantes, os\n"
+	.string "treinadores do salao completam o\l"
+	.string "grupo de quatro.\p"
+	.string "E-MODE nao está disponível em\n"
+	.string "Pokémon Ruby ou Sapphire.$"
 
 LilycoveCity_ContestLobby_Text_ExplainGMode:
-	.string "G-MODE (GLOBAL MODE) is specifically\n"
-	.string "for four players who are linked using\l"
-	.string "GBA Game Link cables.\p"
-	.string "Each player must have a POKéMON\n"
-	.string "Emerald, Ruby, or Sapphire Game Pak.\p"
-	.string "The CONTEST starts after all players\n"
-	.string "choose G-MODE (POKéMON Emerald) or\l"
-	.string "enter through the 4-player reception\l"
-	.string "counter (POKéMON Ruby or Sapphire).$"
+	.string "G-MODE é só pra quatro jogadores\n"
+	.string "conectados por cabo GBA Game Link.\p"
+	.string "Cada um precisa de Pokémon\n"
+	.string "Emerald, Ruby ou Sapphire.\p"
+	.string "O concurso começa quando todos\n"
+	.string "escolhem G-MODE no Emerald ou\l"
+	.string "entram pelo balcao de quatro\l"
+	.string "jogadores no Ruby ou Sapphire.$"
 
 LilycoveCity_ContestLobby_Text_NoWirelessAdapterInGMode:
-	.string "I'm terribly sorry.\p"
-	.string "G-MODE does not function\n"
-	.string "with Wireless Adapters.\p"
-	.string "Please select E-MODE or try\n"
-	.string "again using a GBA Game Link cable.$"
+	.string "Desculpa, G-MODE nao funciona com\n"
+	.string "Wireless Adapter.\p"
+	.string "Escolha E-MODE ou tente de novo\n"
+	.string "com um cabo GBA Game Link.$"
 
 LilycoveCity_ContestLobby_Text_WhichContestMode:
-	.string "Which CONTEST MODE would you like\n"
-	.string "to enter?$"
+	.string "Qual modo de concurso quer\n"
+	.string "escolher?$"
 
 ContestHall_Text_GettingStartedWireless:
-	.string "MC: Hello! We're just getting started\n"
-	.string "with a 4-player linked POKéMON\l"
-	.string "{STR_VAR_2}!$"
+	.string "APRESENTADOR: Oi! Vai começar o\n"
+	.string "concurso Pokémon {STR_VAR_2}\l"
+	.string "com quatro jogadores conectados!$"
 
 ContestHall_Text_ParticipantsAsFollows:
-	.string "The participating TRAINERS and their\n"
-	.string "POKéMON are as follows:$"
+	.string "Estes sao os treinadores e Pokémon\n"
+	.string "participantes:$"
 
 ContestHall_Text_WeveSeenContestants:
-	.string "MC: We've just seen the four POKéMON\n"
-	.string "contestants.\p"
-	.string "Now it's time for primary judging!$"
+	.string "APRESENTADOR: Conhecemos os\n"
+	.string "quatro Pokémon participantes.\p"
+	.string "Agora começa a primeira avaliaçao!$"
 
 ContestHall_Text_AudienceWillVote:
-	.string "The audience will vote on their\n"
-	.string "favorite POKéMON contestants.$"
+	.string "O público vai votar nos seus\n"
+	.string "Pokémon favoritos.$"
 
 ContestHall_Text_LetVotingBegin:
-	.string "Without any further ado,\n"
-	.string "let the voting begin!$"
+	.string "Sem mais demora, podem votar!$"
 
 ContestHall_Text_VotingComplete:
-	.string "Voting is now complete!\p"
-	.string "While the votes are being tallied,\n"
-	.string "let's move on to secondary judging!$"
+	.string "A votaçao acabou!\p"
+	.string "Enquanto contamos os votos, vamos\n"
+	.string "pra segunda avaliaçao!$"
 
 ContestHall_Text_SecondStageOfJudging:
-	.string "The second stage of judging is\n"
-	.string "the much-anticipated appeal time!\p"
-	.string "May the contestants amaze us with\n"
-	.string "superb appeals of dazzling moves!$"
+	.string "A segunda avaliaçao é a esperada\n"
+	.string "hora das apresentaçoes!\p"
+	.string "Queremos ver golpes incríveis e\n"
+	.string "apresentaçoes de tirar o fôlego!$"
 
 ContestHall_Text_LetsAppeal:
-	.string "Let's see a little enthusiasm!\n"
-	.string "Let's appeal!$"
+	.string "Vamos animar esse público! Podem\n"
+	.string "começar!$"

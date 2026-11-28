@@ -53,37 +53,36 @@ Route124_ShinyCollectorHouse_End:
 	end
 
 Route124_ShinyCollectorHouse_Text_Offer:
-	.string "Coleciono Pokémon shiny!\p"
-	.string "Dou uma Shiny Charm por um.\n"
-	.string "Quer escolher um da sua equipe?$"
+	.string "Coleciono Pokémon shiny! Dou uma\n"
+	.string "Shiny Charm em troca de um. Quer\l"
+	.string "escolher um do seu time?$"
 
 Route124_ShinyCollectorHouse_Text_Confirm:
 	.string "Quer me entregar {STR_VAR_1}\n"
-	.string "em troca da Shiny Charm?\p"
-	.string "A entrega é definitiva.\n"
-	.string "Tem certeza?$"
+	.string "em troca da Shiny Charm? Você nao\l"
+	.string "vai poder pegar ele de volta. Tem\l"
+	.string "certeza?$"
 
 Route124_ShinyCollectorHouse_Text_Reward:
-	.string "Obrigado! Aqui está sua\n"
-	.string "Shiny Charm.\p"
-	.string "Na Bolsa, ela dobra sua chance\n"
-	.string "base de encontrar um shiny!$"
+	.string "Valeu! Aqui ta sua Shiny Charm.\n"
+	.string "Deixa ela na bolsa que sua chance\l"
+	.string "base de encontrar shiny dobra!$"
 
 Route124_ShinyCollectorHouse_Text_Invalid:
-	.string "Só aceito Pokémon shiny.\n"
-	.string "Ovos ficam de fora.$"
+	.string "Só aceito Pokémon shiny. Ovo nao\n"
+	.string "vale.$"
 
 Route124_ShinyCollectorHouse_Text_NeedsPartner:
-	.string "Outro Pokémon da sua equipe\n"
-	.string "precisa estar apto a lutar.$"
+	.string "Você precisa deixar outro Pokémon\n"
+	.string "que possa batalhar no time.$"
 
 Route124_ShinyCollectorHouse_Text_HasItem:
-	.string "Tire o item que ele segura\n"
-	.string "antes de fazer a troca.$"
+	.string "Tira o item que ele segura antes\n"
+	.string "de fazer a troca.$"
 
 Route124_ShinyCollectorHouse_Text_BagFull:
-	.string "Sua Bolsa precisa de espaço\n"
-	.string "para receber a Shiny Charm.$"
+	.string "Libera espaço na bolsa pra receber\n"
+	.string "a Shiny Charm.$"
 
 Route124_ShinyCollectorHouse_Text_AlreadyRewarded:
 	.string "Você já tem uma Shiny Charm!$"

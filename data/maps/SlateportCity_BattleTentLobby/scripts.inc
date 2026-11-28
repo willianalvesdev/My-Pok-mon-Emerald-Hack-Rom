@@ -273,35 +273,31 @@ SlateportCity_BattleTentLobby_EventScript_ExitRules::
 	end
 
 SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe:
-	.string "So, like, I couldn't find myself any\n"
-	.string "POKéMON that were, like, for me.\p"
-	.string "So, I figured, like, hey, I should file\n"
-	.string "a complaint to the guy there?\p"
-	.string "And he wouldn't hear me out, like, hey!\n"
-	.string "So, like, total bummer, man!\p"
-	.string "Hey, like, you! Zip it, you know?\n"
-	.string "Just, you know, take this!$"
+	.string "Cara, nao achei nenhum Pokémon que\n"
+	.string "combinasse comigo.\p"
+	.string "Fui reclamar com o sujeito ali e\n"
+	.string "ele nem me ouviu! Que droga!\p"
+	.string "Ei, você! Nao fala nada. Só pega\n"
+	.string "isto!$"
 
 SlateportCity_BattleTentLobby_Text_ExplainTorment:
-	.string "That's, like, TM41, you know?\n"
-	.string "Hey, it's TORMENT, you hearing me?\p"
-	.string "Like, it won't let the other guy\n"
-	.string "use the same move twice in a row, see?\p"
-	.string "Hey, now, you listen here, like,\n"
-	.string "I'm not laying a torment on you!$"
+	.string "Essa é a TM41, sabe? Tem Torment.\n"
+	.string "Ta me ouvindo?\p"
+	.string "Ela impede o outro de usar o mesmo\n"
+	.string "golpe duas vezes seguidas.\p"
+	.string "E nao tô tentando atormentar\n"
+	.string "você, ta?$"
 
 SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons:
-	.string "I don't really like BUG POKéMON,\n"
-	.string "but maybe I'll try using some for\l"
-	.string "a change of pace.\p"
-	.string "Who knows, I might even get to like\n"
-	.string "them!$"
+	.string "Nao gosto muito de Pokémon Bug,\n"
+	.string "mas talvez use alguns pra variar.\p"
+	.string "Vai que começo a gostar!$"
 
 SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons:
-	.string "You can battle all you want here even\n"
-	.string "if you don't have any tough POKéMON.$"
+	.string "Aqui dá pra batalhar à vontade\n"
+	.string "mesmo sem ter Pokémon fortes.$"
 
 SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection:
-	.string "Wouldn't it be nice if they had more of\n"
-	.string "a selection?$"
+	.string "Nao seria bom se tivesse mais\n"
+	.string "opçoes pra escolher?$"
 

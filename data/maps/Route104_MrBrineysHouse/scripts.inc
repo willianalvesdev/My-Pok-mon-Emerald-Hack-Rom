@@ -95,63 +95,59 @@ Route104_MrBrineysHouse_EventScript_Peeko::
 	end
 
 Route104_MrBrineysHouse_Text_WaitUpPeeko:
-	.string "MR. BRINEY: Hold on, lass!\n"
-	.string "Wait up, PEEKO!$"
+	.string "MR. BRINEY: Calma, menina! Espera,\n"
+	.string "Peeko!$"
 
 Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
-	.string "Hm? You're {PLAYER}{KUN}!\n"
-	.string "You saved my darling PEEKO!\l"
-	.string "We owe so much to you!\p"
-	.string "What's that?\n"
-	.string "You want to sail with me?\p"
-	.string "Hmhm…\p"
-	.string "You have a LETTER bound for DEWFORD\n"
-	.string "and a package for SLATEPORT, then?\p"
-	.string "Quite the busy life you must lead!\p"
-	.string "But, certainly, what you're asking is\n"
-	.string "no problem at all.\p"
-	.string "You've come to the right man!\n"
-	.string "We'll set sail for DEWFORD.$"
+	.string "Hum? Você é {PLAYER}{KUN}! Salvou minha\n"
+	.string "querida Peeko! Devemos muito a\l"
+	.string "você!\p"
+	.string "Como? Quer navegar comigo?\p"
+	.string "Hum... Tem uma Letter pra entregar\n"
+	.string "em Dewford e um pacote pra\l"
+	.string "Slateport?\p"
+	.string "Sua vida ta corrida, hein!\p"
+	.string "Claro, isso nao é problema. Veio\n"
+	.string "falar com a pessoa certa! Vamos\l"
+	.string "pra Dewford.$"
 
 Route104_MrBrineysHouse_Text_SetSailForDewford:
-	.string "MR. BRINEY: DEWFORD it is, then!\p"
-	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "MR. BRINEY: Dewford, entao!\p"
+	.string "Levantem a âncora! Peeko, vamos\n"
+	.string "navegar, minha querida!$"
 
 Route104_MrBrineysHouse_Text_DeclineDeliverySail:
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Your deliveries can wait?\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "MR. BRINEY: Ah, é? As entregas\n"
+	.string "podem esperar?\p"
+	.string "É só avisar quando quiser navegar!$"
 
 Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a LETTER to DEWFORD\n"
-	.string "and a package to SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "MR. BRINEY: Opa! Já sei oque veio\n"
+	.string "pedir!\p"
+	.string "Uma Letter pra Dewford e um\n"
+	.string "pacote pra Slateport.\p"
+	.string "Sem problema! Sou o homem certo\n"
+	.string "pra isso!\p"
+	.string "Primeiro vamos pra Dewford.$"
 
 Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "I know exactly what you want to say!\p"
-	.string "You're to deliver a package to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
-	.string "What you need me to do is no problem\n"
-	.string "at all--I'm the man for the job!\p"
-	.string "First, we'll set sail for DEWFORD.$"
+	.string "MR. BRINEY: Opa! Já sei oque veio\n"
+	.string "pedir!\p"
+	.string "Você precisa entregar um pacote\n"
+	.string "pro capitao Stern, em Slateport.\p"
+	.string "Sem problema! Sou o homem certo\n"
+	.string "pra isso!\p"
+	.string "Primeiro vamos pra Dewford.$"
 
 Route104_MrBrineysHouse_Text_WhereAreWeBound:
-	.string "MR. BRINEY: Ahoy!\n"
-	.string "For you, I'll go out to sea anytime!\p"
-	.string "Now, my friend, where are we bound?$"
+	.string "MR. BRINEY: Opa! Por você, saio\n"
+	.string "pro mar a qualquer hora!\p"
+	.string "Entao, pra onde vamos?$"
 
 Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
-	.string "MR. BRINEY: Is that so?\n"
-	.string "Well, PEEKO owes her life to you.\p"
-	.string "You just go on and tell me whenever\n"
-	.string "you want to set sail!$"
+	.string "MR. BRINEY: Ah, é? Bom, Peeko deve\n"
+	.string "a vida a você.\p"
+	.string "É só avisar quando quiser navegar!$"
 
 Route104_MrBrineysHouse_Text_Peeko:
 	.string "PEEKO: Pii piihyoro!$"

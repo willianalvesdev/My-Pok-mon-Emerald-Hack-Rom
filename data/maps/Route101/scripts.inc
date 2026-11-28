@@ -257,42 +257,39 @@ Route101_Movement_BirchApproachPlayer:
 	step_end
 
 Route101_Text_HelpMe:
-	.string "H-help me!$"
+	.string "M-me ajuda!$"
 
 Route101_Text_PleaseHelp:
-	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "Ei! Você aí! Me ajuda, por favor!\p"
+	.string "Tem uma Poké Ball na minha bolsa!$"
 
 Route101_Text_DontLeaveMe:
-	.string "Wh-Where are you going?!\n"
-	.string "Don't leave me like this!$"
+	.string "P-pra onde você vai?! Nao me deixa\n"
+	.string "aqui!$"
 
 Route101_Text_YouSavedMe:
-	.string "PROF. BIRCH: Whew…\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
-	.string "Oh?\p"
-	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
+	.string "PROF. BIRCH: Ufa...\p"
+	.string "Eu tava estudando Pokémon\n"
+	.string "selvagens no mato quando fui\l"
+	.string "atacado.\p"
+	.string "Você me salvou. Muito obrigado!\p"
+	.string "Ah, você é {PLAYER}{KUN}!\p"
+	.string "Aqui nao é um bom lugar pra\n"
+	.string "conversar. Passa no meu\l"
+	.string "laboratório depois, ta?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If POKéMON get tired, take them to\n"
-	.string "a POKéMON CENTER.\p"
-	.string "There's a POKéMON CENTER in OLDALE\n"
-	.string "TOWN right close by.$"
+	.string "Se seus Pokémon cansarem, leve\n"
+	.string "eles a um Centro Pokémon.\p"
+	.string "Tem um em Oldale Town, bem aqui\n"
+	.string "perto.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "Os Pokémon selvagens aparecem no\n"
+	.string "mato alto.\p"
+	.string "Se quiser capturar alguns, entre\n"
+	.string "no mato e procure.$"
 
 Route101_Text_RouteSign:
-	.string "ROUTE 101\n"
-	.string "{UP_ARROW} OLDALE TOWN$"
+	.string "Route 101 {UP_ARROW} Oldale Town$"
 

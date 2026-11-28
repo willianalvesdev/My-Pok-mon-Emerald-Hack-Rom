@@ -40,22 +40,23 @@ MossdeepCity_Mart_EventScript_Sailor::
 	end
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:
-	.string "REVIVE is fantastic!\p"
-	.string "Give it to a fainted POKéMON,\n"
-	.string "and the POKéMON will arise.\p"
-	.string "But be careful, REVIVE doesn't restore\n"
-	.string "the used-up PP of moves.$"
+	.string "Revive é ótimo!\p"
+	.string "Use num Pokémon desmaiado pra ele\n"
+	.string "acordar.\p"
+	.string "Mas cuidado: Revive nao recupera\n"
+	.string "os PP dos golpes.$"
 
 MossdeepCity_Mart_Text_MaxRepelLastsLongest:
-	.string "MAX REPEL keeps all weak POKéMON away.\p"
-	.string "Out of all the REPEL sprays, it lasts\n"
-	.string "the longest.$"
+	.string "Max Repel afasta os Pokémon\n"
+	.string "fracos.\p"
+	.string "É o repelente que dura mais tempo.$"
 
 MossdeepCity_Mart_Text_NetAndDiveBallsRare:
-	.string "The NET and DIVE BALLS are rare POKé\n"
-	.string "BALLS that are only made in MOSSDEEP.\p"
-	.string "A NET BALL is effective against\n"
-	.string "BUG-type and WATER-type POKéMON.\p"
-	.string "A DIVE BALL works best on POKéMON\n"
-	.string "at the bottom of the sea.$"
+	.string "Net Ball e Dive Ball sao Poké\n"
+	.string "Balls raras fabricadas em\l"
+	.string "Mossdeep.\p"
+	.string "A Net Ball funciona bem com\n"
+	.string "Pokémon dos tipos Bug e Water.\p"
+	.string "A Dive Ball funciona melhor no\n"
+	.string "fundo do mar.$"
 

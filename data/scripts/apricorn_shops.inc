@@ -36,5 +36,5 @@ ApricornShop_EventScript_Black::
 	.purgem apricorn_shop
 
 ApricornShop_Text_Welcome:
-	.string "Tenho Apricorns por ¥50 cada.\n"
-	.string "Pode comprar quantas quiser!$"
+	.string "Tenho Apricorns por ¥50 cada. Pode\n"
+	.string "comprar quantas quiser!$"

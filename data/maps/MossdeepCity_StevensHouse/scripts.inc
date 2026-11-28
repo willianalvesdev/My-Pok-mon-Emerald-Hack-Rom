@@ -148,67 +148,62 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "STEVEN: {PLAYER}{KUN}…\p"
-	.string "As you can see, there's not much here,\n"
-	.string "but this is my home.\p"
-	.string "Thank you for all that you've done.\p"
-	.string "This is my token of appreciation.\n"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
-	.string "No need to be shy--you've earned\n"
-	.string "this HM.$"
+	.string "STEVEN: {PLAYER}{KUN}...\p"
+	.string "Como pode ver, nao tem muita coisa\n"
+	.string "aqui, mas é minha casa.\p"
+	.string "Obrigado por tudo. Quero dar a\n"
+	.string "você a HM Dive.\p"
+	.string "Pode aceitar, você merece.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "STEVEN: While you're using SURF, you\n"
-	.string "should notice dark patches of water.\p"
-	.string "Use DIVE if you come to deep water\n"
-	.string "like it. You'll drop to the seafloor.\p"
-	.string "When you want to come back up, use\n"
-	.string "DIVE again.\p"
-	.string "In some places, it won't be possible\n"
-	.string "for you to surface, though.$"
+	.string "STEVEN: Enquanto usa Surf, você\n"
+	.string "vai ver partes mais escuras da\l"
+	.string "água.\p"
+	.string "Use Dive nessas partes profundas\n"
+	.string "pra descer até o fundo do mar.\p"
+	.string "Pra voltar, use Dive de novo.\p"
+	.string "Mas tem lugares onde nao é\n"
+	.string "possível subir.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "STEVEN: Apparently, there's an\n"
-	.string "underwater cavern between\l"
-	.string "MOSSDEEP and SOOTOPOLIS.\p"
-	.string "You know, the one that CAPT. STERN\n"
-	.string "found in his submarine.$"
+	.string "STEVEN: Parece que existe uma\n"
+	.string "caverna submersa entre Mossdeep e\l"
+	.string "Sootopolis.\p"
+	.string "É aquela que o capitao Stern\n"
+	.string "encontrou com o submarino.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the POKé BALL.\p"
-	.string "It contained the POKéMON\n"
-	.string "BELDUM.\p"
-	.string "Take the POKé BALL?$"
+	.string "{PLAYER} olhou a Poké Ball.\p"
+	.string "Tem um Beldum dentro dela.\p"
+	.string "Pegar a Poké Ball?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a BELDUM.$"
+	.string "{PLAYER} recebeu um Beldum.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "There is no space for another POKéMON.$"
+	.string "Nao tem espaço pra outro Pokémon.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
-	.string "it was.$"
+	.string "{PLAYER} deixou a Poké Ball onde\n"
+	.string "estava.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
-	.string "It's a letter.\p"
-	.string "… … … … … …\p"
-	.string "To {PLAYER}{KUN}…\p"
-	.string "I've decided to do a little soul-\n"
-	.string "searching and train on the road.\p"
-	.string "I don't plan to return home for some\n"
-	.string "time.\p"
-	.string "I have a favor to ask of you.\p"
-	.string "I want you to take the POKé BALL on\n"
-	.string "the desk.\p"
-	.string "Inside it is a BELDUM, my favorite\n"
-	.string "POKéMON.\p"
-	.string "I'm counting on you.\p"
-	.string "May our paths cross someday.\p"
-	.string "STEVEN STONE$"
+	.string "É uma carta.\p"
+	.string "...\p"
+	.string "Para {PLAYER}{KUN}...\p"
+	.string "Decidi viajar pra pensar um pouco\n"
+	.string "na vida e treinar pelo caminho. Nao\l"
+	.string "devo voltar pra casa tao cedo.\p"
+	.string "Tenho um favor a pedir. Pegue a\n"
+	.string "Poké Ball em cima da mesa.\p"
+	.string "Dentro dela tem um Beldum, meu\n"
+	.string "Pokémon favorito.\p"
+	.string "Conto com você. Espero que a\n"
+	.string "gente se encontre de novo.\p"
+	.string "Steven Stone$"
 
 MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
-	.string "It's a collection of rare rocks and\n"
-	.string "stones assembled by STEVEN.$"
+	.string "É uma coleçao de pedras raras\n"
+	.string "reunida por Steven.$"
 

@@ -53,13 +53,14 @@ Route110_SeasideCyclingRoadNorthEntrance_EventScript_ClearCyclingRoad::
 	end
 
 Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad:
-	.string "On CYCLING ROAD, you can go all out\n"
-	.string "and cycle as fast as you'd like.\p"
-	.string "It feels great to go that fast, but try\n"
-	.string "not to crash into anyone!$"
+	.string "Na Cycling Road, você pode pedalar\n"
+	.string "tao rápido quanto quiser.\p"
+	.string "É muito bom sentir a velocidade,\n"
+	.string "mas cuidado pra nao bater em\l"
+	.string "ninguém!$"
 
 Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk:
-	.string "Sorry, you can't walk on CYCLING\n"
-	.string "ROAD. It's too dangerous.\p"
-	.string "Please come back with a BIKE.$"
+	.string "Desculpa, nao pode andar a pé na\n"
+	.string "Cycling Road. É perigoso demais.\p"
+	.string "Volte com uma bicicleta.$"
 

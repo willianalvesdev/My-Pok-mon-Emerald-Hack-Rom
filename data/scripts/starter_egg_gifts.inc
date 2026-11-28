@@ -177,19 +177,21 @@ StarterEggs_EventScript_End:
 	end
 
 StarterEggs_Text_Offer:
-	.string "Tenho um ovo de Pokémon para você.\n"
+	.string "Tenho um ovo de Pokémon pra você.\n"
 	.string "Quer levar?$"
 
 StarterEggs_Text_NoRoom:
-	.string "Volte com um espaço livre no time.$"
+	.string "Volta com um espaço livre no time.$"
 
 StarterEggs_Text_Received:
-	.string "{PLAYER} recebeu um ovo de Pokémon!$"
+	.string "{PLAYER} recebeu um ovo de\n"
+	.string "Pokémon!$"
 
 StarterEggs_Text_AlreadyGiven:
-	.string "Cuide bem do ovo que te dei!$"
+	.string "Cuida bem do ovo que te dei!$"
 
 StarterEggs_Text_JohtoLocked:
-	.string "Volte depois de completar a Pokédex\n"
-	.string "de Hoenn e escolher um inicial de\l"
-	.string "Johto com o Professor Birch.$"
+	.string "Volta depois de completar a\n"
+	.string "Pokédex de Hoenn e escolher um\l"
+	.string "inicial de Johto com o Professor\l"
+	.string "Birch.$"

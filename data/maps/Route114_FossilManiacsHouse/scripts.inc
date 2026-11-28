@@ -31,24 +31,25 @@ Route114_FossilManiacsHouse_EventScript_Bookshelf::
 	end
 
 Route114_FossilManiacsHouse_Text_HaveThisToDigLikeMyBrother:
-	.string "My big brother's the FOSSIL MANIAC…\n"
-	.string "He's a nice guy who loves FOSSILS…\p"
-	.string "He loves digging holes, too…\n"
-	.string "He dug this hole by himself…\p"
-	.string "You can have this, so you can DIG\n"
-	.string "holes just like my big brother…$"
+	.string "Meu irmao é o Fossil Maniac... Ele\n"
+	.string "é legal e adora fósseis...\p"
+	.string "Também gosta de cavar. Fez esse\n"
+	.string "buraco sozinho...\p"
+	.string "Leve isto pra poder usar Dig e\n"
+	.string "cavar como ele...$"
 
 Route114_FossilManiacsHouse_Text_DigReturnsYouToEntrance:
-	.string "If you make a POKéMON DIG inside a\n"
-	.string "cave, you're returned to the entrance…$"
+	.string "Se seu Pokémon usar Dig dentro de\n"
+	.string "uma caverna, você volta pra\l"
+	.string "entrada...$"
 
 Route114_FossilManiacsHouse_Text_RocksFillDisplayCase:
-	.string "Rocks in peculiar shapes fill\n"
-	.string "the display case…$"
+	.string "O mostruário ta cheio de pedras de\n"
+	.string "formatos estranhos...$"
 
 Route114_FossilManiacsHouse_Text_CrammedWithBooks:
-	.string "THE COMPOSITION OF STRATA…\n"
-	.string "HOW RAIN SHAPES THE LAND…\l"
-	.string "STONES, SOIL, AND ROCK…\p"
-	.string "It's crammed with books.$"
+	.string "COMO AS CAMADAS DO SOLO SE\n"
+	.string "FORMAM... COMO A CHUVA MUDA A\l"
+	.string "TERRA... PEDRAS E SOLO...\p"
+	.string "Está cheio de livros.$"
 

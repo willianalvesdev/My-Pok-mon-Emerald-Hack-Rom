@@ -19,6 +19,7 @@
 #include "international_string_util.h"
 #include "item.h"
 #include "link.h"
+#include "line_break.h"
 #include "m4a.h"
 #include "malloc.h"
 #include "menu.h"
@@ -3590,7 +3591,21 @@ static void BufferMonTrainerMemo(void)
 
 static void PrintMonTrainerMemo(void)
 {
-    PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
+    static const u8 fonts[] = {FONT_NORMAL, FONT_SMALL, FONT_SMALL_NARROWER};
+    u8 windowId = AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO);
+    u32 fontId = FONT_NORMAL;
+
+    // Translated memos must fit after the nature, level and location are expanded.
+    for (u32 i = 0; i < ARRAY_COUNT(fonts); i++)
+    {
+        fontId = fonts[i];
+        u32 rows = GetWindowAttribute(windowId, WINDOW_HEIGHT) * 8 / GetFontAttribute(fontId, FONTATTR_MAX_LETTER_HEIGHT);
+        StripLineBreaks(gStringVar4);
+        BreakStringAutomatic(gStringVar4, WindowWidthPx(windowId) - 1, rows, fontId, HIDE_SCROLL_PROMPT);
+        if (CountLineBreaks(gStringVar4) < rows)
+            break;
+    }
+    PrintTextOnWindowWithFont(windowId, gStringVar4, 0, 1, 0, 0, fontId);
 }
 
 static void BufferNatureString(void)

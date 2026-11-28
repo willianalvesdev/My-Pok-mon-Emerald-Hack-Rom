@@ -120,30 +120,34 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
-	.string "People and POKéMON, they are but\n"
-	.string "the same…\p"
-	.string "Their individual nature makes them\n"
-	.string "good at certain things, and not good\l"
-	.string "at others.$"
+	.string "Pessoas e Pokémon sao parecidos...\p"
+	.string "Cada um tem seu jeito, e isso faz\n"
+	.string "com que tenham facilidade para\l"
+	.string "algumas coisas e dificuldade para\l"
+	.string "outras.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes:
-	.string "Rather than trying to make a POKéMON\n"
-	.string "do what it dislikes, try to let it do\l"
-	.string "what it likes and is good at doing.\p"
-	.string "Put yourself in the POKéMON's position\n"
-	.string "and consider what moves it would like.$"
+	.string "Em vez de obrigar um Pokémon a\n"
+	.string "fazer algo de que nao gosta, deixe\l"
+	.string "que ele faça o que gosta e sabe\l"
+	.string "fazer.\p"
+	.string "Tente pensar como ele e imagine\n"
+	.string "quais golpes ele gostaria de usar.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered:
-	.string "A POKéMON's nature is a remarkable\n"
-	.string "thing…\p"
-	.string "Some POKéMON behave in a completely\n"
-	.string "different way when they are cornered.$"
+	.string "A natureza de um Pokémon é uma\n"
+	.string "coisa curiosa...\p"
+	.string "Alguns mudam totalmente de\n"
+	.string "comportamento quando estao em\l"
+	.string "apuros.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature:
-	.string "Are you beginning to understand how\n"
-	.string "a POKéMON's nature makes it behave?$"
+	.string "Está começando a entender como a\n"
+	.string "natureza de um Pokémon afeta o\l"
+	.string "jeito dele?$"
 
 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons:
-	.string "Ah… I see a strong, heartfelt bond\n"
-	.string "between you and your POKéMON…$"
+	.string "Ah... Vejo uma ligaçao forte e\n"
+	.string "sincera entre você e seus\l"
+	.string "Pokémon...$"
 

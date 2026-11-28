@@ -134,35 +134,35 @@ Route113_EventScript_Wyatt::
 	end
 
 Route113_Text_AshCanBeFashionedIntoGlass:
-	.string "Wahahaha! Today's technology is a\n"
-	.string "wondrous thing!\p"
-	.string "Take this volcanic ash here.\n"
-	.string "It can be fashioned into glass.$"
+	.string "Wahahaha! A tecnologia de hoje é\n"
+	.string "incrível!\p"
+	.string "Dá pra transformar estas cinzas do\n"
+	.string "vulcao em vidro.$"
 
 Route113_Text_FunWalkingThroughAsh:
-	.string "It's fun walking through the volcano's\n"
-	.string "ashes on the ground and grass.\p"
-	.string "You can see where you walked--it's\n"
-	.string "really neat!$"
+	.string "É divertido andar nas cinzas que\n"
+	.string "cobrem o chao e a grama.\p"
+	.string "Ficam marcados os lugares onde\n"
+	.string "você passou!$"
 
 Route113_Text_RouteSign111:
-	.string "ROUTE 113\n"
-	.string "{RIGHT_ARROW} ROUTE 111$"
+	.string "Route 113 {RIGHT_ARROW} Route 111$"
 
 Route113_Text_RouteSignFallarbor:
-	.string "ROUTE 113\n"
-	.string "{LEFT_ARROW} FALLARBOR TOWN$"
+	.string "Route 113 {LEFT_ARROW} Fallarbor Town$"
 
 Route113_Text_TrainerTipsRegisterKeyItems:
-	.string "TRAINER TIPS\p"
-	.string "You may register one of the KEY ITEMS\n"
-	.string "in your BAG as SELECT.\p"
-	.string "Simply press SELECT to use\n"
-	.string "the registered item conveniently.$"
+	.string "DICAS DE TREINADOR\p"
+	.string "Você pode registrar um item\n"
+	.string "importante da bolsa no botao\l"
+	.string "SELECT.\p"
+	.string "Depois é só apertar SELECT pra\n"
+	.string "usar esse item.$"
 
 Route113_Text_GlassWorkshopSign:
-	.string "GLASS WORKSHOP\n"
-	.string "“Turning Volcanic Ash into Glass Items”$"
+	.string "Oficina de vidro\p"
+	.string "“Transformando cinzas do vulcao em\n"
+	.string "objetos de vidro.”$"
 
 Route113_EventScript_SpeedMeteorite::
 	setvar VAR_0x8004, SPECIES_DEOXYS_SPEED
@@ -195,10 +195,10 @@ Route113_EventScript_InspectMeteorite::
 	end
 
 Route113_Text_DeoxysMeteorite:
-	.string "Deoxys reagiu à energia\n"
-	.string "do meteoro!$"
+	.string "Deoxys reagiu à energia do\n"
+	.string "meteoro!$"
 
 Route113_Text_InspectMeteorite:
-	.string "Um meteoro escuro repousa\n"
-	.string "no fundo da cratera.$"
+	.string "Um meteoro escuro repousa no\n"
+	.string "fundo da cratera.$"
 

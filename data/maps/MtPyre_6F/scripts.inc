@@ -28,42 +28,44 @@ MtPyre_6F_EventScript_Cedric::
 	end
 
 MtPyre_6F_Text_ValerieIntro:
-	.string "When I'm here…\n"
-	.string "A curious power flows into me…$"
+	.string "Quando tô aqui... Um poder\n"
+	.string "estranho entra em mim...$"
 
 MtPyre_6F_Text_ValerieDefeat:
-	.string "The power is ebbing away…$"
+	.string "O poder ta indo embora...$"
 
 MtPyre_6F_Text_ValeriePostBattle:
-	.string "Perhaps the power is from the spirits\n"
-	.string "of POKéMON in fitful sleep here…$"
+	.string "Talvez esse poder venha dos\n"
+	.string "espíritos dos Pokémon que nao\l"
+	.string "conseguem descansar aqui...$"
 
 MtPyre_6F_Text_ValerieRegister:
-	.string "Fufufu… I lost the match, but…\n"
-	.string "I have this little ability…\p"
-	.string "Without ever laying my hands on\n"
-	.string "your POKéNAV… Hiyah!$"
+	.string "Fufufu... Perdi a batalha, mas\n"
+	.string "tenho uma habilidade...\p"
+	.string "Sem nem encostar no seu PokéNav...\n"
+	.string "Hiyah!$"
 
 MtPyre_6F_Text_ValerieRematchIntro:
-	.string "Behind you…\n"
-	.string "What is it…$"
+	.string "Atrás de você... Oque é aquilo...?$"
 
 MtPyre_6F_Text_ValerieRematchDefeat:
-	.string "Something faded away…$"
+	.string "Alguma coisa desapareceu...$"
 
 MtPyre_6F_Text_ValeriePostRematch:
-	.string "The POKéMON at rest here…\n"
-	.string "Sometimes, they play…$"
+	.string "Os Pokémon que descansam aqui...\n"
+	.string "Às vezes, brincam...$"
 
 MtPyre_6F_Text_CedricIntro:
-	.string "Have you lost your bearings?\n"
-	.string "Have no fear for I am here!$"
+	.string "Se perdeu? Nao precisa ter medo,\n"
+	.string "eu tô aqui!$"
 
 MtPyre_6F_Text_CedricDefeat:
-	.string "Weren't you lost?$"
+	.string "Você nao tava perdido?$"
 
 MtPyre_6F_Text_CedricPostBattle:
-	.string "I had this feeling that a lost TRAINER\n"
-	.string "would be panicked and easy to beat.\p"
-	.string "It's dirty and I won't try it again…$"
+	.string "Achei que um treinador perdido ia\n"
+	.string "estar assustado e seria fácil de\l"
+	.string "vencer.\p"
+	.string "Foi uma ideia suja. Nao vou fazer\n"
+	.string "isso de novo...$"
 

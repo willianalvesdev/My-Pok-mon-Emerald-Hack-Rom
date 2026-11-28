@@ -39,25 +39,25 @@ Route124_EVResetHouse_Egg:
 
 Route124_EVResetHouse_Text_Offer:
 	.string "Posso zerar todos os EVs de um\n"
-	.string "Pokémon da sua equipe.\p"
-	.string "Quer fazer isso agora?$"
+	.string "Pokémon do seu time. Quer fazer\l"
+	.string "isso agora?$"
 
 Route124_EVResetHouse_Text_Choose:
-	.string "Escolha um Pokémon da equipe.$"
+	.string "Escolha um Pokémon do seu time.$"
 
 Route124_EVResetHouse_Text_Confirm:
-	.string "Zerar todos os EVs de\n"
+	.string "Quer zerar todos os EVs de\n"
 	.string "{STR_VAR_1}?$"
 
 Route124_EVResetHouse_Text_Done:
-	.string "Pronto! Os seis EVs de\n"
-	.string "{STR_VAR_1} foram zerados.$"
+	.string "Pronto! Zerei os EVs dos seis\n"
+	.string "atributos de {STR_VAR_1}.$"
 
 Route124_EVResetHouse_Text_Cancel:
-	.string "Volte quando quiser.$"
+	.string "Pode voltar quando quiser.$"
 
 Route124_EVResetHouse_Text_NoPokemon:
-	.string "Traga um Pokémon da sua equipe.$"
+	.string "Traga um Pokémon do seu time.$"
 
 Route124_EVResetHouse_Text_Egg:
-	.string "Ovos ainda nao podem treinar.$"
+	.string "Ovo ainda nao pode treinar.$"

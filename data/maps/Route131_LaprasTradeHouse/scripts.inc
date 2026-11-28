@@ -21,16 +21,15 @@ Route131_LaprasTradeHouse_End:
 	end
 
 Route131_LaprasTradeHouse_Text_Offer:
-	.string "Eu sempre quis um Psyduck!\p"
-	.string "Quer trocar um pelo meu Lapras\n"
-	.string "de nível 30?$"
+	.string "Sempre quis ter um Psyduck! Troca\n"
+	.string "um pelo meu Lapras de nível 30?$"
 
 Route131_LaprasTradeHouse_Text_WrongPokemon:
-	.string "Eu queria um Psyduck!$"
+	.string "Mas eu queria um Psyduck!$"
 
 Route131_LaprasTradeHouse_Text_Thanks:
-	.string "Valeu pelo Psyduck!\n"
-	.string "Cuide bem do Lapras!$"
+	.string "Valeu pelo Psyduck! Cuida bem do\n"
+	.string "Lapras!$"
 
 Route131_LaprasTradeHouse_Text_AlreadyTraded:
 	.string "Meu Psyduck adora morar aqui!$"

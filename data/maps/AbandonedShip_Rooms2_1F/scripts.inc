@@ -50,100 +50,117 @@ AbandonedShip_Rooms2_1F_EventScript_Garrison::
 	end
 
 AbandonedShip_Rooms2_1F_Text_DanIntro:
-	.string "DAN: While searching for treasures,\n"
-	.string "we discovered a TRAINER!$"
+	.string "DAN: Enquanto procurávamos\n"
+	.string "tesouros, achamos um Treinador!$"
 
 AbandonedShip_Rooms2_1F_Text_DanDefeat:
-	.string "DAN: We couldn't win even though\n"
-	.string "we worked together…$"
+	.string "DAN: Nao conseguíamos ganhar,\n"
+	.string "mesmo tendo trabalho juntos...$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostBattle:
-	.string "DAN: We can't find any treasures…\n"
-	.string "I wonder if someone got them already?$"
+	.string "DAN: Nao conseguimos encontrar\n"
+	.string "nenhum tesouro... será que alguém\l"
+	.string "já os achou?$"
 
 AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons:
-	.string "DAN: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "DAN: Você nao tem nem dois\n"
+	.string "POKÉMONS, como você acha que\l"
+	.string "venceria a gente?$"
 
 AbandonedShip_Rooms2_1F_Text_KiraIntro:
-	.string "KIRA: Oh?\n"
-	.string "We were searching for treasures.\l"
-	.string "But we discovered a TRAINER instead!$"
+	.string "KIRA: AHA, Estavamos procurando\n"
+	.string "tesouros. Mas em vez disso achamos\l"
+	.string "um TREINADOR!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraDefeat:
-	.string "KIRA: Ooh, so strong!$"
+	.string "KIRA: Caramba tao forte!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraPostBattle:
-	.string "KIRA: Where could the treasures be?\p"
-	.string "I've already decided what I'm buying\n"
-	.string "when we find the treasures!$"
+	.string "KIRA: Onde podem estar esses\n"
+	.string "tesouros?\p"
+	.string "Já ate decidi o que vou comprar\n"
+	.string "quando encontrarmos!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons:
-	.string "KIRA: Oh, you don't have two POKéMON?\n"
-	.string "We'll have to battle some other time!$"
+	.string "KIRA: Você nem sequer tem dois\n"
+	.string "POKÉMONS, como você acha que\l"
+	.string "poderia vencer a gente?$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRegister:
-	.string "KIRA: Oh, you make me so angry!\n"
-	.string "I'm going to register you for that!$"
+	.string "KIRA: AH, você me irrita tanto!\n"
+	.string "vou registrar você por causa\l"
+	.string "disso!$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchIntro:
-	.string "DAN: We've been searching for\n"
-	.string "treasures all this time.\p"
-	.string "Our POKéMON have grown stronger, too.\n"
-	.string "Let us show you, okay?$"
+	.string "DAN: Estivemos procurando tesouros\n"
+	.string "este tempo todo.\p"
+	.string "Os nossos POKéMONS também se\n"
+	.string "tornaram mais fortes. Vamos te\l"
+	.string "mostrar!$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchDefeat:
-	.string "DAN: You're strong, as usual!$"
+	.string "DAN: Você está muito forte, como\n"
+	.string "sempre!$"
 
 AbandonedShip_Rooms2_1F_Text_DanPostRematch:
-	.string "DAN: We can't find any treasures,\n"
-	.string "we lose at POKéMON…\p"
-	.string "I want to go home… But if I say that,\n"
-	.string "she gets all angry with me…$"
+	.string "DAN: Nao encontramos nenhum\n"
+	.string "tesouro, ainda perdemos a\l"
+	.string "batalha...\p"
+	.string "Quero ir para casa, mas se eu\n"
+	.string "disser isso, ela fica vai ficar\l"
+	.string "furiosa comigo.$"
 
 AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons:
-	.string "DAN: You don't even have two POKéMON.\n"
-	.string "You can't expect to beat us like that.$"
+	.string "DAN: Você nao tem nem dois\n"
+	.string "POKÉMONS, como você acha que\l"
+	.string "venceria a gente?$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchIntro:
-	.string "KIRA: Oh? We meet again!\p"
-	.string "Just like us, you still haven't given up\n"
-	.string "searching for treasures, have you?\p"
-	.string "Want to make it so the loser has\n"
-	.string "to give up searching?$"
+	.string "KIRA: Oh! Nos estrosamos denovo\p"
+	.string "Parece que você ainda nao desistiu\n"
+	.string "de procurar os tesouros nao é\l"
+	.string "mesmo?\p"
+	.string "Que tal uma luta? o perdedor\n"
+	.string "betinha desiste de procurar o\l"
+	.string "tesouro$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat:
-	.string "KIRA: Oh, we lost again…$"
+	.string "KIRA: Fomos molestados\n"
+	.string "novamente...$"
 
 AbandonedShip_Rooms2_1F_Text_KiraPostRematch:
-	.string "KIRA: We're not leaving until we raise\n"
-	.string "our POKéMON some more and we find\l"
-	.string "the treasures here!$"
+	.string "KIRA: Nao vamos embora até\n"
+	.string "uparmos os nossos POKéMONS e\l"
+	.string "encontrarmos os tesouros!$"
 
 AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons:
-	.string "KIRA: Oh, you don't have two POKéMON?\n"
-	.string "We'll have to battle some other time!$"
+	.string "KIRA: Você nem sequer tem dois\n"
+	.string "POKÉMONS, como você acha que\l"
+	.string "poderia vencer a gente?$"
 
 AbandonedShip_Rooms2_1F_Text_JaniIntro:
-	.string "I'm not good at swimming,\n"
-	.string "but I am good at battles!$"
+	.string "Nadar eu posso até nao saber, mas\n"
+	.string "pra x1 eu sou fera!$"
 
 AbandonedShip_Rooms2_1F_Text_JaniDefeat:
-	.string "Oops.\n"
-	.string "That didn't go very well.$"
+	.string "Eu só perdi porque fui programado\n"
+	.string "pra isso fdp$"
 
 AbandonedShip_Rooms2_1F_Text_JaniPostBattle:
-	.string "Walking around barefoot in this ship\n"
-	.string "is kind of gross.$"
+	.string "Andar descalço nesse navio é\n"
+	.string "nojento, parece que alguém cagou\l"
+	.string "no chao$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonIntro:
-	.string "Strength and compassion…\n"
-	.string "Those are a TRAINER's treasures!$"
+	.string "Força e bondade... sao as\n"
+	.string "caracteristicas de um verdadeiro\l"
+	.string "TREINADOR!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat:
-	.string "Ah, there is something about you\n"
-	.string "that sparkles.$"
+	.string "Algo me diz que você é o alto\n"
+	.string "nivel dos mitos antigos.... O\l"
+	.string "ESCOLHIDO!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle:
-	.string "In a cabin somewhere on board,\n"
-	.string "I saw something sparkle.$"
+	.string "Em alguma cabine do navio vi algo\n"
+	.string "brilhando.$"

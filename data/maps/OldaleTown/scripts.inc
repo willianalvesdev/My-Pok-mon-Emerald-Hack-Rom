@@ -340,58 +340,57 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	step_end
 
 OldaleTown_Text_SavingMyProgress:
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "Quero descansar, entao tô salvando\n"
+	.string "meu progresso.$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
-	.string "Hi!\n"
-	.string "I work at a POKéMON MART.\p"
-	.string "Can I get you to come with me?$"
+	.string "Oi! Trabalho no Poké Mart.\p"
+	.string "Pode vir comigo um instante?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a POKéMON MART.\n"
-	.string "Just look for our blue roof.\p"
-	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching POKéMON.\p"
-	.string "Here, I'd like you to have this as\n"
-	.string "a promotional item.$"
+	.string "Este é o Poké Mart. É só procurar\n"
+	.string "o telhado azul.\p"
+	.string "Vendemos várias coisas, incluindo\n"
+	.string "Poké Balls pra capturar Pokémon.\p"
+	.string "Toma, quero dar isto de brinde pra\n"
+	.string "você.$"
 
 OldaleTown_Text_PotionExplanation:
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "Você pode usar Potion a qualquer\n"
+	.string "hora.\p"
+	.string "Em certas situaçoes, ela ajuda até\n"
+	.string "mais que um Centro Pokémon.$"
 
 OldaleTown_Text_WaitDontComeInHere:
-	.string "Aaaaah! Wait!\n"
-	.string "Please don't come in here.\p"
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Aaaaah! Espera! Nao entra aqui,\n"
+	.string "por favor!\p"
+	.string "Acabei de descobrir pegadas de um\n"
+	.string "Pokémon raro!\p"
+	.string "Espera eu terminar de desenhar\n"
+	.string "elas, ta?$"
 
 OldaleTown_Text_DiscoveredFootprints:
-	.string "I just discovered the footprints of\n"
-	.string "a rare POKéMON!\p"
-	.string "Wait until I finish sketching\n"
-	.string "them, okay?$"
+	.string "Acabei de descobrir pegadas de um\n"
+	.string "Pokémon raro!\p"
+	.string "Espera eu terminar de desenhar\n"
+	.string "elas, ta?$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
-	.string "I finished sketching the footprints of\n"
-	.string "a rare POKéMON.\p"
-	.string "But it turns out they were only my\n"
-	.string "own footprints…$"
+	.string "Terminei o desenho das pegadas do\n"
+	.string "Pokémon raro.\p"
+	.string "Só depois percebi que as pegadas\n"
+	.string "eram minhas...$"
 
 OldaleTown_Text_MayLetsGoBack:
-	.string "MAY: {PLAYER}{KUN}!\n"
-	.string "Over here!\l"
-	.string "Let's hurry home!$"
+	.string "MAY: {PLAYER}{KUN}! Por aqui! Vamos logo\n"
+	.string "pra casa!$"
 
 OldaleTown_Text_BrendanLetsGoBack:
-	.string "BRENDAN: I'm heading back to my dad's\n"
-	.string "LAB now.\l"
-	.string "{PLAYER}, you should hustle back, too.$"
+	.string "BRENDAN: Vou voltar pro\n"
+	.string "laboratório do meu pai. Anda logo\l"
+	.string "e vem também, {PLAYER}.$"
 
 OldaleTown_Text_TownSign:
-	.string "OLDALE TOWN\n"
-	.string "“Where things start off scarce.”$"
+	.string "Oldale Town\p"
+	.string "“Onde tudo começa aos poucos.”$"
 

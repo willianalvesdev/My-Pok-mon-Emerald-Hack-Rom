@@ -32,46 +32,51 @@ AbandonedShip_Rooms_1F_EventScript_ThaliaRematch::
 	end
 
 AbandonedShip_Rooms_1F_Text_TakingALookAround:
-	.string "Ships of this sort are rare, so I'm\n"
-	.string "taking a look around.\p"
-	.string "Hmhm…\n"
-	.string "There appear to be other cabins…$"
+	.string "Navios deste tipo sao raros, por\n"
+	.string "isso estou vasculhando tudo por\l"
+	.string "aqui.\p"
+	.string "Parece que há outras cabines...$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaIntro:
-	.string "What on earth would compel you to\n"
-	.string "come here? You must be curious!$"
+	.string "O que você acha que ta fazendo\n"
+	.string "aqui? Você é bem enxerido!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaDefeat:
-	.string "Not just curious, but also strong…$"
+	.string "Você pode até ser forte, mas\n"
+	.string "continua enxerido.$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostBattle:
-	.string "The man next door…\p"
-	.string "He says he's just sightseeing,\n"
-	.string "but I don't know about that.$"
+	.string "O homem na porta ao lado...\p"
+	.string "Ele diz que está só de passagem,\n"
+	.string "mas nao sei se isso é verdade.$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRegister:
-	.string "You're such a tough TRAINER!\n"
-	.string "Let me register you as a memento!$"
+	.string "Você é um treinador muito casca\n"
+	.string "grossa! Vou te adicionar no meu\l"
+	.string "Discord!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro:
-	.string "What on earth would compel you to\n"
-	.string "come back? You must really be curious!$"
+	.string "O que você acha que ta fazendo\n"
+	.string "aqui? Você é bem enxerido!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat:
-	.string "Aren't you too strong?$"
+	.string "Você nao apela demais?$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaPostRematch:
-	.string "I'm sure that man's up to something!\n"
-	.string "He just acts so suspiciously!$"
+	.string "Tenho certeza que aquele viado\n"
+	.string "está tramando algo, ele está\l"
+	.string "agindo de forma muito sus$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusIntro:
-	.string "Waaah!\n"
-	.string "I've been found! …Huh?$"
+	.string "WAAAAAAH! ME ENCONTRARAM, FUDEU!\n"
+	.string "....Huh?$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusDefeat:
-	.string "Oh, you're not my mom.$"
+	.string "Que susto cara, achei que era\n"
+	.string "minha mainha$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
-	.string "I'm in trouble with my mom, so I ran.\n"
-	.string "Keep it a secret where I am!$"
+	.string "Acabei com o cartao de crédito\n"
+	.string "dela em robux, por favor nao diga\l"
+	.string "onde eu estou$"
 

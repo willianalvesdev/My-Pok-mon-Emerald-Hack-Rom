@@ -257,165 +257,164 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
-	.string "If you challenge him with WATER-type\n"
-	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
-	.string "Hey, go for it!$"
+	.string "E aí, {PLAYER}, futuro campeao!\p"
+	.string "Wattson, o líder daqui, usa\n"
+	.string "Pokémon do tipo Electric.\p"
+	.string "Se vier com Pokémon do tipo Water,\n"
+	.string "vai tomar choque! Bzzt!\p"
+	.string "Ele também encheu o ginásio de\n"
+	.string "portas controladas por botoes. Uma\l"
+	.string "figura!\p"
+	.string "Vai com tudo!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "Nossa, você ta eletrizante! Até\n"
+	.string "abriu a porta!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "Minha alma elétrica vai acabar com\n"
+	.string "seus sonhos! Uou, yeah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "Isso foi ligado, amplificado e\n"
+	.string "eletrizante demais, cara!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoa-yeah!$"
+	.string "Pokémon e rock precisam de\n"
+	.string "coraçao! Uou, yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under WATTSON!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "Treinei com Wattson! Nao vou\n"
+	.string "perder tao fácil!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "Unplugged and turned off…$"
+	.string "Desligado da tomada...$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "WATTSON, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "Wattson treina faz muito, muito\n"
+	.string "tempo.\p"
+	.string "Esse velho já batalhava antes do\n"
+	.string "seu pai nascer!$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "Este ginásio tem quebra-cabeças!\n"
+	.string "Legal, né?$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "It's no fun to lose…$"
+	.string "Perder nao tem graça...$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "WATTSON says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "Wattson gosta de preparar umas\n"
+	.string "armadilhas com botoes.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
-	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "Meu charme e os golpes dos meus\n"
+	.string "Pokémon vao deixar você em\l"
+	.string "choque!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "I'm shocked by your power!$"
+	.string "Sua força me deixou em choque!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by WATTSON.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "Ouvi dizer que Wattson fundou\n"
+	.string "Mauville.\p"
+	.string "Ele já era treinador muito antes\n"
+	.string "da gente. Deve saber muita coisa!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "I love shiny things!$"
+	.string "Eu adoro coisas brilhantes!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
-	.string "Oh…\n"
-	.string "My eyes are frazzled…$"
+	.string "Ah... Meus olhos tao até\n"
+	.string "cansados...$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE GYM's WATTSON has a shiny\n"
-	.string "forehead. It makes me happy!$"
+	.string "Wattson tem a testa brilhante.\n"
+	.string "Gosto disso!\p"
+	.string "Nem precisa de lanterna no apagao.$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, WATTSON, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "Desisti de reformar a cidade\n"
+	.string "inteira.\p"
+	.string "Agora passo o tempo criando\n"
+	.string "armadilhas com portas no meu\l"
+	.string "ginásio.\p"
+	.string "Opa! Oque você faz aqui?\p"
+	.string "Passou por todas as minhas portas?\p"
+	.string "Wahahahah! Que divertido!\p"
+	.string "Entao eu, Wattson, líder do\n"
+	.string "ginásio de Mauville, vou deixar\l"
+	.string "você eletrizado!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
-	.string "Wahahahah!\n"
-	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
-	.string "Take this BADGE!$"
+	.string "Wahahahah! Muito bem, perdi!\p"
+	.string "Você me deu uma batalha\n"
+	.string "emocionante! Pegue esta insígnia!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
-	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from WATTSON.$"
+	.string "{PLAYER} recebeu a Dynamo Badge de\n"
+	.string "Wattson.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
-	.string "Hmm…\n"
-	.string "You should take this, too!$"
+	.string "Com a Dynamo Badge, seus Pokémon\n"
+	.string "podem usar Rock Smash fora das\l"
+	.string "batalhas.\p"
+	.string "Ela também deixa seus Pokémon um\n"
+	.string "pouco mais rápidos.\p"
+	.string "Hum... Leve isto também!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
-	.string "… … … … … …$"
+	.string "A TM34 tem Shock Wave.\p"
+	.string "É um golpe que nunca erra. Pode\n"
+	.string "confiar nele!\p"
+	.string "...$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered GYM LEADER WATTSON\n"
-	.string "in the POKéNAV.$"
+	.string "O líder Wattson foi registrado no\n"
+	.string "PokéNav.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "Ver um jovem treinador com tanto\n"
+	.string "futuro me deixa cheio de\l"
+	.string "esperança!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "Wahahahah! Vá em frente e\n"
+	.string "continue se esforçando!$"
 
 MauvilleCity_Gym_Text_GymStatue:
-	.string "MAUVILLE CITY POKéMON GYM$"
+	.string "Ginásio Pokémon de Mauville City$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
-	.string "MAUVILLE CITY POKéMON GYM\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "Ginásio Pokémon de Mauville City\p"
+	.string "Treinadores aprovados por Wattson:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "WATTSON: Ah-ha! Here at last!\n"
-	.string "I know what you want.\l"
-	.string "You want to battle my POKéMON!\p"
+	.string "WATTSON: Ahá! Finalmente chegou!\n"
+	.string "Já sei oque você quer: batalhar\l"
+	.string "com meus Pokémon!\p"
 	.string "Wahahahaha!\p"
-	.string "I'll make sparks fly from you!\n"
-	.string "Don't say I didn't warn you!$"
+	.string "Vou fazer as faíscas voarem!\n"
+	.string "Depois nao diga que nao avisei!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
-	.string "Oof…\n"
-	.string "Our batteries ran dry…$"
+	.string "Ufa... Nossas baterias acabaram...$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "WATTSON: We'll have to recharge our\n"
-	.string "batteries again.\p"
-	.string "When we're fully charged up, we'll\n"
-	.string "gladly accept your challenge.\p"
-	.string "So, come back again sometime,\n"
-	.string "won't you?$"
+	.string "WATTSON: Precisamos recarregar as\n"
+	.string "baterias.\p"
+	.string "Quando estivermos com a carga\n"
+	.string "cheia, vamos aceitar seu desafio\l"
+	.string "com prazer.\p"
+	.string "Volta aqui outra hora, combinado?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "WATTSON: Ah-ha! Here at last!\n"
-	.string "I know what you want.\l"
-	.string "You want to battle my POKéMON!\p"
+	.string "WATTSON: Ahá! Finalmente chegou!\n"
+	.string "Já sei oque você quer: batalhar\l"
+	.string "com meus Pokémon!\p"
 	.string "Wahahahaha!\p"
-	.string "Oops! Wait!\n"
-	.string "You've only one POKéMON with you!\p"
-	.string "Come see me with two or more\n"
-	.string "POKéMON, all right?$"
+	.string "Opa, espera! Você só trouxe um\n"
+	.string "Pokémon!\p"
+	.string "Volte com pelo menos dois, ta bom?$"
 

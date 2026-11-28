@@ -419,109 +419,103 @@ RusturfTunnel_EventScript_Mike::
 	end
 
 RusturfTunnel_Text_ComeAndGetSome:
-	.string "What, are you coming?\n"
-	.string "Come and get some, then!$"
+	.string "Oque, você vem? Entao vem\n"
+	.string "enfrentar!$"
 
 RusturfTunnel_Text_Peeko:
 	.string "PEEKO: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
-	.string "Grah, keelhaul it all!\p"
-	.string "That hostage POKéMON turned out to\n"
-	.string "be worthless!\p"
-	.string "And to think I made a getaway…\n"
-	.string "In this tunnel to nowhere!\p"
-	.string "Hey! You!\n"
-	.string "So you want to battle me?$"
+	.string "Grah, que droga!\p"
+	.string "Esse Pokémon refém nao serviu pra\n"
+	.string "nada!\p"
+	.string "E eu ainda fugi pra um túnel sem\n"
+	.string "saída!\p"
+	.string "Ei, você! Quer batalhar comigo?$"
 
 RusturfTunnel_Text_GruntDefeat:
-	.string "Urrrggh! My career in crime comes to\n"
-	.string "a dead end!$"
+	.string "Urrrggh! Minha carreira no crime\n"
+	.string "chegou num beco sem saída!$"
 
 RusturfTunnel_Text_GruntTakePackage:
-	.string "This is plain not right…\p"
-	.string "The BOSS told me this would be a\n"
-	.string "slick-and-easy job to pull.\p"
-	.string "All I had to do was steal some package\n"
-	.string "from DEVON.\p"
-	.string "Tch!\n"
-	.string "You want it back that badly, take it!$"
+	.string "Isso ta errado...\p"
+	.string "O chefe disse que era um trabalho\n"
+	.string "fácil. Só precisava roubar um\l"
+	.string "pacote da Devon.\p"
+	.string "Tsc! Quer tanto de volta? Entao\n"
+	.string "pega!$"
 
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
-	.string "PEEKO!\n"
-	.string "Am I glad to see you're safe!$"
+	.string "Peeko! Que alívio ver você bem!$"
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
-	.string "PEEKO owes her life to you!\p"
-	.string "They call me MR. BRINEY.\n"
-	.string "And, you are?\p"
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "Ah, so you are {PLAYER}{KUN}!\n"
-	.string "I sincerely thank you!\p"
-	.string "Now, if there's anything that troubles\n"
-	.string "you, don't hesitate to tell me!\p"
-	.string "You can usually find me in my cottage\n"
-	.string "by the sea near PETALBURG WOODS.\p"
-	.string "Come, PEEKO, we should make our way\n"
-	.string "home.\p"
+	.string "Peeko deve a vida a você!\p"
+	.string "Pode me chamar de Mr. Briney. E\n"
+	.string "você é...?\p"
+	.string "...\p"
+	.string "Ah, {PLAYER}{KUN}! Muito obrigado mesmo!\p"
+	.string "Se precisar de alguma coisa, é só\n"
+	.string "falar!\p"
+	.string "Costumo ficar na minha casa à\n"
+	.string "beira-mar, perto de Petalburg\l"
+	.string "Woods.\p"
+	.string "Venha, Peeko. Vamos pra casa.\p"
 	.string "PEEKO: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:
-	.string "… …\p"
-	.string "Why can't they keep digging?\n"
-	.string "Is the bedrock too hard?\p"
-	.string "My beloved awaits me in VERDANTURF\n"
-	.string "TOWN just beyond here…\p"
-	.string "If RUSTBORO and VERDANTURF were\n"
-	.string "joined by this tunnel, I could visit\l"
-	.string "her every day…\p"
-	.string "But this…\n"
-	.string "What am I to do?$"
+	.string "...\p"
+	.string "Por que nao continuam cavando? A\n"
+	.string "pedra é dura demais?\p"
+	.string "Minha amada ta esperando em\n"
+	.string "Verdanturf Town, logo do outro\l"
+	.string "lado...\p"
+	.string "Se o túnel ligasse Rustboro a\n"
+	.string "Verdanturf, eu podia visitar ela\l"
+	.string "todo dia.\p"
+	.string "Mas agora... Oque eu faço?$"
 
 RusturfTunnel_Text_ToGetToVerdanturf:
-	.string "To get from RUSTBORO to VERDANTURF,\n"
-	.string "you need to go to DEWFORD, then pass\l"
-	.string "through SLATEPORT and MAUVILLE…$"
+	.string "Pra ir de Rustboro a Verdanturf,\n"
+	.string "precisa passar por Dewford,\l"
+	.string "Slateport e Mauville...$"
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM:
-	.string "Wow! You shattered that boulder\n"
-	.string "blocking the way.\p"
-	.string "To show you how much I appreciate it,\n"
-	.string "I'd like you to have this HM.$"
+	.string "Nossa! Você quebrou a pedra que\n"
+	.string "bloqueava o caminho.\p"
+	.string "Quero dar esta HM pra agradecer.$"
 
 RusturfTunnel_Text_ExplainStrength:
-	.string "That HM contains STRENGTH.\p"
-	.string "If a muscular POKéMON were to learn\n"
-	.string "that, it would be able to move even\l"
-	.string "large boulders.$"
+	.string "Essa HM tem Strength.\p"
+	.string "Um Pokémon forte que aprenda esse\n"
+	.string "golpe pode mover até pedras\l"
+	.string "enormes.$"
 
 RusturfTunnel_Text_WandaReunion:
-	.string "WANDA!\n"
-	.string "Now I can see you anytime!\p"
-	.string "WANDA: That's…wonderful.\p"
-	.string "Please, take some rest at my home.$"
+	.string "Wanda! Agora posso ver você\n"
+	.string "sempre!\p"
+	.string "WANDA: Isso é... maravilhoso.\p"
+	.string "Venha descansar um pouco lá em\n"
+	.string "casa.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
-	.string "On the other side of this rock…\n"
-	.string "My boyfriend is there.\p"
-	.string "He… He's not just digging the tunnel\n"
-	.string "to come see me.\p"
-	.string "He works his hands raw and rough\n"
-	.string "for the benefit of everyone.$"
+	.string "Do outro lado desta pedra... Meu\n"
+	.string "namorado ta lá.\p"
+	.string "Ele nao cava só pra vir me ver.\p"
+	.string "Machuca as maos trabalhando pra\n"
+	.string "ajudar todo mundo.$"
 
 RusturfTunnel_Text_MikeIntro:
-	.string "What do you call a wild man up in the\n"
-	.string "mountains? A mountain man, right?\p"
-	.string "So why don't they call a POKéMON in\n"
-	.string "the mountains a mountain POKéMON?$"
+	.string "Um homem selvagem das montanhas é\n"
+	.string "um montanhês, né?\p"
+	.string "Entao por que um Pokémon das\n"
+	.string "montanhas nao é um pokémonhês?$"
 
 RusturfTunnel_Text_MikeDefeat:
-	.string "My POKéMON…\n"
-	.string "Ran out of power…$"
+	.string "Meus Pokémon... Ficaram sem\n"
+	.string "força...$"
 
 RusturfTunnel_Text_MikePostBattle:
-	.string "They halted development here to\n"
-	.string "protect POKéMON, right?\l"
-	.string "There's a feel-good story!$"
+	.string "Pararam a obra pra proteger os\n"
+	.string "Pokémon, né? Essa é uma boa\l"
+	.string "história!$"
 

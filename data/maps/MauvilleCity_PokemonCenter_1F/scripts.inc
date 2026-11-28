@@ -34,21 +34,21 @@ MauvilleCity_PokemonCenter_1F_EventScript_Youngster::
 	end
 
 MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings:
-	.string "That man over there, he says weird\n"
-	.string "things!\p"
-	.string "He's funny in a weird way.\n"
-	.string "I doubt I'll forget about him!$"
+	.string "Aquele homem fala cada coisa\n"
+	.string "estranha!\p"
+	.string "Ele é engraçado de um jeito\n"
+	.string "esquisito. Nao vou esquecer dele\l"
+	.string "tao cedo!$"
 
 MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner:
-	.string "When I accessed the RECORD CORNER,\n"
-	.string "the data for what's hot in DEWFORD\l"
-	.string "got updated.\p"
-	.string "Now that bit of data is the same\n"
-	.string "as my friend's!$"
+	.string "Quando usei o Record Corner, a\n"
+	.string "moda de Dewford foi atualizada.\p"
+	.string "Agora a informaçao ta igual à do\n"
+	.string "meu amigo!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
-	.string "A RECORD CORNER opened upstairs in\n"
-	.string "the POKéMON CENTER.\p"
-	.string "I don't know what it's about, but it\n"
-	.string "sounds fun. I'll go check it out!$"
+	.string "Abriram um Record Corner no andar\n"
+	.string "de cima do Centro Pokémon.\p"
+	.string "Nao sei direito oque é, mas parece\n"
+	.string "divertido. Vou olhar!$"
 

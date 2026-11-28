@@ -74,17 +74,18 @@ ApricornWorkshop_End:
 	end
 
 ApricornWorkshop_Text_ChooseBall:
-	.string "Faço Poké Balls com Apricorns!\p"
-	.string "Cada bola custa 10 da mesma cor.\n"
-	.string "Qual você quer?$"
+	.string "Faço Poké Balls com Apricorns!\n"
+	.string "Preciso de dez da mesma cor pra\l"
+	.string "cada Ball. Qual você quer?$"
 
 ApricornWorkshop_Text_Confirm:
-	.string "Usar 10 {STR_VAR_1}\n"
-	.string "para fazer uma {STR_VAR_2}?$"
+	.string "Usar dez {STR_VAR_1} pra fazer\n"
+	.string "uma {STR_VAR_2}?$"
 
 ApricornWorkshop_Text_NotEnough:
-	.string "Para essa bola, preciso de 10\n"
+	.string "Pra essa Ball, preciso de dez\n"
 	.string "{STR_VAR_1}.$"
 
 ApricornWorkshop_Text_Done:
-	.string "Pronto! Aqui está sua {STR_VAR_2}.$"
+	.string "Pronto! Aqui ta sua\n"
+	.string "{STR_VAR_2}.$"

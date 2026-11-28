@@ -76,19 +76,19 @@ LilycoveCity_DepartmentStore_4F_Pokemart_EvolutionItems::
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
-	.string "Hmm…\p"
-	.string "An attacking move…\n"
-	.string "Or a defensive move…\p"
-	.string "It's no easy matter to decide which TM\n"
-	.string "moves should be taught to POKéMON…$"
+	.string "Hum...\p"
+	.string "Um golpe de ataque ou um de\n"
+	.string "defesa...\p"
+	.string "É difícil escolher quais golpes de\n"
+	.string "TM ensinar pros Pokémon.$"
 
 LilycoveCity_DepartmentStore_4F_Text_FiftyDifferentTMs:
-	.string "There are so many different kinds of\n"
-	.string "TM moves.\p"
-	.string "A catalog I read said there are fifty\n"
-	.string "different kinds.$"
+	.string "Existem vários golpes de TM.\p"
+	.string "Li num catálogo que sao cinquenta\n"
+	.string "tipos diferentes.$"
 
 LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
-	.string "I'd like to get all the different TMs,\n"
-	.string "but a POKéMON learns only four moves.$"
+	.string "Queria ter todas as TMs, mas cada\n"
+	.string "Pokémon só pode aprender quatro\l"
+	.string "golpes.$"
 
